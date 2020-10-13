@@ -1,5 +1,7 @@
 package net.lightbody.bmp;
 
+import android.util.Log;
+
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.MapMaker;
@@ -269,6 +271,7 @@ public class BrowserMobProxyServer implements BrowserMobProxy {
     public void start(int port, InetAddress clientBindAddress, InetAddress serverBindAddress) {
         boolean notStarted = started.compareAndSet(false, true);
         if (!notStarted) {
+            Log.i("11111111","Proxy server is already started. Not restarting.");
             throw new IllegalStateException("Proxy server is already started. Not restarting.");
         }
 

@@ -4,7 +4,13 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <Button
+        android:text="发送"
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
     <ProgressBar
+        android:visibility="gone"
         android:id="@+id/pb_progress"
         android:layout_marginTop="-15dp"
         android:layout_width="match_parent"
@@ -14,6 +20,7 @@
         android:layout_marginBottom="15dp"/>
 
     <Button
+        android:visibility="gone"
         android:layout_marginRight="5dp"
         android:id="@+id/bt_jump"
         android:layout_alignParentRight="true"
@@ -23,6 +30,7 @@
 
     <cn.darkal.networkdiagnosis.View.ClearTextView
         android:layout_marginLeft="5dp"
+        android:visibility="gone"
         android:id="@+id/et_url"
         android:layout_toLeftOf="@id/bt_jump"
         android:layout_width="match_parent"
@@ -32,11 +40,13 @@
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipe_container"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_below="@id/et_url"
         android:layout_height="match_parent" >
 
         <WebView
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/fl_webview"/>

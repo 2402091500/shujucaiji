@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">AndroidHttpCapture</string>
+    <string name="app_name">Ai数据采集☯☯☯☯</string>
+    <string name="a_name">A@@数据采集@@A</string>
+    <string name="tips">开始数据采集时请先，检查好手机的以下一些设置是否开启</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

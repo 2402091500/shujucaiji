@@ -302,7 +302,7 @@ public class WebViewFragment extends BaseFragment {
     public void setUserAgent(){
         String originUA = userAgentString;
 
-        switch (SharedPreferenceUtils.getString(getContext(),"select_ua", "0")) {
+        switch (SharedPreferenceUtils.getString(getContext(),"select_ua", "1")) {
             case "0":
                 userAgentString = baseUserAgentString;
                 break;

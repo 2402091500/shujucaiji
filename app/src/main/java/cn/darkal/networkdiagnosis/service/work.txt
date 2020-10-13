@@ -1,0 +1,5 @@
+
+
+ 天天快报：com.tencent.reading            /com.tencent.reading.activity.SplashActivity
+
+ 一点资讯：com.hipu.yidian/com.hipu.yidian.ui.guide.UserGuideActivity

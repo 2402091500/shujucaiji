@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<TextView
+    android:drawableLeft="@drawable/logo2"
+    android:text="数据采集助手"
+    android:textSize="16dp"
+    android:drawablePadding="10dp"
+    android:textColor="@color/white"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"/>
+    <TextView
+    android:text="@string/tips"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llserice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/lshap"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imastate"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/noservise" />
+
+            <TextView
+                android:id="@+id/tvser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="服务未开启" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/lshap"
+            android:id="@+id/llset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/daili" />
+
+            <TextView
+                android:id="@+id/seting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="设置系统代理" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@drawable/lshap"
+            android:id="@+id/llzhensu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/zhenshu" />
+
+            <TextView
+                android:id="@+id/tvproxy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="安装证书" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/lshap"
+            android:id="@+id/llpintai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/pingtai" />
+
+            <TextView
+                android:id="@+id/tvproxy1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="选择平台" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="前往采集数据" />
+
+
+</LinearLayout>

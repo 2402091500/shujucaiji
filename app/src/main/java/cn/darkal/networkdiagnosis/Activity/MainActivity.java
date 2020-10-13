@@ -48,6 +48,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
+import com.google.gson.Gson;
 import com.google.zxing.QrCodeScanActivity;
 import com.tencent.bugly.crashreport.CrashReport;
 
@@ -80,6 +81,7 @@ import cn.darkal.networkdiagnosis.Fragment.BackHandledInterface;
 import cn.darkal.networkdiagnosis.Fragment.NetworkFragment;
 import cn.darkal.networkdiagnosis.Fragment.PreviewFragment;
 import cn.darkal.networkdiagnosis.Fragment.WebViewFragment;
+import cn.darkal.networkdiagnosis.Fragment.WebViewFragment2;
 import cn.darkal.networkdiagnosis.R;
 import cn.darkal.networkdiagnosis.SysApplication;
 import cn.darkal.networkdiagnosis.Utils.DeviceUtils;
@@ -87,11 +89,13 @@ import cn.darkal.networkdiagnosis.Utils.FileUtil;
 import cn.darkal.networkdiagnosis.Utils.SharedPreferenceUtils;
 import cn.darkal.networkdiagnosis.Utils.ZipUtils;
 import cn.darkal.networkdiagnosis.View.LoadingDialog;
+import cn.darkal.networkdiagnosis.modle.PostInfo;
+import cn.darkal.networkdiagnosis.modle.tiantian.TT_Yule;
+import cn.darkal.networkdiagnosis.service.DataIntentService;
+import cn.darkal.networkdiagnosis.service.UpLoadDataService;
+import rx.Subscriber;
 
-/**
- * Created by xuzhou on 2016/8/10.
- * MainActivity
- */
+
 public class MainActivity extends AppCompatActivity implements BackHandledInterface {
     public final static String CODE_URL = "#";
     public final static String UPLOAD_URL = "#";
@@ -166,13 +170,14 @@ public class MainActivity extends AppCompatActivity implements BackHandledInterf
 
         getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
 
-        if (getIntent().getStringExtra("url") != null && getIntent().getStringExtra("url").length() > 0) {
-            WebViewFragment webViewFragment = WebViewFragment.getInstance();
-            webViewFragment.loadUrl(getIntent().getStringExtra("url"));
-            switchContent(webViewFragment);
-        } else {
-            switchContent(WebViewFragment.getInstance());
-        }
+//        if (getIntent().getStringExtra("url") != null && getIntent().getStringExtra("url").length() > 0) {
+//            WebViewFragment webViewFragment = WebViewFragment.getInstance();
+//            webViewFragment.loadUrl(getIntent().getStringExtra("url"));
+//            switchContent(webViewFragment);
+//        } else {
+//            switchContent(WebViewFragment.getInstance());
+//        }
+            switchContent(WebViewFragment2.getInstance());
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -183,53 +188,10 @@ public class MainActivity extends AppCompatActivity implements BackHandledInterf
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(navigationItemListener);
         navigationView.getMenu().getItem(0).setChecked(true);
+        // 请求1
+        Intent i = new Intent(getApplicationContext(), DataIntentService.class);
+        startService(i);
 
-//        if (savedInstanceState != null && savedInstanceState.getInt("tab") != 0) {
-//            switch (savedInstanceState.getInt("tab")) {
-//                case 1:
-//                    switchContent(WebViewFragment.getInstance());
-//                    break;
-//                case 2:
-//                    switchContent(NetworkFragment.getInstance());
-//                    break;
-//                case 3:
-//                    switchContent(PreviewFragment.getInstance());
-//                    break;
-//            }
-//        }
-
-//        fab.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View view, MotionEvent motionEvent) {
-//                //获取到手指处的横坐标和纵坐标
-//                int x = (int) motionEvent.getX();
-//                int y = (int) motionEvent.getY();
-//                switch (motionEvent.getAction()) {
-//                    case MotionEvent.ACTION_DOWN:
-//                        lastX = x;
-//                        lastY = y;
-//                        isMove = false;
-//                        break;
-//                    case MotionEvent.ACTION_MOVE:
-//                        //计算移动的距离
-//                        int offX = x - lastX;
-//                        int offY = y - lastY;
-//                        if (offX * offX + offY * offY < 400 && !isMove) {
-//                            break;
-//                        }
-//                        view.offsetLeftAndRight(offX);
-//                        view.offsetTopAndBottom(offY);
-//                        isMove = true;
-//                        break;
-//                    case MotionEvent.ACTION_UP:
-//                        if (!isMove) {
-//                            createPage();
-//                        }
-//                        break;
-//                }
-//                return true;
-//            }
-//        });
     }
 
     public void createPage() {
@@ -244,22 +206,22 @@ public class MainActivity extends AppCompatActivity implements BackHandledInterf
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else if (fam.isOpened()) {
-            fam.close(true);
-        } else if (mBackHandedFragment == null || !(mBackHandedFragment instanceof WebViewFragment)) {
-            switchContent(WebViewFragment.getInstance());
-        } else if (!mBackHandedFragment.onBackPressed()) {
-            if ((System.currentTimeMillis() - exitTime) > 2000) {
-                Toast.makeText(getApplicationContext(), "再按一次退出程序", Toast.LENGTH_SHORT).show();
-                exitTime = System.currentTimeMillis();
-            } else {
-                finish();
-                System.exit(0);
-            }
-        }
+//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+//        if (drawer.isDrawerOpen(GravityCompat.START)) {
+//            drawer.closeDrawer(GravityCompat.START);
+//        } else if (fam.isOpened()) {
+//            fam.close(true);
+//        } else if (mBackHandedFragment == null || !(mBackHandedFragment instanceof WebViewFragment)) {
+//            switchContent(WebViewFragment.getInstance());
+//        } else if (!mBackHandedFragment.onBackPressed()) {
+//            if ((System.currentTimeMillis() - exitTime) > 2000) {
+//                Toast.makeText(getApplicationContext(), "再按一次退出程序", Toast.LENGTH_SHORT).show();
+//                exitTime = System.currentTimeMillis();
+//            } else {
+//                finish();
+//                System.exit(0);
+//            }
+//        }
     }
 
     @Override
@@ -267,20 +229,12 @@ public class MainActivity extends AppCompatActivity implements BackHandledInterf
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
 
-//        MenuItem pageButton = menu.findItem(R.id.action_page);
-//        pageButton.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
-//            @Override
-//            public boolean onMenuItemClick(MenuItem item) {
-//                createPage();
-//                return true;
-//            }
-//        });
+
 
         filterMenuItem = menu.findItem(R.id.action_filter);
         homeItem = menu.findItem(R.id.action_home);
         searchItem = menu.findItem(R.id.search);
-//        uaMenuItem = menu.findItem(R.id.ua);
-//        logMenuItem = menu.findItem(R.id.log);
+
 
         SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         searchView = (SearchView) searchItem.getActionView();
@@ -383,7 +337,7 @@ public class MainActivity extends AppCompatActivity implements BackHandledInterf
                     break;
                 }
                 case R.id.nav_gallery:
-                    switchContent(WebViewFragment.getInstance());
+                    switchContent(WebViewFragment2.getInstance());
                     break;
                 case R.id.nav_preview:
                     switchContent(PreviewFragment.getInstance());
@@ -1035,7 +989,7 @@ public class MainActivity extends AppCompatActivity implements BackHandledInterf
         DialogInterface.OnClickListener buttonListener = new ButtonOnClick();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-        String selected = SharedPreferenceUtils.getString(this, "select_ua", "0");
+        String selected = SharedPreferenceUtils.getString(this, "select_ua", "1");
         int pos;
         try {
             pos = Integer.parseInt(selected);

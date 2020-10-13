@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/libs/netty-all-android-4.0.44.Final.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/netty-all-android-4.0.44.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

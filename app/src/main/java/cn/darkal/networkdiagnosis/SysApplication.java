@@ -6,6 +6,8 @@ import android.os.Environment;
 import android.preference.PreferenceManager;
 import android.support.multidex.MultiDexApplication;
 import android.util.Log;
+
+import com.squareup.leakcanary.LeakCanary;
 import com.tencent.bugly.Bugly;
 import net.gotev.uploadservice.UploadService;
 import net.lightbody.bmp.BrowserMobProxy;
@@ -17,6 +19,9 @@ import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -24,9 +29,12 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
+import cn.darkal.networkdiagnosis.Activity.MainActivity;
 import cn.darkal.networkdiagnosis.Bean.ResponseFilterRule;
 import cn.darkal.networkdiagnosis.Utils.DeviceUtils;
+import cn.darkal.networkdiagnosis.Utils.LogcatFileManager;
 import cn.darkal.networkdiagnosis.Utils.SharedPreferenceUtils;
+import cn.darkal.networkdiagnosis.Utils.SysUtils;
 
 /**
  * Created by xuzhou on 2016/8/10.
@@ -36,15 +44,25 @@ public class SysApplication extends MultiDexApplication {
     public static int proxyPort = 8888;
     public BrowserMobProxy proxy;
     public List<ResponseFilterRule> ruleList = new ArrayList<>();
-
+    public static SysApplication instans;
     @Override
     public void onCreate() {
+        instans=this;
         super.onCreate();
         initProxy();
+        closeAndroid10Dialog();
+        startLogcatManager();
+        SharedPreferenceUtils.putString(this, "select_ua", "1");
+        SysUtils.getInstanse().init(this).plintPkgAndCls();
         // Gradle automatically generates proper variable as below.
         UploadService.NAMESPACE = BuildConfig.APPLICATION_ID;
-
-        Bugly.init(getApplicationContext(), "db9f598223", false);
+        if (LeakCanary.isInAnalyzerProcess(this)) {//1
+            // This process is dedicated to LeakCanary for heap analysis.
+            // You should not init your app in this process.
+            return;
+        }
+        LeakCanary.install(this);
+//        Bugly.init(getApplicationContext(), "db9f598223", false);
     }
 
     public void initProxy() {
@@ -157,5 +175,52 @@ public class SysApplication extends MultiDexApplication {
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+    //关闭反射系统提醒
+    public void closeAndroid10Dialog(){
+        try {
+            Class aClass = Class.forName("android.content.pm.PackageParser$Package");
+            Constructor declaredConstructor = aClass.getDeclaredConstructor(String.class);
+            declaredConstructor.setAccessible(true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            Class cls = Class.forName("android.app.ActivityThread");
+            Method declaredMethod = cls.getDeclaredMethod("currentActivityThread");
+            declaredMethod.setAccessible(true);
+            Object activityThread = declaredMethod.invoke(null);
+            Field mHiddenApiWarningShown = cls.getDeclaredField("mHiddenApiWarningShown");
+            mHiddenApiWarningShown.setAccessible(true);
+            mHiddenApiWarningShown.setBoolean(activityThread, true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+    private void startLogcatManager() {
+        String folderPath = null;
+
+        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {// save in SD card first
+            folderPath = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "BDT-Logcat";
+        } else {// If the SD card does not exist, save in the directory of application.
+
+            folderPath = this.getFilesDir().getAbsolutePath() + File.separator + "BDT-Logcat";
+        }
+
+        LogcatFileManager.getInstance().start(folderPath);
+    }
+
+    private void stopLogcatManager() {
+
+        LogcatFileManager.getInstance().stop();
+    }
+
+    @Override
+    public void onTrimMemory(int level) {
+        stopLogcatManager();
+        super.onTrimMemory(level);
     }
 }
