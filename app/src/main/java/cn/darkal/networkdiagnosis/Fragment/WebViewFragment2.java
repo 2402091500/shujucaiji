@@ -106,7 +106,7 @@ public class WebViewFragment2 extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
             //com.hipu.yidian
             case R.id.send:
-                Intent settintIntent = getContext().getPackageManager().getLaunchIntentForPackage("com.hipu.yidian");
+                Intent settintIntent = getContext().getPackageManager().getLaunchIntentForPackage("com.tencent.reading");
                 startActivity(settintIntent);
                 break;
             case R.id.llserice:

@@ -693,7 +693,7 @@ public class TT_Yule {
         bean.setItemDomain(tag);
         bean.setItemType("1");
         bean.setItemTitle(b.getTitle());
-        bean.setItemSource(b.getSource());
+        bean.setItemSource("天天快报");
         bean.setItemUrl(b.getUrl_comment());
         bean.setItemComment(b.getCommentNum()+"");
         bean.setItemRead(b.getViewNum()+"");

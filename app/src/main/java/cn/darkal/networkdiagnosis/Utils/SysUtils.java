@@ -177,9 +177,9 @@ public class SysUtils {
 
     }
         public void findanclick(AccessibilityNodeInfo scrollview,String txt){
-            SysUtils.sleep(2000l);
-            NodeUtil.findNodeByTextAndClick(scrollview,txt);
             SysUtils.sleep(1000l);
+            NodeUtil.findNodeByTextAndClick(scrollview,txt);
+            SysUtils.sleep(100l);
             NodeUtil.findNodeByTextAndClick(scrollview,txt);
         }
 }
