@@ -115,13 +115,14 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/im_pingtai"
                 android:padding="5dp"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:src="@drawable/pingtai" />
 
             <TextView
-                android:id="@+id/tvproxy1"
+                android:id="@+id/tv_pintai"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"

@@ -346,7 +346,6 @@ public class KeJi {
         private boolean is_up;
         private boolean is_down;
         private boolean is_top;
-        private WemediaInfoBean wemedia_info;
         private String text;
         private Object content;
         private int i_alliance_scope;
@@ -724,14 +723,6 @@ public class KeJi {
 
         public void setIs_top(boolean is_top) {
             this.is_top = is_top;
-        }
-
-        public WemediaInfoBean getWemedia_info() {
-            return wemedia_info;
-        }
-
-        public void setWemedia_info(WemediaInfoBean wemedia_info) {
-            this.wemedia_info = wemedia_info;
         }
 
         public String getText() {
@@ -1927,7 +1918,7 @@ public class KeJi {
         }
     }
 
-    public PostInfo getdata(String tag){
+    public PostInfo getdata(){
         postInfo=new PostInfo();
         if(this.result==null){
             return null;
@@ -1939,7 +1930,8 @@ public class KeJi {
             PostInfo.InfoBean bean=new PostInfo.InfoBean();
             bean.setCreateTime(b.getDdate());
             bean.setItemAuthor(b.getSource());
-            bean.setItemDomain(tag);
+
+            bean.setItemDomain(b.getCategory());
             bean.setItemType("1");
             bean.setItemTitle(b.getTitle());
             bean.setItemSource(b.getDsource());

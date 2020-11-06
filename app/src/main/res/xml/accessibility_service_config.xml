@@ -6,7 +6,7 @@
     android:accessibilityFlags="flagDefault"
     android:canPerformGestures="true"
     android:canRetrieveWindowContent="true"
-    android:packageNames="com.tencent.reading,com.hipu.yidian"
+    android:packageNames="com.tencent.reading,com.hipu.yidian,com.ss.android.ugc.aweme"
     android:description="@string/a_name"
     android:notificationTimeout="100"
     tools:ignore="UnusedAttribute"

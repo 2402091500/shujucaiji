@@ -2,6 +2,7 @@ package cn.darkal.networkdiagnosis.Utils;
 
 import android.accessibilityservice.AccessibilityService;
 import android.accessibilityservice.GestureDescription;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -18,10 +19,14 @@ import android.os.Looper;
 import android.support.annotation.RequiresApi;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Collections;
 import java.util.List;
 
@@ -137,6 +142,25 @@ public class SysUtils {
         }
     }
 
+    public void WriteStringToFile6(String s) {
+
+        long currentTime = System.currentTimeMillis();
+        String timeNow = new SimpleDateFormat("MM-dd HH:mm:ss").format(currentTime);
+
+        String sdCardDir = Environment.getExternalStorageDirectory().getAbsolutePath();
+        File saveFile = new File(sdCardDir, File.separator + "BDT-Logcat/logcat-"+timeNow+".log");
+        FileOutputStream outStream = null;
+        try {
+            outStream = new FileOutputStream(saveFile);
+            outStream.write(s.getBytes());
+            outStream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void topGestureClick(Context context,AccessibilityService mservice,boolean left) {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
@@ -182,4 +206,112 @@ public class SysUtils {
             SysUtils.sleep(100l);
             NodeUtil.findNodeByTextAndClick(scrollview,txt);
         }
+    @SuppressLint("NewApi")
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
+        public void runkuaibao(AccessibilityService mservice){
+            AccessibilityNodeInfo scrollview = NodeUtil.findNodeByIdAndClassName(mservice.getRootInActiveWindow(), PlamID.scrollviewid, ClassN.HorizontalScrollView);
+            SysUtils.getInstanse().findanclick(scrollview,"娱乐");
+            SysUtils.getInstanse().findanclick(scrollview,"科技");
+            SysUtils.getInstanse().findanclick(scrollview,"新时代");
+            SysUtils.getInstanse().findanclick(scrollview,"汽车");
+            SysUtils.getInstanse().findanclick(scrollview,"动漫");
+            SysUtils.getInstanse().findanclick(scrollview,"生活");
+            SysUtils.getInstanse().findanclick(scrollview,"体育");
+            SysUtils.getInstanse().findanclick(scrollview,"财经");
+
+
+            SysUtils.getInstanse().findanclick(scrollview,"军事");
+            SysUtils.getInstanse().findanclick(scrollview,"美女");
+            SysUtils.getInstanse().findanclick(scrollview,"历史");
+            SysUtils.getInstanse().findanclick(scrollview,"NBA");
+            SysUtils.getInstanse().findanclick(scrollview,"国际");
+            SysUtils.getInstanse().findanclick(scrollview,"游戏");
+            SysUtils.getInstanse().findanclick(scrollview,"数码");
+            SysUtils.getInstanse().findanclick(scrollview,"情感");
+            SysUtils.getInstanse().findanclick(scrollview,"宠物");
+            SysUtils.getInstanse().findanclick(scrollview,"星座");
+            SysUtils.getInstanse().findanclick(scrollview,"育儿");
+            SysUtils.getInstanse().findanclick(scrollview,"旅游");
+            SysUtils.getInstanse().findanclick(scrollview,"时尚");
+            SysUtils.getInstanse().findanclick(scrollview,"美食");
+            SysUtils.getInstanse().findanclick(scrollview,"三农");
+            SysUtils.getInstanse().findanclick(scrollview,"健康");
+            SysUtils.getInstanse().findanclick(scrollview,"教育");
+        }
+    @SuppressLint("NewApi")
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
+        public void runYidian(AccessibilityService mservice){
+            AccessibilityNodeInfo scrollview = NodeUtil.findNodeByIdAndClassName(mservice.getRootInActiveWindow(), PlamID.yd_scrollviewid, ClassN.HorizontalScrollView);
+            SysUtils.getInstanse().findanclick(scrollview,"互联网");
+            SysUtils.getInstanse().findanclick(scrollview,"科学");
+            SysUtils.getInstanse().findanclick(scrollview,"时政");
+            SysUtils.getInstanse().findanclick(scrollview,"美文");
+            SysUtils.getInstanse().findanclick(scrollview,"电商");
+            SysUtils.getInstanse().findanclick(scrollview,"IT");
+            SysUtils.getInstanse().findanclick(scrollview,"金融");
+            SysUtils.getInstanse().findanclick(scrollview,"健康");
+            SysUtils.getInstanse().findanclick(scrollview,"美食");
+            SysUtils.getInstanse().findanclick(scrollview,"育儿");
+            SysUtils.getInstanse().findanclick(scrollview,"摄影");
+            SysUtils.getInstanse().findanclick(scrollview,"情感");
+            SysUtils.getInstanse().findanclick(scrollview,"农村");
+            SysUtils.getInstanse().findanclick(scrollview,"视频");
+            SysUtils.getInstanse().findanclick(scrollview,"新时代");
+            SysUtils.getInstanse().findanclick(scrollview,"历史");
+            SysUtils.getInstanse().findanclick(scrollview,"娱乐");
+            SysUtils.getInstanse().findanclick(scrollview,"动物");
+            SysUtils.getInstanse().findanclick(scrollview,"军事");
+            SysUtils.getInstanse().findanclick(scrollview,"NBA");
+            SysUtils.getInstanse().findanclick(scrollview,"体育");
+            SysUtils.getInstanse().findanclick(scrollview,"财经");
+            SysUtils.getInstanse().findanclick(scrollview,"科技");
+            SysUtils.getInstanse().findanclick(scrollview,"民生");
+            SysUtils.getInstanse().findanclick(scrollview,"段子");
+            SysUtils.getInstanse().findanclick(scrollview,"汽车");
+            SysUtils.getInstanse().findanclick(scrollview,"时尚");
+            SysUtils.getInstanse().findanclick(scrollview,"明星");
+            SysUtils.getInstanse().findanclick(scrollview,"搞笑");
+
+        }
+    @SuppressLint("NewApi")
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
+        public void runTouTiao(AccessibilityService mservice){
+            AccessibilityNodeInfo scrollview = NodeUtil.findNodeByIdAndClassName(mservice.getRootInActiveWindow(), PlamID.yd_scrollviewid, ClassN.HorizontalScrollView);
+            SysUtils.getInstanse().findanclick(scrollview,"互联网");
+            SysUtils.getInstanse().findanclick(scrollview,"科学");
+            SysUtils.getInstanse().findanclick(scrollview,"时政");
+            SysUtils.getInstanse().findanclick(scrollview,"美文");
+            SysUtils.getInstanse().findanclick(scrollview,"电商");
+            SysUtils.getInstanse().findanclick(scrollview,"IT");
+            SysUtils.getInstanse().findanclick(scrollview,"金融");
+            SysUtils.getInstanse().findanclick(scrollview,"健康");
+            SysUtils.getInstanse().findanclick(scrollview,"美食");
+            SysUtils.getInstanse().findanclick(scrollview,"育儿");
+            SysUtils.getInstanse().findanclick(scrollview,"摄影");
+            SysUtils.getInstanse().findanclick(scrollview,"情感");
+            SysUtils.getInstanse().findanclick(scrollview,"农村");
+            SysUtils.getInstanse().findanclick(scrollview,"视频");
+            SysUtils.getInstanse().findanclick(scrollview,"新时代");
+            SysUtils.getInstanse().findanclick(scrollview,"历史");
+            SysUtils.getInstanse().findanclick(scrollview,"娱乐");
+            SysUtils.getInstanse().findanclick(scrollview,"动物");
+            SysUtils.getInstanse().findanclick(scrollview,"军事");
+            SysUtils.getInstanse().findanclick(scrollview,"NBA");
+            SysUtils.getInstanse().findanclick(scrollview,"体育");
+            SysUtils.getInstanse().findanclick(scrollview,"财经");
+            SysUtils.getInstanse().findanclick(scrollview,"科技");
+            SysUtils.getInstanse().findanclick(scrollview,"民生");
+            SysUtils.getInstanse().findanclick(scrollview,"段子");
+            SysUtils.getInstanse().findanclick(scrollview,"汽车");
+            SysUtils.getInstanse().findanclick(scrollview,"时尚");
+            SysUtils.getInstanse().findanclick(scrollview,"明星");
+            SysUtils.getInstanse().findanclick(scrollview,"搞笑");
+
+        }
+    @SuppressLint("NewApi")
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
+        public void rundouying(AccessibilityService mservice){
+        SysUtils.sleep(1500l);
+        NodeUtil.findNodeByIdTextAndClick(mservice.getRootInActiveWindow(),PlamID.dy_shouyeid,"首页",true);
+    }
 }

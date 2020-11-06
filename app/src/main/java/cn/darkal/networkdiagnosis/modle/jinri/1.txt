@@ -1,0 +1,35 @@
+视频 category=video
+热点 category=news_hot
+娱乐 category=news_entertainment
+图片 category=%E7%BB%84%E5%9B%BE
+体育 category=news_sports
+要闻 category=new_11
+国际 category=news_world
+健康 category=news_health
+科技 category=news_tech
+军事 category=news_military
+历史 category=news_history
+漫画 category=%E6%BC%AB%E7%94%BB
+数码 category=digital
+NBA  category=NBA
+游戏 category=news_game
+音乐 category=music
+情感 category=emotion
+视频 category=hotsoon_video
+育儿 category=news_baby
+美食 category=news_food
+养生 category=news_regimen
+旅游 category=news_travel
+家居 category=news_home
+教育 category=news_edu
+三农 category=news_agriculture
+故事 category=news_story
+影视 category=film_tv
+彩票 category=%E5%BD%A9%E7%A5%A8
+搞笑 category=funny
+星座 category=news_astrology
+
+
+
+
+

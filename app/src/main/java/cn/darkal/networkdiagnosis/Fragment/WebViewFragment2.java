@@ -21,6 +21,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,7 +35,9 @@ import cn.darkal.networkdiagnosis.Activity.SettingsActivity;
 import cn.darkal.networkdiagnosis.R;
 import cn.darkal.networkdiagnosis.Utils.FileUtil;
 import cn.darkal.networkdiagnosis.Utils.OpenAccessibilitySettingHelper;
+import cn.darkal.networkdiagnosis.Utils.SharedPreferenceUtils;
 import cn.darkal.networkdiagnosis.service.MyAccessibilityService;
+import cn.darkal.networkdiagnosis.service.URL;
 
 public class WebViewFragment2 extends Fragment implements View.OnClickListener {
 
@@ -49,6 +52,8 @@ public class WebViewFragment2 extends Fragment implements View.OnClickListener {
     private ImageView imastate;
     private LinearLayout llzhensu;
     private LinearLayout llpintai;
+    private ImageView im_pingtai;
+    private TextView tv_pintai;
 
 
     public static WebViewFragment2 getInstance() {
@@ -67,7 +72,9 @@ public class WebViewFragment2 extends Fragment implements View.OnClickListener {
         ButterKnife.bind(this, view);
         startBt = (Button) view.findViewById(R.id.send);
         tvser = (TextView) view.findViewById(R.id.tvser);
+        tv_pintai = (TextView) view.findViewById(R.id.tv_pintai);
         imastate = (ImageView) view.findViewById(R.id.imastate);
+        im_pingtai = (ImageView) view.findViewById(R.id.im_pingtai);
         llserice = (LinearLayout) view.findViewById(R.id.llserice);
         llset = (LinearLayout) view.findViewById(R.id.llset);
         llzhensu = (LinearLayout) view.findViewById(R.id.llzhensu);
@@ -106,7 +113,8 @@ public class WebViewFragment2 extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
             //com.hipu.yidian
             case R.id.send:
-                Intent settintIntent = getContext().getPackageManager().getLaunchIntentForPackage("com.tencent.reading");
+                String packagename = SharedPreferenceUtils.getString(getContext(), "pingtai", URL.kuaibao);
+                Intent settintIntent = getContext().getPackageManager().getLaunchIntentForPackage(packagename);
                 startActivity(settintIntent);
                 break;
             case R.id.llserice:
@@ -119,20 +127,41 @@ public class WebViewFragment2 extends Fragment implements View.OnClickListener {
                 installCert();
                 break;
             case R.id.llpintai:
-                AlertDialog.Builder builder=new AlertDialog.Builder(getActivity());
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                 builder.setTitle("选择要采集数据的平台：");
                 builder.setCancelable(true);
-                final String[] lesson = new String[]{"天天快报", "一点资讯", "凤凰新闻", "趣头条", "惠头条", "百度新闻", "万能钥匙"};
+                final String[] lesson = new String[]{"抖音", "天天快报", "一点资讯", "今日头条", "趣头条", "惠头条", "百度新闻", "万能钥匙"};
                 builder.setIcon(R.drawable.logo);
                 builder.setIcon(R.drawable.logo)
                         .setItems(lesson, new DialogInterface.OnClickListener() {
+                            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                Toast.makeText(getContext(), "你选择了" + lesson[which], Toast.LENGTH_SHORT).show();
+                                switch (which) {
+                                    case 0:
+                                        im_pingtai.setImageDrawable(getContext().getDrawable(R.drawable.douyin));
+                                        tv_pintai.setText("抖音");
+                                        SharedPreferenceUtils.putString(getContext(), "pingtai", URL.douyin);
+                                        break;
+                                    case 1:
+                                        im_pingtai.setImageDrawable(getContext().getDrawable(R.drawable.kuaibao));
+                                        tv_pintai.setText("看点快报");
+                                        SharedPreferenceUtils.putString(getContext(), "pingtai", URL.kuaibao);
+                                        break;
+                                    case 2:
+                                        im_pingtai.setImageDrawable(getContext().getDrawable(R.drawable.yidianzhixun));
+                                        tv_pintai.setText("一点资讯");
+                                        SharedPreferenceUtils.putString(getContext(), "pingtai", URL.yidianzhixun);
+                                        break;
+                                    case 3:
+                                        im_pingtai.setImageDrawable(getContext().getDrawable(R.drawable.toutiao));
+                                        tv_pintai.setText("今日头条");
+                                        SharedPreferenceUtils.putString(getContext(), "pingtai", URL.toutiao);
+                                        break;
+                                }
                                 dialog.dismiss();
                             }
                         }).create();
-
                 AlertDialog dialog = builder.create();
                 dialog.show();
 
@@ -195,7 +224,7 @@ public class WebViewFragment2 extends Fragment implements View.OnClickListener {
             }
         };
 
-        FileUtil.checkPermission(getActivity(),runnable);
+        FileUtil.checkPermission(getActivity(), runnable);
     }
 
 }

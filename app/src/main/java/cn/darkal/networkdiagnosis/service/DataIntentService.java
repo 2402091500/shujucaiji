@@ -2,6 +2,7 @@ package cn.darkal.networkdiagnosis.service;
 
 import android.app.IntentService;
 import android.content.Intent;
+import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
@@ -9,11 +10,14 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import com.orhanobut.logger.Logger;
 
-import net.gotev.uploadservice.Logger;
 import net.lightbody.bmp.core.har.HarEntry;
 import net.lightbody.bmp.core.har.HarLog;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -74,10 +78,46 @@ public class DataIntentService extends IntentService {
             ) {
                 if (entry != null && entry.getResponse() != null && entry.getResponse().getContent() != null) {
                     String urld = entry.getRequest().getUrl();
+                    String data = entry.getResponse().getContent().getText();
+//                    Log.i("全部数据", data + "@@");
+//                    Log.i("全部url", entry.getRequest().getUrl() + "@@@");
+//                    SysUtils.getInstanse().WriteStringToFile5(entry.getResponse().getContent().getText() + "@@");
+
                     if (urld.contains("r.cnews.qq.com")) {
                         TT(entry, urld);
-                    } else if (urld.contains("go2yd.com")) {
-                        YD(entry, urld);
+                    }
+                    else if (urld.contains("go2yd.com")) {
+                        YD(entry);
+                    }
+                    else if (urld.contains("aweme-eagle.snssdk.com")) {
+//                        Log.i("抖音数据", data + "@@");
+//                        Log.i("抖音url", entry.getRequest().getUrl() + "@@@");
+//                        SysUtils.getInstanse().WriteStringToFile5(entry.getResponse().getContent().getText() + "@@");
+                        GetDataByTag.getDouyin(entry, "未知");
+                    }
+
+                    else if (urld.contains("nine.ifeng.com")) {
+                        Log.i("凤凰新闻数据", data + "@@");
+                        Log.i("凤凰新闻url", entry.getRequest().getUrl() + "@@@");
+                        SysUtils.getInstanse().WriteStringToFile5(entry.getResponse().getContent().getText() + "@@");
+//                        GetDataByTag.getDouyin(entry, "未知");
+                    }
+                    else if (urld.contains("lf.snssdk.com/api/news/feed")) {
+                        Log.i("今日头条 数据", data + "@@");
+                        Log.i("今日头条 url", entry.getRequest().getUrl() + "@@@");
+
+                        if(entry!=null
+                                &&entry.getResponse()!=null
+                                &&entry.getResponse().getContent()!=null
+                                &&entry.getResponse().getContent().getText()!=null
+                                &&!entry.getResponse().getContent().getText().isEmpty()
+                                &&entry.getResponse().getContent().getText().length()>300
+//                                &&entry.getResponse().getContent().getText().contains("content")
+                        ){
+//                        SysUtils.getInstanse().WriteStringToFile6(entry.getResponse().getContent().getText() + "@@");
+                        }
+                        TD(entry,urld);
+//                        GetDataByTag.getDouyin(entry, "未知");
                     }
                 } else {
                     LogUtil.i("TAG", "printData: ############################################");
@@ -193,102 +233,42 @@ public class DataIntentService extends IntentService {
     }
 
 
-    private void YD(HarEntry entry, String urld) {
-//                        String data = entry.getResponse().getContent().getText();
-//                        Log.i("科技数据", data + "@@");
-//                        Log.i("科技url", entry.getRequest().getUrl() + "@@@");
-//                        SysUtils.getInstanse().WriteStringToFile5(entry.getResponse().getContent().getText() + "@@");
-
-        if (urld.contains("channel_id=60813409094")) {
-            GetDataByTag.getKeji(entry, "互联网");
-        }
-        if (urld.contains("channel_id=60813409110")) {
-            GetDataByTag.getKeji(entry, "科学");
-        }
-        if (urld.contains("channel_id=60813409126")) {
-            GetDataByTag.getKeji(entry, "时政");
-        }
-        if (urld.contains("channel_id=60813409078")) {
-            GetDataByTag.getKeji(entry, "美文");
-        }
-        if (urld.contains("channel_id=60813409046")) {
-            GetDataByTag.getKeji(entry, "电商 ");
-        }
-        if (urld.contains("channel_id=60813408998")) {
-            GetDataByTag.getKeji(entry, "IT");
-        }
-        if (urld.contains("channel_id=60652002582")) {
-            GetDataByTag.getKeji(entry, "金融 ");
-        }
-        if (urld.contains("channel_id=2712332746")) {
-            GetDataByTag.getKeji(entry, "健康 ");
-        }
-        if (urld.contains("channel_id=60651998774")) {
-            GetDataByTag.getKeji(entry, "美食 ");
-        }
-        if (urld.contains("channel_id=60651998166")) {
-            GetDataByTag.getKeji(entry, "育儿 ");
-        }
-        if (urld.contains("channel_id=60651997286")) {
-            GetDataByTag.getKeji(entry, "摄影 ");
-        }
-        if (urld.contains("channel_id=60651991382")) {
-            GetDataByTag.getKeji(entry, "情感 ");
-        }
-        if (urld.contains("channel_id=60651991206")) {
-            GetDataByTag.getKeji(entry, "农村 ");
-        }
-        if (urld.contains("channel_id=60651988694")) {
-            GetDataByTag.getKeji(entry, "视频 ");
-        }
-        if (urld.contains("channel_id=60651988278")) {
-            GetDataByTag.getKeji(entry, "新时代");
-        }
-        if (urld.contains("channel_id=60651990166")) {
-            GetDataByTag.getKeji(entry, "历史 ");
-        }
-        if (urld.contains("channel_id=2712332710")) {
-            GetDataByTag.getKeji(entry, "娱乐 ");
-        }
-        if (urld.contains("channel_id=60652001638")) {
-            GetDataByTag.getKeji(entry, "动物 ");
-        }
-        if (urld.contains("channel_id=2712332714")) {
-            GetDataByTag.getKeji(entry, "军事 ");
-        }
-        if (urld.contains("channel_id=2712332714")) {
-            GetDataByTag.getKeji(entry, "NBA");
-        }
-        if (urld.contains("channel_id=2712332718")) {
-            GetDataByTag.getKeji(entry, "体育 ");
-        }
-        if (urld.contains("channel_id=2712332726")) {
-            GetDataByTag.getKeji(entry, "财经 ");
-        }
-        if (urld.contains("channel_id=2712332730")) {
-            GetDataByTag.getKeji(entry, "科技 ");
-        }
-        if (urld.contains("channel_id=2712332734")) {
-            GetDataByTag.getKeji(entry, "民生 ");
-        }
-        if (urld.contains("channel_id=2712332742")) {
-            GetDataByTag.getKeji(entry, "段子 ");
-        }
-        if (urld.contains("channel_id=2712332754")) {
-            GetDataByTag.getKeji(entry, "汽车 ");
-        }
-        if (urld.contains("channel_id=2712332750")) {
-            GetDataByTag.getKeji(entry, "时尚 ");
-        }
-        if (urld.contains("channel_id=60813408982")) {
-            GetDataByTag.getKeji(entry, "明星 ");
-        }
-        if (urld.contains("channel_id=2712332758")) {
-            GetDataByTag.getKeji(entry, "搞笑 ");
-        }
-
-
+    private void YD(HarEntry entry) {
+        GetDataByTag.getYD(entry);
     }
+    private void TD(HarEntry entry,String urld) {
+        if (urld.contains("category=video")) {GetDataByTag.getTD(entry, "视频",urld);}
+        if (urld.contains("category=news_hot")) {GetDataByTag.getTD(entry, "热点",urld);}
+        if (urld.contains("category=news_entertainment")) {GetDataByTag.getTD(entry, "娱乐",urld);}
+        if (urld.contains("category=%E7%BB%84%E5%9B%BE")) {GetDataByTag.getTD(entry, "图片",urld);}
+        if (urld.contains("category=news_sports")) {GetDataByTag.getTD(entry, "体育",urld);}
+        if (urld.contains("category=new_11")) {GetDataByTag.getTD(entry, "要闻",urld);}
+        if (urld.contains("category=news_world")) {GetDataByTag.getTD(entry, "国际",urld);}
+        if (urld.contains("category=news_health")) {GetDataByTag.getTD(entry, "健康",urld);}
+        if (urld.contains("category=news_tech")) {GetDataByTag.getTD(entry, "科技",urld);}
+        if (urld.contains("category=news_military")) {GetDataByTag.getTD(entry, "军事",urld);}
+        if (urld.contains("category=news_history")) {GetDataByTag.getTD(entry, "历史",urld);}
+        if (urld.contains("category=%E6%BC%AB%E7%94%BB")) {GetDataByTag.getTD(entry, "漫画",urld);}
+        if (urld.contains("category=digital")) {GetDataByTag.getTD(entry, "数码",urld);}
+        if (urld.contains("category=NBA")) {GetDataByTag.getTD(entry, "NBA",urld);}
+        if (urld.contains("category=news_game")) {GetDataByTag.getTD(entry, "游戏",urld);}
+        if (urld.contains("category=music")) {GetDataByTag.getTD(entry, "音乐",urld);}
+        if (urld.contains("category=emotion")) {GetDataByTag.getTD(entry, "情感",urld);}
+        if (urld.contains("category=hotsoon_video")) {GetDataByTag.getTD(entry, "小视频",urld);}
+        if (urld.contains("category=news_baby")) {GetDataByTag.getTD(entry, "育儿",urld);}
+        if (urld.contains("category=news_food")) {GetDataByTag.getTD(entry, "美食",urld);}
+        if (urld.contains("category=news_regimen")) {GetDataByTag.getTD(entry, "养生",urld);}
+        if (urld.contains("category=news_travel")) {GetDataByTag.getTD(entry, "旅游",urld);}
+        if (urld.contains("category=news_home")) {GetDataByTag.getTD(entry, "家居",urld);}
+        if (urld.contains("category=news_edu")) {GetDataByTag.getTD(entry, "教育",urld);}
+        if (urld.contains("category=news_agriculture")) {GetDataByTag.getTD(entry, "三农",urld);}
+        if (urld.contains("category=news_story")) {GetDataByTag.getTD(entry, "故事",urld);}
+        if (urld.contains("category=film_tv")) {GetDataByTag.getTD(entry, "影视",urld);}
+        if (urld.contains("category=%E5%BD%A9%E7%A5%A8")) {GetDataByTag.getTD(entry, "彩票",urld);}
+        if (urld.contains("category=funny")) {GetDataByTag.getTD(entry, "搞笑",urld);}
+        if (urld.contains("category=news_astrology")) {GetDataByTag.getTD(entry, "星座",urld);}
+    }
+
 
     public String jsonFormatter(StringBuilder uglyJSONString) {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();

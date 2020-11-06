@@ -1,442 +1,297 @@
 package cn.darkal.networkdiagnosis.modle.tiantian;
 
-import junit.framework.Test;
-
-import java.util.ArrayList;
 import java.util.List;
-
-import cn.darkal.networkdiagnosis.modle.PostInfo;
-import cn.darkal.networkdiagnosis.modle.yidian.KeJi;
 
 public class Tsest {
 
-
     /**
-     * status : success
-     * code : 0
-     * result : [{"extra":[],"title":"社交网络\u201c去中心化\u201d消亡史","meta":"183725222_1602560340059_236","docid":"0RK1Flww","ctype":"news","dtype":1,"impid":"183725222_1602560340059_236","pageid":"CF_c4","itemid":"0RK1Flww","display_flag":0,"feedback_forbidden":false,"wemedia_id":110526,"tags":[],"category":"科技","security":2,"detail":{"fid":"c4","federation_mash_type":"relevant","dedup_type":"channel","document_item_mash_type":"relevant","dedupValid":"true","batch":"0","mashtype":"ch-rel","trans_info":{"fid":"c4","mashtype":"ch-rel","point":"c4","dedupValid":"true","federation_mash_type":"relevant","document_item_mash_type":"relevant","dedup_level":"2","dedup_type":"channel","batch":"0"},"point":"c4","dedup_level":"2"},"is_local_doc":false,"ddate":"2020-10-13 11:33:32","dislike_reasons":["IT","社交网络","Twitter","品读科技"],"dislike_fromids":["sc18","sc46","t1676","t24635"],"date":"2020-10-13 11:33:32","dsource":"钛媒体","summary":"在美国大选前夕，各家社交网络都针对在平台上出现的仇恨言论、假新闻等问题进行了相关整治。当然，整治的方法不只是删帖封号这么\u201c简单粗暴\u201d，其中推特（Twitter）所做的\u201c绣花功夫\u201d尤为值得一提。","image_attribut_update":true,"image_urls":["0RK1Fl6tsF"],"source":"钛媒体","author_dtype":"yidianhao","url":"http://www.tmtpost.com/4790500.html","i_alliance_scope":5512202,"image":"0RK1Fl6tsF","upload_images_v":[],"comment_count":5,"auth":true,"is_gov":false,"content_type":"news","b_political":false,"enable_top":true,"is_like":false,"is_up":false,"is_down":false,"is_top":false,"wemedia_info":{"image":"http://si1.go2yd.com/get-image/0IUGMBY3wg4","name":"钛媒体","channel_id":"m110526","summary":"中国最大也最具影响力的财经科技信息服务提供商，集\u201c媒体、数据和生活方式\u201d三大板块于一身，旨在引领未来商业与生活新知。","media_domain":"科技","source_type":2,"plus_v":2,"postcount":0,"authentication":"钛媒体官方一点号 品创计划作者","sunnyplan_mark":0,"sunnyplan_snnum":"","copy_right_mark":0,"sunnyplan_certlevel":"","is_changfeng":0,"account_click":0,"is_puppet":0,"userid":211887075,"rank":6,"fromId":"m110526","type":"media"}},{"extra":[],"title":"中国网络视听用户规模破9亿","meta":"183725222_1602560340059_236","docid":"0RKG7SzE","ctype":"news","dtype":0,"impid":"183725222_1602560340059_236","pageid":"CF_c4","itemid":"0RKG7SzE","display_flag":0,"feedback_forbidden":false,"wemedia_id":715969,"tags":[],"category":"科技","security":0,"detail":{"fid":"c4","federation_mash_type":"relevant","dedup_type":"channel","document_item_mash_type":"relevant","dedupValid":"true","batch":"0","mashtype":"ch-rel","trans_info":{"fid":"c4","mashtype":"ch-rel","point":"c4","dedupValid":"true","federation_mash_type":"relevant","document_item_mash_type":"relevant","dedup_level":"2","dedup_type":"channel","batch":"0"},"point":"c4","dedup_level":"2"},"is_local_doc":false,"ddate":"2020-10-13 11:28:05","dislike_reasons":["IT","科技","品读科技"],"dislike_fromids":["sc18","c6","t24635"],"date":"2020-10-13 11:28:05","dsource":"中证网","summary":"中国网络视听节目服务协会10月12日在成都发布《2020中国网络视听发展研究报告》。《报告》显示，截至2020年6月，我国网络视听用户规模达9.01亿，2019年网络视听产业规模达4541.3亿。","image_attribut_update":false,"source":"中证网","author_dtype":"yidianhao","url":"http://cs.com.cn/cj2020/202010/t20201013_6100893.html","mtype":0,"is_gov":false,"content_type":"news","b_political":false,"enable_top":true,"is_like":false,"is_up":false,"is_down":false,"is_top":false,"wemedia_info":{"image":"http://si1.go2yd.com/get-image/0JHsUOV2W7k","name":"中证网","channel_id":"m715969","summary":"中证网一点号","media_domain":"财经","source_type":1,"plus_v":0,"postcount":0,"authentication":"","sunnyplan_mark":0,"sunnyplan_snnum":"","copy_right_mark":0,"sunnyplan_certlevel":"","is_changfeng":0,"account_click":0,"is_puppet":1,"userid":12299265,"rank":5,"fromId":"m715969","type":"media"}},{"extra":[],"title":"「第三届数字中国建设峰会」潮起东南\u2014\u2014从数字福建到数字中国","meta":"183725222_1602560340059_236","docid":"0RKDnhoh","ctype":"news","dtype":3,"impid":"183725222_1602560340059_236","pageid":"CF_c4","itemid":"0RKDnhoh","display_flag":0,"feedback_forbidden":false,"wemedia_id":383660,"tags":[],"category":"科技","security":3,"detail":{"fid":"c4","federation_mash_type":"relevant","dedup_type":"channel","document_item_mash_type":"relevant","dedupValid":"true","batch":"0","mashtype":"ch-rel","trans_info":{"fid":"c4","mashtype":"ch-rel","point":"c4","dedupValid":"true","federation_mash_type":"relevant","document_item_mash_type":"relevant","dedup_level":"2","dedup_type":"channel","batch":"0"},"point":"c4","dedup_level":"2"},"is_local_doc":false,"ddate":"2020-10-13 11:22:38","dislike_reasons":["福建","IT","科技"],"dislike_fromids":["t1069","sc18","c6"],"date":"2020-10-13 11:22:38","dsource":"一点资讯","summary":"第三届数字中国建设峰会今天（10月12日）在福州开幕，本届数字中国建设峰会的主题是\u201c创新驱动数字化转型、智能引领高质量发展\u201d。说到蓬勃发展的数字经济，我们首先想到的是北上广深，殊不知，福建也是数字经济的引领者，数字经济的贡献超过全国平均水平，而这都得益于福建2","b_political":true,"image_attribut_update":true,"image_urls":["0RKDnh02zI","0RKDnhTAhn","0RKDnhpEvE"],"source":"央视网新闻","author_dtype":"yidianhao","url":"http://www.yidianzixun.com/mp/content?id=359717037940864","i_alliance_scope":4194304,"image":"0RKDnh02zI","upload_images_v":[],"enable_top":true,"auth":true,"is_gov":false,"content_type":"news","is_like":false,"is_up":false,"is_down":false,"is_top":false,"wemedia_info":{"image":"http://si1.go2yd.com/get-image/0DILCgPiOxc","name":"央视网新闻","channel_id":"m383660","summary":"中央电视台主办互联网站业务","media_domain":"国际","source_type":2,"plus_v":0,"postcount":0,"authentication":"","sunnyplan_mark":0,"sunnyplan_snnum":"","copy_right_mark":0,"sunnyplan_certlevel":"","is_changfeng":0,"account_click":0,"is_puppet":0,"userid":552013148,"rank":6,"fromId":"m383660","type":"media"}},{"extra":[],"title":"传荣耀最快下周出售；联发科断供前出货华为；Mate X2曝光","meta":"183725222_1602560340059_236","docid":"0RKG5wLK","ctype":"news","dtype":1,"impid":"183725222_1602560340059_236","pageid":"CF_c4","itemid":"0RKG5wLK","display_flag":0,"feedback_forbidden":false,"wemedia_id":566251,"tags":[],"category":"科技,财经","security":0,"detail":{"fid":"c4","federation_mash_type":"relevant","dedup_type":"channel","document_item_mash_type":"relevant","dedupValid":"true","batch":"0","mashtype":"ch-rel","trans_info":{"fid":"c4","mashtype":"ch-rel","point":"c4","dedupValid":"true","federation_mash_type":"relevant","document_item_mash_type":"relevant","dedup_level":"2","dedup_type":"channel","batch":"0"},"point":"c4","dedup_level":"2"},"is_local_doc":false,"ddate":"2020-10-13 11:17:11","dislike_reasons":["华为","联发科","华为荣耀","品读科技"],"dislike_fromids":["t412","t5434","u5938","t24635"],"date":"2020-10-13 11:17:11","dsource":"一点资讯","summary":"昨日，媒体爆料称，联发科在9月份抢在最后出货华为截止日（9月15日）之前，出货了近3亿美金的手机芯片给华为（自研、ODM），有4G也有5G，以平均ASP 22美金来看，等于出货了约1300万颗手机芯片给华为，足够支撑华为一个多月的使用。虽然目前联发科已经向美国","image_attribut_update":true,"image_urls":["0RKG5wZsua"],"source":"DIGITIMES","author_dtype":"yidianhao","upload_images":["0RKG5wZsua"],"url":"http://www.yidianzixun.com/mp/content?id=359723219878112","i_alliance_scope":5742107,"image":"0RKG5wZsua","upload_images_v":[],"auth":true,"is_gov":false,"content_type":"news","b_political":false,"enable_top":true,"is_like":false,"is_up":false,"is_down":false,"is_top":false,"wemedia_info":{"image":"http://si1.go2yd.com/get-image/0FtLNchIAzo","name":"DIGITIMES","channel_id":"m566251","summary":"DIGITIMES关注于科技产业供应链信息的关键平台，协助全球读者及时掌握产业动态，并提供深入分析报告，是全球了解科技业供应链的核心来源。","media_domain":"科技","source_type":2,"plus_v":0,"postcount":0,"authentication":"","sunnyplan_mark":0,"sunnyplan_snnum":"","copy_right_mark":0,"sunnyplan_certlevel":"","is_changfeng":0,"account_click":0,"is_puppet":0,"userid":584697937,"rank":5,"fromId":"m566251","type":"media"}},{"extra":[],"title":"资讯：爱仕达\u2022钱江机器人陈合林：工业互联机器人将改变产业生态","meta":"183725222_1602560340059_236","docid":"0RKDtccS","ctype":"news","dtype":0,"impid":"183725222_1602560340059_236","pageid":"CF_c4","itemid":"0RKDtccS","display_flag":0,"feedback_forbidden":false,"wemedia_id":439896,"tags":[],"category":"科技","security":0,"detail":{"fid":"c4","federation_mash_type":"relevant","dedup_type":"channel","document_item_mash_type":"relevant","dedupValid":"true","batch":"0","mashtype":"ch-rel","trans_info":{"fid":"c4","mashtype":"ch-rel","point":"c4","dedupValid":"true","federation_mash_type":"relevant","document_item_mash_type":"relevant","dedup_level":"2","dedup_type":"channel","batch":"0"},"point":"c4","dedup_level":"2"},"is_local_doc":false,"ddate":"2020-10-13 11:11:44","dislike_reasons":["工业","爱仕达","工业机器人","机器人"],"dislike_fromids":["b174","e16499","b10217","e10236"],"date":"2020-10-13 11:11:44","dsource":"一点资讯","summary":"2020年中国国际工业博览会于9月15日-9月19日，在国家会展中心（上海）举行，本次博览会的主题是智能、互联、赋能产业新发展。在工业机器人领域持续深耕的爱仕达\u2022钱江机器人参展。","image_attribut_update":false,"source":"财联社","author_dtype":"yidianhao","url":"http://www.yidianzixun.com/mp/content?id=359717234618592","auth":true,"is_gov":false,"content_type":"news","b_political":false,"enable_top":true,"is_like":false,"is_up":false,"is_down":false,"is_top":false,"wemedia_info":{"image":"http://si1.go2yd.com/get-image/0E9XzNiB2GG","name":"财联社","channel_id":"m439896","summary":"A股24小时电报。定位于证券领域投资者，专注于中国证券市场动态的分析、报道，为证券市场提供资讯、数据分析、专家咨询服务。全面监控全球证券市场资讯、财经新闻，365天24小时不间断提供全方位的金融信息服务。","media_domain":"财经","source_type":2,"plus_v":2,"postcount":0,"authentication":"财联社官方一点号","sunnyplan_mark":0,"sunnyplan_snnum":"","copy_right_mark":0,"sunnyplan_certlevel":"","is_changfeng":0,"account_click":0,"is_puppet":0,"userid":565189023,"rank":6,"fromId":"m439896","type":"media"}},{"extra":[],"title":"为新发展格局凝聚数字力量","meta":"183725222_1602560340059_236","docid":"0RKANInr","ctype":"news","dtype":1,"impid":"183725222_1602560340059_236","pageid":"CF_c4","itemid":"0RKANInr","display_flag":0,"feedback_forbidden":false,"wemedia_id":251853,"tags":[],"category":"科技","security":3,"detail":{"fid":"c4","federation_mash_type":"relevant","dedup_type":"channel","document_item_mash_type":"relevant","dedupValid":"true","batch":"0","mashtype":"ch-rel","trans_info":{"fid":"c4","mashtype":"ch-rel","point":"c4","dedupValid":"true","federation_mash_type":"relevant","document_item_mash_type":"relevant","dedup_level":"2","dedup_type":"channel","batch":"0"},"point":"c4","dedup_level":"2"},"is_local_doc":false,"ddate":"2020-10-13 11:06:16","dislike_reasons":["科技","工博会","智慧城市"],"dislike_fromids":["c6","e2575385","e19739"],"date":"2020-10-13 11:06:16","dsource":"上观新闻","image_urls":["0RKANI4Hcf"],"source":"上观新闻","author_dtype":"yidianhao","mtype":1,"scope":16777216,"summary":"10月12日，闽江江畔，福州海峡国际会展中心宛如一只巨型\u201c蝴蝶\u201d，第三届数字中国建设峰会在此开幕。从\u201c数字中国\u201d的思想源头和实践起点中走来，向共享数字化发展红利的未来迈进。这场以\u201c创新驱动数字化转型、智能引领高质量发展\u201d为主题的大会，承载美好期待，凝聚各界共识","image_attribut_update":true,"url":"https://export.shobserver.com/ydzx/html/299356.html","i_alliance_scope":5642267,"image":"0RKANI4Hcf","upload_images_v":[],"removed":false,"auth":true,"is_gov":true,"content_type":"news","b_political":false,"enable_top":true,"is_like":false,"is_up":false,"is_down":false,"is_top":false,"wemedia_info":{"image":"http://si1.go2yd.com/get-image/0fdaRi0HBp2","name":"上观新闻","channel_id":"m251853","summary":"上观新闻原名上海观察，由解放日报社出品。我们努力提供更宽、更深、更快的报道内容，全力打造互联网传播环境下，具有全国影响力的上海新媒体发布平台。","media_domain":"国内","source_type":2,"plus_v":0,"postcount":0,"authentication":"","sunnyplan_mark":0,"sunnyplan_snnum":"","copy_right_mark":0,"sunnyplan_certlevel":"","is_changfeng":0,"account_click":0,"is_puppet":0,"userid":489831495,"rank":4,"fromId":"m251853","type":"media"}},{"extra":[],"title":"直播电商是风口还是趋势？成功实操后我有了结论","meta":"183725222_1602560340059_236","docid":"0RKAoBnh","ctype":"news","dtype":3,"impid":"183725222_1602560340059_236","pageid":"CF_c4","itemid":"0RKAoBnh","display_flag":0,"feedback_forbidden":false,"wemedia_id":17271,"tags":[],"category":"科技","security":3,"detail":{"fid":"c4","federation_mash_type":"relevant","dedup_type":"channel","document_item_mash_type":"relevant","dedupValid":"true","batch":"0","mashtype":"ch-rel","trans_info":{"fid":"c4","mashtype":"ch-rel","point":"c4","dedupValid":"true","federation_mash_type":"relevant","document_item_mash_type":"relevant","dedup_level":"2","dedup_type":"channel","batch":"0"},"point":"c4","dedup_level":"2"},"is_local_doc":false,"ddate":"2020-10-13 11:00:49","dislike_reasons":["直播冲突","电商","IT","品读科技"],"dislike_fromids":["t32010","sc45","sc18","t24635"],"date":"2020-10-13 11:00:49","dsource":"人人都是产品经理","summary":"编辑导读：2020年的互联网风口，当属直播电商。先是李佳琦、薇娅等直播带货达人的出现，再是疫情期间直播带货的迅猛发展，最后是各路明星纷纷入局。如今，哪个品牌没有开过直播都不好意思说自己跟得上潮流。本文作者实操了一次直播带货，从中总结了一些经验，对直播电商提出了","image_attribut_update":true,"image_urls":["0RKAoB5D2h","0RKAoBHwtB","0RKAoBWjKv"],"source":"人人都是产品经理","author_dtype":"yidianhao","url":"http://www.woshipm.com/it/4214965.html","i_alliance_scope":4210705,"image":"0RKAoB5D2h","upload_images_v":[],"auth":true,"is_gov":false,"content_type":"news","b_political":false,"enable_top":true,"is_like":false,"is_up":false,"is_down":false,"is_top":false,"wemedia_info":{"image":"http://si1.go2yd.com/get-image/023IXqSAlBg","name":"人人都是产品经理","channel_id":"m17271","summary":"中国最大最活跃的产品经理学习、交流、分享社区","media_domain":"科技","source_type":2,"plus_v":2,"postcount":0,"authentication":"人人都是产品经理官方一点号","sunnyplan_mark":0,"sunnyplan_snnum":"","copy_right_mark":0,"sunnyplan_certlevel":"","is_changfeng":0,"account_click":0,"is_puppet":0,"userid":79422318,"rank":5,"fromId":"m17271","type":"media"}},{"extra":[],"title":"第三届数字中国建设峰会在榕召开中国联通众多5G创新成果引爆全场","meta":"183725222_1602560340059_236","docid":"0RJads4e","ctype":"news","dtype":3,"impid":"183725222_1602560340059_236","pageid":"CF_c4","itemid":"0RJads4e","display_flag":0,"feedback_forbidden":false,"wemedia_id":117804,"tags":[],"category":"科技","security":0,"detail":{"fid":"c4","federation_mash_type":"relevant","dedup_type":"channel","document_item_mash_type":"relevant","dedupValid":"true","batch":"0","mashtype":"ch-rel","trans_info":{"fid":"c4","mashtype":"ch-rel","point":"c4","dedupValid":"true","federation_mash_type":"relevant","document_item_mash_type":"relevant","dedup_level":"2","dedup_type":"channel","batch":"0"},"point":"c4","dedup_level":"2"},"is_local_doc":false,"ddate":"2020-10-13 10:55:22","dislike_reasons":["中国联通","创新","科技"],"dislike_fromids":["t5465","u7489","c6"],"date":"2020-10-13 10:55:22","dsource":"yyscj.com.cn","summary":"﻿10月12日至14日，以\u201c创新驱动数字化转型，智能引领高质量发展\u201d为主题的第三届数字中国建设峰会在福州正式拉开帷幕。峰会期间，中国联通围绕\u201c数字联通 创新未来\u201d设置智慧城市、智慧产业、智慧生活三大主题区域，展示联通在云计算、大数据、物联网、人工智能、安全服务","image_attribut_update":true,"image_urls":["0RJadsva9u","0RJadssCAd","0RJadsKRW3"],"source":"运营商财经网","author_dtype":"yidianhao","url":"http://www.yyscj.com.cn/show-list-54855.html","image":"0RJadsva9u","upload_images_v":[],"removed":false,"scope":0,"auth":true,"is_gov":false,"content_type":"news","b_political":false,"enable_top":true,"is_like":false,"is_up":false,"is_down":false,"is_top":false,"wemedia_info":{"image":"http://si1.go2yd.com/get-image/0TtFlyjSbDM","name":"运营商财经网","channel_id":"m117804","summary":"运营商财经网是一家专注于科技、通信、财经领域的TMT垂直行业门户网站","media_domain":"科技","source_type":2,"plus_v":2,"postcount":0,"authentication":"品创计划作者","sunnyplan_mark":0,"sunnyplan_snnum":"","copy_right_mark":0,"sunnyplan_certlevel":"","is_changfeng":0,"account_click":0,"is_puppet":0,"userid":220218411,"rank":5,"fromId":"m117804","type":"media"}},{"adsfrom":"lingxi","mtype":2,"dtype":"normal","title":"没人陪你练口语？这里有外教，地道英语在家学","source":"阿卡索外教","image":"https://imagelx.yidianzixun.com/static/CmcRYl9y7HaAY46bAAHb7cE053s442/89936483.jpg","videoUrl":"","video_type":-1,"image_urls":["https://imagelx.yidianzixun.com/static/CmcRYl9y7HaAY46bAAHb7cE053s442/89936483.jpg"],"summary":"","url":"https://www.acadsoc.com.cn/MJ/childrenTG-C1.htm?search=4935951","eid":"2008951947","tid":"","actionUrl":"","actionIcon":"list_download_small.png","actionName":"立即下载","actionDesc":"","pn":"","template":"3","ex":"t4rxBArA85Ogx9RWs2mIKyRgq6axaycHkFlhLmtvsxQaoH6SAi6gAolxd5MR290c5KVWEW0USEQcV3cJn4L_RCoCX8IPGCBaCM-jObgYDccYHJTrd5sPp1tY5FU8gWe6as66U-PN7WKzkwBT-_GgXrTKyU33GzyWDvTRpDwFFk71VguyHnedt9d91aQGc4f0N_TR-U-KHwMftbOJ6XBpHvqeKwHzRnak8mXdSzvs1eatdlZwhIbc7NGaQdSH2yR-fwJ1_aXEtwbXeZhRYAiqil5vhsRK9S-kd_QYbZwESjp4lhhs_ysSkhmIDAVD0DE1zSlZ1ZPj1VvZpiMczMUKlpRrtO9FFgtpr7sHJB3C_4iWppvl7d4uxXj5UUZkkoivgxlp9HwTIb2BYwCvoKxfUf-XQr4wk6br97xJSfNZitL1VguyHnedt_7NBluRr1zdpbBxwO1kQh6L1m10VWiqE8XBHHmU-OSWnpVcYtm3SyaeUG3b2FWFpy9dELQ-dLkmGByU63ebD6ehol6AdpHCVi0_xjK_8OSMxR8Uu0GsuT7yOuX0dy2tu3C7fgIC6nK4L5W_ET1PiQiCWW8c7CO-SC8U34bkc8AjHxCu25Z9t6OSJLx4SNKVQO7cb3P3KcKgTX50y_mStIbZU_gPT-0M2_48j9NdTEICENgAvjBaC4F8LpPIvC502bQYtoukCLEz4073W-Em8Mn3QX9Kbo3r3g_dB8L3WzbUX2qc87is7MeQxoAgZd-ua78WEpxbYeUbOs3BRC1wE9lKryHqS78NbE2umTs50Hd58eBtQrNDAq389_cy8My_jnuDT7JykHft4Md7p3pUATux02pXK88pwc-EvE36ckcsbHHsZ-urgrxY2vUYBUakwd_6FjbmBj6YJjXEM9LJQ00xwLzauJDnXcGk8h2sKPhCF57uQB88AoFuMqP0JCqwU_z-wGb9nii-TXR46wHKVjrNOudMqv5WPkd5fIkoJRCAxkjeBthSpG7pfRXHvNCOHdtqI1ddEy-b04FjRsDGlRQ-OSdEY4vBBWzJ35kPgi1EWZau1ALUzkfcvbD-BQt0ipVThBRRBNL6pY_pN-1tv6ljp67ZH9ws5x8Mpiyx8TEMx_yAg1qCB3qOBJxmCHx68l5vhsRK9S-kd_QYbZwESjoPR0gwGsXUxULR_RqNVn9FKrUm6ZG_PDO9XZS5lEgckkZRG_kPpRziKj_40KH4OR7fXbvjvtTQo8_3gCdJywhua3l61zURytgFT42ne8D-bkU56WD2jRUKbxrvFzt__OZDHfOJ7o2BYpSYJOBUVnomgZdYivgu4lgLwGIcNc5pmxQf_d3jyZMKI99C79BY6mjJKxm_1bboAK-B13xd02_IeY8dLxfXDVBVS2V8CtZDLzs59rzn8bcqXfFfwvh0zbfwg19QHQos1awy7A0_pyRL7FpA42P6koX0eUoaQMYiYb8rxNxEOaT1yV39Ujqm6GtYlqL_r1xFElvxXGIYToH1y7iNJlbeqWGpdIAJaOkPMXjchdsytVEOMBhQaqNp7_d9HhW4JEFAfdezkvewmpDSvOjuxaUc278JvkBtVJy3Ebt85dc78mJAAdXLFTgeerf7n2p9RBuvf1sBkVupzQtJzqQHHyK2FxSqjvxKafrAfdFI9EElo4Lu2hqvspx2ZFiJOgwAsLOywEe06P0XQL3hs9umbk2KcSz2gvfB1bB3Nhe3DaiS59zAAWiD69WBVRJFOelg9o0VCqBPVDEAOq9N5E-nYYyScqGD8uhm9xkrM0N5oqTsq-Nz_HnIVNGx8-5BC2ipkyQByhDd5AevAGLSlBmaJY8qQKROxI2HiWSjPYxO4NNkmuWSzc9CV4wpsr8jXjtkgUN-z66WLzdGVR5ZSc-BFs83JWB44NbRM5IzmRxGeN2oGogyqQZhInb_7XgXIlJNRS7199FjgBOyErcu-qfouBympJs8n8u5kbCWoDSzq2ydZiTAoAsQ-SZbD1PG2GaVvK1CLioCX8IPGCBanPjly_NUywKCNWqLak2FdrnWyJGzUA6njxoSVe185dd8gD48LXpz1qufAkDqW2_56Lm1ohfzkqxChjo3xxVZcmdiqZz5eLq17m8K9zishFEP9i-J76waEzyAVEeNYeeUhEYkczVWQAwMpi4dPzwMeOCjVvoHirlYh0cNpnGMhyNI70bUx47HHqjragv50JVK0Ny_Xcy0IfpC1oUezmIX9VEWN8LO_RlGq6MFBuelUdUKdLZLpRj7-ZzUinhbY_AZLjpqva-Y3Zmmz0e815xgWueZKajRg3sPSK2TdMNDLyL0fiVK2-y33HCATHwEs0HBP1_PN42gSMMFJ6Md1MX9Ib9ntisyLRhe52PIvgtCUA61Zi7e1y8-diyJ0k7_YuLKR4NyfmofznSTv3XypPIkVjqEJDq5gVGuUbkCtO3An1lLnoFo_zoCGOuUsRtaKjj8Quszg7mNardh5SjWEP655X2DB8YI1AVaBgcK1E8kyp_30fQVSPzivk9EzpUEX9Py_mYp7xQVJ7v1jTpvGVr3n8zbrZLM4b0laZYhuWo-jrnGuN2xLXZ1S4mz6p32cek6ihaoc-P2bpQyCc0ubaRtXp8LjGu-Lhlzi8J_BZH5NRKMB1P4_g46BfNQqqWylSmkAFlA7jYMVU4AoiWmFJuQVFI-LksZtF1YB4BaSRnaHNhUeATQroZYIIVMUQ7QGtAIRs9j1Mxl8bShGb3Y-T2V5E0_vCaMDukhm7Fq-OmtnNZCpcmuGQbFCgQ5D24AKe6733xdSJbyZtuWLLUlte-YPHff2kJGIpiFqvX9nPh3hxNfzJ7r6yBV7qjD9oh_1Nwtb4DmgihwjwTHd5nzwGuH8rSUrPTu0jjhULKqD9pw05CrkzVrI64FjHHlSEgYY7zm_pzcpu1ev-M_XRV4LiW2KYm1rxF5r_PVJfozNMEoysZWfBncwO8-DbtyET1vAMBgXRElu0_ydqN7b5nHwfyanGcnzSnGUq3ti7pqcbVjhnxKzO38Ow9emb0JwwRiaNoIINx9lPUTz6pBp2KhV40DHrnmchyAfqNoBjkm8nNXSErVJfcGC8FdmFDoSbFrUuMf0rkK2VIrGWRxYx5M8hH6B1xpkQbI6yKUxj62jTMACxkUdm7IqPYbrIiJOaz7Q13RVpCe6HAnZhI5TPbByaKeFXxsqltvisbC8Ni_c08hz6_gMIPbp_PHOzLe3wM1kXlbTWdXZ4eUV1zoMYh6ceaxTfhLw4qvqFWpKinjvOjP7PwRJc6434Gk55V_97sGL2UIUoq2zVlDzhVhL0PYWWGvffePKL_-m1bFmdN8FlrgEJ58lI4mXnoLBlZO2WejzuacKRbdPJglnhGoO-8h99eFO4XHpv_Rlr6IvCM8erZpA9YInj7MtsYAr4gNMsB_uVOuXs380a1E0LE_KNCdwnJokwssZWOBD7Xqn0kj5yRn7yHS8kw9l8phonfN9XorDFeSX0CXyYDLP8kpLSf2PcMZPEmMvj_V4Mbwifjf0Au1SRxxhn2ga09DSBlkvcvnGI8Q_vxS81_vwTeiXmdFsaEC8Oqu6oIq9oIsxl_hgqJyNepGbgZo6LUna4O75bSl1JUhxIOiuyATDf_ZkYtvnCOM1dCOy_az4SmhKCefE0damALk9XDfAvPXqA","startAppStore":0,"expireTime":2082729600000,"viewMonitorUrls":[],"clickMonitorUrls":[],"playMonitorUrls":[],"finishMonitorUrls":[],"position":9,"dspname":"","tag":"推广","dislikeReasons":[],"UI_type":"","show_share":1,"multi_titles":[],"multi_headlines":[],"multi_subtitles":[],"subtitle_urls":[],"multi_urls":[],"firstMonitorUrls":[],"midMonitorUrls":[],"thirdMonitorUrls":[],"stdMonitorUrls":[],"fidMonitorUrls":[],"stiMonitorUrls":[],"fiiMonitorUrls":[],"btm_image_urls":[],"extraField":{"specialFreqCtrl":"false","remainingViewNum":"2147483647","autoVideo":"1"},"click_type":0,"ads_channel_id":"","ads_channel_name":"","ads_channel_type":"","ads_channel_image":"","ads_docid":"","play_sound":1,"buttonName":"","formUrl":"","iconUrl":"","ads_flag":"","deepLinkUrl":"","categoryName":"","appName":"","buttonDesc":"","flag_color":"","gif_url":"","phonenumber":"","appChannel":"","appRef":"","appClientId":"","appSignature":"","nonce":"","conversion_link":"","business_center":"","longitude":-1,"latitude":-1,"distance":-1,"click_url_bottom":"","MultiClickType":[],"tags":[],"download_url":"","s5MonitorUrls":[],"s15MonitorUrls":[],"s30MonitorUrls":[],"sNMonitorUrls":[],"mini_program_id":"","mini_program_path":"","sdktype":0,"locationInformation":"","ctype":"advertisement","impid":"183725222_1602560340059_236","pageid":"CF_c4","itemid":"AD_600377156","aid":600377156,"date":"2020-10-13 11:39:00"},{"extra":[],"title":"北京民营企业科技创新百强榜单发布 奇安信位列第七领跑网络安全行业","meta":"183725222_1602560340059_236","docid":"0RKDVhox","ctype":"news","dtype":1,"impid":"183725222_1602560340059_236","pageid":"CF_c4","itemid":"0RKDVhox","display_flag":0,"feedback_forbidden":false,"wemedia_id":287716,"tags":[],"category":"财经,科技","security":0,"detail":{"fid":"c4","federation_mash_type":"relevant","dedup_type":"channel","document_item_mash_type":"relevant","dedupValid":"true","batch":"0","mashtype":"ch-rel","trans_info":{"fid":"c4","mashtype":"ch-rel","point":"c4","dedupValid":"true","federation_mash_type":"relevant","document_item_mash_type":"relevant","dedup_level":"2","dedup_type":"channel","batch":"0"},"point":"c4","dedup_level":"2"},"is_local_doc":false,"ddate":"2020-10-13 10:44:28","dislike_reasons":["科技创新","网络安全","民营企业","创新"],"dislike_fromids":["u10460","t580","u10834","u7489"],"date":"2020-10-13 10:44:28","dsource":"金融界","summary":"10月10日，\u201c2020北京民营企业科技创新百强榜单\u201d正式发布，奇安信紧随百度、美团、京东、小米等传统互联网巨头位列第七，连续两年跻身科技创新百强榜单前十，在网络安全领域处于遥遥领先的地位。","image_attribut_update":true,"image_urls":["0RKDVhlyEd"],"source":"金融界","author_dtype":"yidianhao","url":"http://m.jrj.com.cn/rss/yidianzixun/2020/10/13/31042007.shtml","mtype":1,"i_alliance_scope":5643786,"image":"0RKDVhlyEd","upload_images_v":[],"auth":true,"is_gov":false,"content_type":"news","b_political":false,"enable_top":true,"is_like":false,"is_up":false,"is_down":false,"is_top":false,"wemedia_info":{"image":"http://si1.go2yd.com/get-image/0C5iNVNoR6W","name":"金融界","channel_id":"m287716","summary":"金融界是目前中国唯一在美国上市的财经类互联网公司，致力于打造以证券交易为核心的互联网综合理财平台。我们为投资者和机构用户提供7x24小时全球财经数据与资讯服务。","media_domain":"财经","source_type":2,"plus_v":0,"postcount":0,"authentication":"","sunnyplan_mark":0,"sunnyplan_snnum":"","copy_right_mark":0,"sunnyplan_certlevel":"","is_changfeng":0,"account_click":0,"is_puppet":0,"userid":474758884,"rank":4,"fromId":"m287716","type":"media"}},{"extra":[],"title":"新华社连发蔚来通稿-聚焦用户、技术和产业链创新","meta":"183725222_1602560340059_236","docid":"0RKHAthO","ctype":"news","dtype":1,"impid":"183725222_1602560340059_236","pageid":"CF_c4","itemid":"0RKHAthO","display_flag":0,"feedback_forbidden":false,"wemedia_id":30127,"tags":[],"category":"汽车,科技","security":0,"detail":{"fid":"c4","federation_mash_type":"relevant","dedup_type":"channel","document_item_mash_type":"relevant","dedupValid":"true","batch":"0","mashtype":"ch-rel","trans_info":{"fid":"c4","mashtype":"ch-rel","point":"c4","dedupValid":"true","federation_mash_type":"relevant","document_item_mash_type":"relevant","dedup_level":"2","dedup_type":"channel","batch":"0"},"point":"c4","dedup_level":"2"},"is_local_doc":false,"ddate":"2020-10-13 10:39:01","dislike_reasons":["创新","汽车","IT"],"dislike_fromids":["u7489","c11","sc18"],"date":"2020-10-13 10:39:01","dsource":"一点资讯","summary":"蔚来今年以来取得的优秀成绩持续引发媒体关注。在最新通过的《新能源汽车产业发展规划》发布后，10月11日，中国国家通讯社新华社连续播发通稿，对蔚来进行了集中报道。其中，《谁来定义汽车，谁在决定市场？\u2014\u2014从蔚来汽车看智能电动汽车发展三大焦点》一文，通过对蔚来创始人","image_attribut_update":true,"image_urls":["0RKHAt4oLI"],"source":"车威","author_dtype":"yidianhao","upload_images":["0RKHAt4oLI"],"url":"http://www.yidianzixun.com/mp/content?id=359726318526624","i_alliance_scope":1538,"image":"0RKHAt4oLI","upload_images_v":[],"auth":true,"is_gov":false,"content_type":"news","b_political":false,"enable_top":true,"is_like":false,"is_up":false,"is_down":false,"is_top":false,"wemedia_info":{"image":"https://si1.go2yd.com/get-image/0jf25IRRcy8","name":"车威","channel_id":"m30127","summary":"为汽车行业职业经理人提供每日行业资讯、热点分析、绯闻八卦、深度评论和独到分析。","media_domain":"汽车","source_type":1,"plus_v":2,"postcount":0,"authentication":"深度评论员，提拱行业资讯、热点分析等。汽车\u201c一号红人\u201d计划会员","sunnyplan_mark":0,"sunnyplan_snnum":"","copy_right_mark":0,"sunnyplan_certlevel":"","is_changfeng":0,"account_click":0,"is_puppet":0,"userid":101694565,"rank":5,"fromId":"m30127","type":"media"}}]
-     * disable_op : 2
-     * fresh_count : 11
-     * offset : 11
-     * trace_info : [{"type":"ListAdCard","reason":"success","code":1}]
-     * refresh_status : normal
-     * search_hint : 大家都在搜:疾病
-     * bookcount : 1970.7万人订阅
-     * channel_id : c4
-     * fromId : c4
-     * channel_name : 互联网
-     * channel_type : subcategory
-     * channel_summary : 互联网,网络
-     * channel_image : http://s.go2yd.com/b/iclofkg5_0000d1d1.jpg
-     * channel_unshared : false
+     * listId : SYLB10NEW
+     * type : list
+     * expiredTime : 180000
+     * ch : sy
+     * syRetainOldNew : -1
+     * item : [{"type":"doc","id":"ucms_80amI77Rd8y","thumbnail":"https://d.ifengimg.com/w224_h150_q100_webp/x0.ifengimg.com/ucms/2020_42/9EA591FD3F8B42E8CE1B155EF05C53AD145CC6AC_w500_h280.jpg.webp","title":"光刻机龙头阿斯麦：从荷兰向中国出口DUV光刻机无需许可证","source":"第一财经","subscribe":{"cateid":312705,"catename":"第一财经","type":"vampire","description":"第一财经官方账号","forbidFollow":"0","forbidJump":"0","originalName":"","cateSource":"","showDescription":"1"},"updateTime":"2020/10/15 16:39:47","documentId":"ucms_80amI77Rd8y","staticId":"ucms_80amI77Rd8y","style":{"view":"titleimg","recomTag":{"bg":"1","bgColor":"#26F54343","bgNightColor":"#26D33939","fontColor":"#FFF54343","fontNightColor":"#FFD33939","text":"热点","pos":"1"},"backreason":["0_来源:第一财经","c_财经","sc_企业动态","0_对内容不感兴趣"],"defaultreason":"0_不感兴趣"},"commentsUrl":"ucms_80amI77Rd8y","comments":"1","commentsall":"3","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80amI77Rd8y&channelId=SYLB10NEW&category=%E8%B4%A2%E7%BB%8F&imId=80amI77Rd8y&channelKey=&isHotSpot=1","weburl":"https://ishare.ifeng.com/c/s/v004UGhxGPNp9Fjcd--tf2tUNp9y6MsPGa0pwog0KQvlT3zdhFkMIn4BPqEre5SEJOKuK?spss=np","openType":"1","staticId":"ucms_80amI77Rd8y"},"reftype":"ai||||insertRecom%23OutHotTagInsert%23+%230.0%23+%23perfectOld||%E7%A7%91%E6%8A%80-%E7%A7%91%E6%8A%80%E5%85%AC%E5%8F%B8%E5%8A%A8%E6%80%81|","intro":"","simId":"usim_80amOu1RwOG","recomToken":"c8f80e219e4b42dd-c420ca0528524bbdb9bc397ceb573c96","payload":"eyJkb2NpZCI6IjgwYW1JNzdSZDh5In0=","statisticTag":""},{"type":"qualityReading","id":"4a56cf74-32bb-4cae-8ea0-69ce17ca4dfe","thumbnail":"","title":"精品深读","documentId":"4a56cf74-32bb-4cae-8ea0-69ce17ca4dfe","staticId":"deep_qualityReading","style":{"view":"qualityReadingMarquee","backreason":["0_对内容不感兴趣"],"defaultreason":"0_不感兴趣"},"link":{"type":"qualityReadingList","url":"https://nine.ifeng.com/qualityReadingList"},"reftype":"ai||||qualityReading%23Marquee|||","intro":"","recomToken":"c8f80e219e4b42dd-de66e83ff6b0463bb8097d1f435bd287","payload":"eyJkb2NpZCI6IjRhNTZjZjc0LTMyYmItNGNhZS04ZWEwLTY5Y2UxN2NhNGRmZSJ9","relation":[{"type":"doc","title":"为什么中国人的头发最值钱？","thumbnail":"https://d.ifengimg.com/w600_h338_q100_webp/x0.ifengimg.com/res/2020/071AB32207DA56862CB19C4105EE3C9A798A4CC3_size92_w1080_h720.jpeg.webp","documentId":"ucms_80aY6IzxAJn","staticId":"ucms_80aY6IzxAJn","reftype":"ai||||qualityReading%23Marquee||%E7%A4%BE%E4%BC%9A-%E7%A4%BE%E4%BC%9A%E4%B8%87%E8%B1%A1|","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80aY6IzxAJn&channelId=SYLB10NEW&category=&imId=80aY6IzxAJn&channelKey=&startfrom=qualityreading","weburl":"https://ishare.ifeng.com/c/s/v004yX24f1GcKFsQvGfB2-_JBoleEiqhC5i01hC4tgynEcT3Q0w1C2DjAbAM9Ydbl6--Bj?spss=np","openType":"1","staticId":"ucms_80aY6IzxAJn"}},{"type":"doc","title":"一个管不住丈夫，一个管不住儿子？文在寅被女亲信接连\u201c插刀\u201d","thumbnail":"https://d.ifengimg.com/w600_h338_q100_webp/x0.ifengimg.com/ucms/2020_42/9064494241FE0BE55CAB4DEA29FEDF6AE40258DC_w650_h366.jpg.webp","documentId":"ucms_80aTsYm0ZbM","staticId":"ucms_80aTsYm0ZbM","reftype":"ai||||qualityReading%23Marquee||%E6%97%B6%E6%94%BF-%E4%B8%9C%E4%BA%9A%E5%92%8C%E7%8E%AF%E5%A4%AA%E5%B9%B3%E6%B4%8B%E6%97%B6%E6%94%BF|","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80aTsYm0ZbM&channelId=SYLB10NEW&category=%E6%97%B6%E6%94%BF&imId=80aTsYm0ZbM&channelKey=&startfrom=qualityreading","weburl":"https://ishare.ifeng.com/c/s/v004N9mf2srEXqarVViQq3JJYxRFXaFVt4LT6euIEgZ1MNr9wRwyfg14-_i7v5QC--BJZp?spss=np","openType":"1","staticId":"ucms_80aTsYm0ZbM"}},{"type":"doc","title":"香港，正告别\u201c世界间谍中心\u201d","thumbnail":"https://d.ifengimg.com/w600_h338_q100_webp/x0.ifengimg.com/ucms/2020_42/54A11CF5E696BF721B575AB5EF7522A3179F143C_w650_h366.png.webp","documentId":"ucms_80aQIEkXszG","staticId":"ucms_80aQIEkXszG","reftype":"ai||||qualityReading%23Marquee||%E6%97%B6%E6%94%BF-%E6%B8%AF%E6%BE%B3%E5%8F%B0%E7%9A%84%E5%90%84%E9%A1%B9%E5%B7%A5%E4%BD%9C|","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80aQIEkXszG&channelId=SYLB10NEW&category=%E6%97%B6%E6%94%BF&imId=80aQIEkXszG&channelKey=&startfrom=qualityreading","weburl":"https://ishare.ifeng.com/c/s/v004fr2M32PL-_vzZ7F1YsFIZnIiobvkHOZe9Hmag-_US1SnOFf7eIcuw-_scQuK32hIMqu?spss=np","openType":"1","staticId":"ucms_80aQIEkXszG"}},{"type":"doc","title":"胡毅峰：我是城管，我怕大家问我什么时候去收复钓鱼岛","thumbnail":"https://d.ifengimg.com/w600_h338_q100_webp/x0.ifengimg.com/ucms/2020_42/B340F3369AE4EAF953C52839E5C1E7F33BEFB01C_w1200_h600.jpg.webp","documentId":"ucms_80aOX8RB5lP","staticId":"ucms_80aOX8RB5lP","reftype":"ai||||qualityReading%23Marquee||%E7%A4%BE%E4%BC%9A-%E5%9F%8E%E7%AE%A1%E7%89%A9%E4%B8%9A%E5%9C%A8%E8%A1%8C%E5%8A%A8|","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80aOX8RB5lP&channelId=SYLB10NEW&category=%E7%A4%BE%E4%BC%9A&imId=80aOX8RB5lP&channelKey=&startfrom=qualityreading","weburl":"https://ishare.ifeng.com/c/s/v004DhXQmHdELRybPi1x7rC5EY8J--3PnJ6PPSLGa48Re7xHfqf9FskfHeK--UBjnTsvm7?spss=np","openType":"1","staticId":"ucms_80aOX8RB5lP"}},{"type":"doc","title":"我是爱自由的美国人，被新冠困在美国失去了自由","thumbnail":"https://d.ifengimg.com/w600_h338_q100_webp/x0.ifengimg.com/ucms/2020_42/4C636D087D26CD4231E199876EB9DAEE7316479B_w650_h366.jpg.webp","documentId":"ucms_80aQTBp0YvG","staticId":"ucms_80aQTBp0YvG","reftype":"ai||||qualityReading%23Marquee||%E7%A4%BE%E4%BC%9A-%E7%A4%BE%E4%BC%9A%E4%B8%87%E8%B1%A1%2C%E5%A2%83%E5%A4%96%E7%96%AB%E6%83%85-%E7%BE%8E%E5%9B%BD%E7%96%AB%E6%83%85|","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80aQTBp0YvG&channelId=SYLB10NEW&category=&imId=80aQTBp0YvG&channelKey=&startfrom=qualityreading","weburl":"https://ishare.ifeng.com/c/s/v004v8M7bnvEEXoff4--ceRQDSDMJazeY--SBBSNHbzqyVaBQSTyHLeibV1k7DFfZiO--Aw?spss=np","openType":"1","staticId":"ucms_80aQTBp0YvG"}}],"statisticTag":""},{"thumbnail":"http://imggen.alicdn.com/38c3056d1bb68914132b333705998a99.jpg?aid=tanx&tid=tailor&m=%7B%22img_url%22%3A%22http%3A%2F%2Fgma.alicdn.com%2Fbao%2Fuploaded%2FO1CN01nPEogY283G2Z3lh7t_%21%210-saturn_solar.jpg_230x230.jpg%22%2C%22title%22%3A%22%22%2C%22promot_name%22%3A%22%22%2C%22itemid%22%3A%22627481016257%22%7D&e=cae4e9f43f94118155bfe4f1f70524df6ebeb6831ca6af0f71f01fd28d81db7e&size=220x146","title":"花西子 蜜粉 促销特惠","appSource":"","intro":"","adId":"iis_91_13654_1_1602752312883_rvrkfi","adPositionId":"10000252","pid":"10000252","type":"advert","style":{"attribute":"广告·淘宝","backreason":["不感兴趣","虚假广告","看过了","档次太低"],"defaultreason":"0_不感兴趣","images":["http://imggen.alicdn.com/38c3056d1bb68914132b333705998a99.jpg?aid=tanx&tid=tailor&m=%7B%22img_url%22%3A%22http%3A%2F%2Fgma.alicdn.com%2Fbao%2Fuploaded%2FO1CN01nPEogY283G2Z3lh7t_%21%210-saturn_solar.jpg_230x230.jpg%22%2C%22title%22%3A%22%22%2C%22promot_name%22%3A%22%22%2C%22itemid%22%3A%22627481016257%22%7D&e=cae4e9f43f94118155bfe4f1f70524df6ebeb6831ca6af0f71f01fd28d81db7e&size=220x146","http://imggen.alicdn.com/dea62f018bc23f5117ffdc941115afc0.jpg?aid=tanx&tid=tailor&m=%7B%22img_url%22%3A%22http%3A%2F%2Fgma.alicdn.com%2Fbao%2Fuploaded%2Fi1%2F3392536705%2FO1CN01jTyISV1zOwFPBBvfC_%21%213392536705.jpg_230x230.jpg%22%2C%22title%22%3A%22%22%2C%22promot_name%22%3A%22%22%2C%22itemid%22%3A%22627481016257%22%7D&e=4dff39a01c68319afdae15a9240b3280ce3121defadb3e849c2d9b38cb2f4e62&size=220x146","http://imggen.alicdn.com/a4b908653802199a0e627e6fa4a2b97d.jpg?aid=tanx&tid=tailor&m=%7B%22img_url%22%3A%22http%3A%2F%2Fgma.alicdn.com%2Fbao%2Fuploaded%2Fi1%2F3392536705%2FO1CN01rpo25M1zOwFNGev8P_%21%213392536705.png_230x230.jpg%22%2C%22title%22%3A%22%22%2C%22promot_name%22%3A%22%22%2C%22itemid%22%3A%22627481016257%22%7D&e=36b6f9ee9df873338295c8dec015dee0087185214f615b4543f7d465127d7419&size=220x146"],"view":"slideimg"},"icon":{"showIcon":1,"text":"广告·淘宝"},"source":"","link":{"type":"web","weburl":"https://ax.ifengo.com/jump?url=gkUyIEZPRm_iHYS1WLlwts5aH_YCFg-_Z5F1p17Z-WtA1BXVOXa40Q0JoUwh9j7V7aTYZRG19DobEnQmbOqnk2CQtklIbZsIoC_bgUK9W1fmVHX1up7SQ1HP_XLS0NmPhGdBCr74d8vk_vaaMKapctVvEhKieuHaL_5pKjRVzM5Iz40azD1fMlj2s0skD3hdrIBJUJK5tECmqVFcdiDU9vqUKBIgVVwx8Ozz6phhyZM14kKwBdhA45FWmnWAaMQGvnazJyEY2g6MnNG1Lv2pI6LcIxXrsMDB74g4enRkrnRI2pnp_VeNUi1C993IPNO1RWCEEbaMBIh1sVJZBH_KwlGDIJ83_tKwQnvUFPN1jDXXxgOXYNGCGlvzcJAuB__5ZHUuQLEJh39bPdEnmramt-LtXFI4cPhBo6FUmNlDnbefmOv6eb2yuUlPKqGwDZa2VecyF9mYcoFwJA41DR2kstwzhWaaOnJK5epMupKc3kYuw5OKy9bkiIHmGgUA9smDU958jAvToWxpuRsBc9hV8gMgqkF7dcHBd79MpX8fOpKNSyBqUEQUIbuLAWcUPMhaEIn-v_SxOTd_HZ6IeEQALfVvo66KKEZEObmIbcD58hNA3l4RWvwku3C0j6rA0gDXnWC0Go651bTFYHgh3JsA4pnRAJoUGOfTd9Go95cYkZFWkGMnUXzUwATWM_ZN7f4LYphMlTcg8lZGBfVOGpmcLJNLETBBEYoKvlxJ7oa5vm6aGzES7fLShF0UZzZmOBLNJ35ppxjLWmqomWdQ_nWtBcbu4wPlDRR3rkoITinFTtQfDGxYcN_MM0i2HIZJtT96Rk01mzin7-JAeGNI_xHI3Ie3Gv9pua4fo5t5FE_1O7Bl6WJuBSE5JUAP3wxjWrEop4iS7PQKB_ucSwDtH8JLtxfbp_PqkkBM_UAtU1rl7hKoFTp4iYqwlKXZqx4YzJMOcPzHpGzDRFe12kQMoZSKEADl3baguTFOQwFSlC1APACqEddAudLm64814OqSIHbwq_Ys_GWTkksaJn9917cSFQqVGZ1FoX4fgtZzdzsrfIPSXMRMOZSRcWUOw0JPuLb6aCeCNDDhsdie2MD9bqok8EAOH8ZgBFUSWdCL8EEW39Ny5i5TNCkhe_vXQZtfx5ko1tAhxMaiiTkoX20goVaEaiwis2BJ-N1qV5Q2HE2KBK2FukGN2aZxpLiS2b3e-wYRFteEZuJQa8AahNqlM1ey34WryJJkixly_nJd50AnU8gpNWYWLoZNq3ieq5lLKOw2-4ZszJzxfzu4Cz9KjIu3tzkJJDIpE1ajrRmvUue6WSu622qNcJhP0jM89uUMZdoMDOTaq8ShXoMZVCMBPMDQ6xFRx2ksHKV19uStQjH0dBnCXNieYoNsF9rytm9ikPWTHSJiQ_b2cAJ4H3hmu13TRZAC4sMnSQdRapBOvhNZRLjpwS_jj0kpur6s2npo7AVDh3RUbFQ1dMwclhk9sXsmKKXCdRgoNdFhMd9c6mzVqG8sTRHY414bdeDC-BExo5vsVitVOJ1uERRjygQLnNVVxpYUq-ykxWZkgy7gvqZQ_HsUSAT4rUGreaTX83VPxbnMsWIW5BS7hS2zbNdY4Ci0N1OGZSMZfCqOLNVtqy14dLq52S7YUET8MSFBQWr8mUXZNJWY4nb8tA4dR9SOABAt7W7T2DO1W4Xqyb7YQ4WCUBgwvl0XF7tdo7I_u4TOpYbIedseTSFmzstcmjo64SeJrf8NEnJO_LICSJlkpnYZIjUWkBcFUAA8WTVz10QPqe5IVBejaQmdEpaFQR6xhvF_vw&bid=91&requestid=c731c85e8004dd8f3e15f4e0bc305857","url":"https://ax.ifengo.com/jump?url=gkUyIEZPRm_iHYS1WLlwts5aH_YCFg-_Z5F1p17Z-WtA1BXVOXa40Q0JoUwh9j7V7aTYZRG19DobEnQmbOqnk2CQtklIbZsIoC_bgUK9W1fmVHX1up7SQ1HP_XLS0NmPhGdBCr74d8vk_vaaMKapctVvEhKieuHaL_5pKjRVzM5Iz40azD1fMlj2s0skD3hdrIBJUJK5tECmqVFcdiDU9vqUKBIgVVwx8Ozz6phhyZM14kKwBdhA45FWmnWAaMQGvnazJyEY2g6MnNG1Lv2pI6LcIxXrsMDB74g4enRkrnRI2pnp_VeNUi1C993IPNO1RWCEEbaMBIh1sVJZBH_KwlGDIJ83_tKwQnvUFPN1jDXXxgOXYNGCGlvzcJAuB__5ZHUuQLEJh39bPdEnmramt-LtXFI4cPhBo6FUmNlDnbefmOv6eb2yuUlPKqGwDZa2VecyF9mYcoFwJA41DR2kstwzhWaaOnJK5epMupKc3kYuw5OKy9bkiIHmGgUA9smDU958jAvToWxpuRsBc9hV8gMgqkF7dcHBd79MpX8fOpKNSyBqUEQUIbuLAWcUPMhaEIn-v_SxOTd_HZ6IeEQALfVvo66KKEZEObmIbcD58hNA3l4RWvwku3C0j6rA0gDXnWC0Go651bTFYHgh3JsA4pnRAJoUGOfTd9Go95cYkZFWkGMnUXzUwATWM_ZN7f4LYphMlTcg8lZGBfVOGpmcLJNLETBBEYoKvlxJ7oa5vm6aGzES7fLShF0UZzZmOBLNJ35ppxjLWmqomWdQ_nWtBcbu4wPlDRR3rkoITinFTtQfDGxYcN_MM0i2HIZJtT96Rk01mzin7-JAeGNI_xHI3Ie3Gv9pua4fo5t5FE_1O7Bl6WJuBSE5JUAP3wxjWrEop4iS7PQKB_ucSwDtH8JLtxfbp_PqkkBM_UAtU1rl7hKoFTp4iYqwlKXZqx4YzJMOcPzHpGzDRFe12kQMoZSKEADl3baguTFOQwFSlC1APACqEddAudLm64814OqSIHbwq_Ys_GWTkksaJn9917cSFQqVGZ1FoX4fgtZzdzsrfIPSXMRMOZSRcWUOw0JPuLb6aCeCNDDhsdie2MD9bqok8EAOH8ZgBFUSWdCL8EEW39Ny5i5TNCkhe_vXQZtfx5ko1tAhxMaiiTkoX20goVaEaiwis2BJ-N1qV5Q2HE2KBK2FukGN2aZxpLiS2b3e-wYRFteEZuJQa8AahNqlM1ey34WryJJkixly_nJd50AnU8gpNWYWLoZNq3ieq5lLKOw2-4ZszJzxfzu4Cz9KjIu3tzkJJDIpE1ajrRmvUue6WSu622qNcJhP0jM89uUMZdoMDOTaq8ShXoMZVCMBPMDQ6xFRx2ksHKV19uStQjH0dBnCXNieYoNsF9rytm9ikPWTHSJiQ_b2cAJ4H3hmu13TRZAC4sMnSQdRapBOvhNZRLjpwS_jj0kpur6s2npo7AVDh3RUbFQ1dMwclhk9sXsmKKXCdRgoNdFhMd9c6mzVqG8sTRHY414bdeDC-BExo5vsVitVOJ1uERRjygQLnNVVxpYUq-ykxWZkgy7gvqZQ_HsUSAT4rUGreaTX83VPxbnMsWIW5BS7hS2zbNdY4Ci0N1OGZSMZfCqOLNVtqy14dLq52S7YUET8MSFBQWr8mUXZNJWY4nb8tA4dR9SOABAt7W7T2DO1W4Xqyb7YQ4WCUBgwvl0XF7tdo7I_u4TOpYbIedseTSFmzstcmjo64SeJrf8NEnJO_LICSJlkpnYZIjUWkBcFUAA8WTVz10QPqe5IVBejaQmdEpaFQR6xhvF_vw&bid=91&requestid=c731c85e8004dd8f3e15f4e0bc305857","pvurl":["http://df.tanx.com/spf3?e=N_iVhrPHoc12jZbs-axlLUVHMSJ9hZISSjcUr7vi_j0cqHKhGgLXnwoYOar0mY9GXUkNcDGdkt6eKdhOe-Wppxv6ehwArj3IhKH5Y4X0M-qaGCecA08DCAxXCjM5fcKK85BIst8XrilWeBcJh-gQRFDOT4gESL0Ft16QSevM4XbcUeNfbHEeT0m7ff-EoubGCr5xugfVSwDiXl5vVyldTsoGPgUS8GJm&k=225&i=mm_12229823_1573806_67420193","http://dsp.simba.taobao.com/feedback?bid=0bb8928500000a4e5f880f38000083a0&v=1&e=6&p=AQu4koUAAApOX4gPOAAAg6CDjaR2HgKkgw%3d%3d&s=80220627941105250&pid=mm_12229823_1573806_67420193&nk=ARad5f5waCK9G3bc4bUwr96i8dL5fmVUwelCFw%3D%3D&aid=80220627941105250&dd=AQ8XdHZlD48zriM00snwKdqMona0&bi=2020&ci=%%CREATIVE_ID%%&atsp=1602752312765566%01113.65.209.51%01Mozilla%2F5.0+%28Linux%3B+Android+9%3B+V1932A+Build%2FPKQ1.181030.001%3B+wv%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F68.0.3440.91+Mobile+Safari%2F537.36%01%019%01%01%01%01%01AQ8XdHZlD48zriM00snwKdqMona0%01%01%01%01%01%011080x2310%01%01%E5%87%A4%E5%87%B0%E6%96%B0%E9%97%BB%E5%AE%A2%E6%88%B7%E7%AB%AF%01%011%01%01%01%01&crtid=2120644906&pdt=__PRODT__&spdt=__SPRODT__&req_id=__REQID__","https://iis1.deliver.ifeng.com/i?p=Ig1g2GIOddKwJKLKr9ElLUhD_qnABa75YKl9-LV3-Oop6UXLi5D8ZJEZM_Ue-6KMxvX3YxYOEN6vCHL0eygclUbsxAoz-zT8w3FnE8Pt5FNrt652bMb5a7I5MheM5KP85Hu1OwtIgp1kP4OcHN2i1eOB7Z-nWkoUuBSOFaxOlO5Oau_ie9I9qT_xvgTlAgHrkgelWv4dbbjEBOCzhNkLFqJYnt-9bnN2O__LjytY-aHninnsBkvriAYNUj8XOX6seRGTdTH2Mp_5g87ebnhFow"],"async_click":["https://iis1.deliver.ifeng.com/c?p=eq21txn4qSORQv4fm855oeJojV9p_Oe9B9PpohmD4zIHTUtURXhJwCFAWm1c3P9K8lfHmkO5QLcbVvMQhtf7CSwxaPP430bEmk_QMsNwRov28Dr2TZAOSUHuCapgrTe2d7FHiYDYwHjdGpx8vR_DnYo5Ms7zVmvtJmUFS-Fsr9QxkNXH5O1eRpe_b3EajA-dyjdQShvgFG4atrPS9WTV51Ah4DDSLGRSiOZfDaa7A4li-Zh0VD-tHKmnjZ-fRlDO","http://rdstat.tanx.com/trd?f=http%3A%2F%2Fdetail.tmall.com%2Fitem.htm&k=57441f6aad744d34&p=mm_12229823_1573806_67420193&pvid=0bb8928500000a4e5f880f38010083a0&s=226x156&d=118678427&bkts=0.7357884&clst=na61&t=1602752312"],"pagemonitor_open":"https://ua.deliver.ifeng.com/monitor/cm.gif?adid=13654&type=o&reqid=c731c85e8004dd8f3e15f4e0bc305857","pagemonitor_close":"https://ua.deliver.ifeng.com/monitor/cm.gif?adid=13654&type=c&reqid=c731c85e8004dd8f3e15f4e0bc305857","dpl_url":"tbopen://m.taobao.com/tbopen/index.html?action=ali.open.nav&module=h5&source=alimama&bootImage=0&appkey=24558693&backURL=&packageName=com.ifeng.news2&visa=068d59511f8dfa0c&bc_fl_src=tanx_k2_67420193_0bb8928500000a4e5f880f38000083a0&h5Url=http%3A%2F%2Fsrd.simba.taobao.com%2Ferd%3Fw%3Dmobileitemjump%26f%3DFhrrRG6eVcSWfOgx3b07icatRqqBIgHrRkBs4kqVFwKZyNKo1elpk73V39vrLFNAUcnVUxVI%252BaCUSkq0rJNjpxM7n%252FTGgDIqALHkFlnFcQKubQ6PCjRVKywtCYgXGjjUb656L%252BnIixAFJk0Y8Z5kOGtbpifR3sLCc5CNMG2pjmdzKyC0WiqVPd0Oc48LA9A6EOj1BsHIAR2GHv5jfjws%252BT%252BYxoRlnBLfG%252Fl4CILvfSb2bpbItME77csVi63GghAX2WsdIHW0fAxkXQGDuJwWD6WCVrmwuvp081Vo%252F1N%252F%252FKh6IN3LdZCTZaKwLPzw%252FF7QyPKsbcEZWSoaQzuXoq4H2WX%252B91JZrl1y9vP3QmuszRZhG2gA5dNx7H%252BE0AB3PJhyBO05sY74I2lFyaHbQQgwTjb2lFIu4H67IRMZg4F499lGUGTQ9qgsybzPZSpwiqh1%252Ft65bd1JQYt%252BbQfG6tGDed%252FUtfmbfk5VCwmCjzl6MwuDRVcvIGYcgAGqyBB7vozfdbdbL4mwAmSk0SJSXbDag0iioXf%252Bi%252FrzzBzfkaN058IQmqvKikzDJk6iInw6laV5XrN9Oo7p3cdA0sD4FRc0giALdjxZk2wpaJpJYqBrUWhLwR5XZkWBbPoR6Fp7JuZAV5KRJnor%252BUdkJMdUFoIKb6Q5pzzBiM2LfRFX0e3RMihoPcbqHb4FHmpaIa5oG9Gl2ucI2uCx%252Fk6hEh9dU4f4r9erv4DoAt4pz6kG4uf6QomPOp1MFSuAiRwGJ3hmjberxcTBBLlAIxP362k0xoo98PlSJRztOegMye6kiUZXEV33om3nQdH95qqLtpPGvmuP1Ro8ng8qEIHPY8bC596AQ3luzvULwy29u0EPTUHsTDXLsOt06pScGRZlB%252BCfhI%252FXUqW0yrtG6bwGsP%252F%252BY2WxyIu2%252FLG2wZGsSoWcsxgimgmB%252FZzEH4STqAiy4ZnNMLW0KYni01KLWIsuc0iZsWyJgf%252FN0JUlUR9dzdVf7lZnCswVAsEb4g9PztL16%252Fn1ZhYe18jJq%252BsZLQnSl%252BgzYNh4UDxvUO%252FXypof%26k%3D29c8da81eb74c040%26pvid%3D0bb8928500000a4e5f880f38000083a0%26p%3Dtt_12229823_1573806_67420193%26es%3D704114169%26l%3D1056%26a%3Dtoken%253D1.1_G2NmVfr0o_p3C7CxJ1IX0mXgYAJ8fBbF08DTPofEmXI%253D%2526tesla_id%253D7438362"}},{"type":"short","id":"ucms_7y8GvOrbmSG","thumbnail":"https://d.ifengimg.com/w224_h224_q100_webp/x0.ifengimg.com/thmaterial/2020_29/A411CDB8A7694B26B0F8D76900DC11E1_w690_h1078.jpg.webp","title":"腿长就是任性，搭配牛仔裤高跟鞋，实在是太好看了","source":"楚楚动人","subscribe":{"cateid":1584599,"catename":"楚楚动人","type":"vampire","description":"好看有料的美女视频内容","logo":"http://d.ifengimg.com/q100/img1.ugc.ifeng.com/newugc/20200424/14/wemedia/87c2dd9b2db8b3885fb6f6a4c7f8f5d10f269c8c_size35_w200_h200.png","honorImg":"https://x0.ifengimg.com/cmpp/2020/1012/877079c2abbb417size5_w66_h66.png","honorImg_night":"https://x0.ifengimg.com/cmpp/2020/1010/faa6b03c33a1709size5_w66_h66.png","forbidFollow":"0","forbidJump":"0","originalName":"","cateSource":"","showDescription":"1","redirectTab":"short"},"updateTime":"2020/07/15 19:22:54","documentId":"ucms_7y8GvOrbmSG","staticId":"short_ucms_7y8GvOrbmSG","style":{"view":"wbtextimg","backreason":["0_来源:楚楚动人","c_美女","0_对内容不感兴趣"],"defaultreason":"0_不感兴趣","imageList":[{"url":"https://d.ifengimg.com/w224_h224_q100_webp/x0.ifengimg.com/thmaterial/2020_29/A411CDB8A7694B26B0F8D76900DC11E1_w690_h1078.jpg.webp"},{"url":"https://d.ifengimg.com/w224_h224_q100_webp/x0.ifengimg.com/thmaterial/2020_29/C828C385FE2D4F19ABE8E7F622D9127D_w690_h1070.jpg.webp"},{"url":"https://d.ifengimg.com/w224_h224_q100_webp/x0.ifengimg.com/thmaterial/2020_29/FC1C407CA3DE4CA588144E0E3B989E7D_w690_h1066.jpg.webp"},{"url":"https://d.ifengimg.com/w224_h224_q100_webp/x0.ifengimg.com/thmaterial/2020_29/09E5889148764173931699DFCB8685D3_w690_h1090.jpg.webp"}],"type":"slides","previewImages":["https://x0.ifengimg.com/thmaterial/2020_29/A411CDB8A7694B26B0F8D76900DC11E1_w690_h1078.jpg","https://x0.ifengimg.com/thmaterial/2020_29/C828C385FE2D4F19ABE8E7F622D9127D_w690_h1070.jpg","https://x0.ifengimg.com/thmaterial/2020_29/FC1C407CA3DE4CA588144E0E3B989E7D_w690_h1066.jpg","https://x0.ifengimg.com/thmaterial/2020_29/09E5889148764173931699DFCB8685D3_w690_h1090.jpg"]},"commentsUrl":"ucms_7y8GvOrbmSG","comments":"200","commentsall":"474","link":{"type":"shortlist","url":"https://nine.ifeng.com/shortList?id=7y8GvOrbmSG","weburl":"https://ishare.ifeng.com/c/s/v004kI2uT82zNlre441jw0-_v--Z5mT8dXxIqXlHZLzULQ6e898Z8pz-_yHB2rQUMpsKpuW?spss=np","staticId":"short_ucms_7y8GvOrbmSG"},"reftype":"ai||||insertRecom%23CommonPanCrowdDocInsert|6689122576788099123%7C%21%7CRecPath.short_intention%7C%21%7Cmain%7C%21%7C0.0%7C%21%7C0.0%7C%21%7C0.0%7C%21%7Cold%7C%21%7Cfalse%7C%21%7Cfalse%7C%21%7Cartificial%7C%21%7CcommonPanGroup|%E7%BE%8E%E5%A5%B3|","intro":"腿长就是任性，搭配牛仔裤高跟鞋，实在是太好看了","simId":"clusterId_20126686","recomToken":"c8f80e219e4b42dd-fcc9bb687d6c4051a1195ccb2cba464a","payload":"eyJkb2NpZCI6Ijd5OEd2T3JibVNHIn0=","like":"1000","shareCount":"39","commentLink":{"type":"short","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_7y8GvOrbmSG&channelId=SYLB10NEW&category=%E7%BE%8E%E5%A5%B3&imId=7y8GvOrbmSG&channelKey=&groupid=6689122576788099123","weburl":"https://ishare.ifeng.com/c/s/v004kI2uT82zNlre441jw0-_v--Z5mT8dXxIqXlHZLzULQ6e898Z8pz-_yHB2rQUMpsKpuW?spss=np","openType":"1","staticId":"ucms_7y8GvOrbmSG"},"statisticTag":""},{"type":"phvideo","id":"51876986-3283-444f-b2ab-e4b4c6dc3db4","thumbnail":"https://d.ifengimg.com/w690_h346_q100_webp/x0.ifengimg.com/ucms/2020_42/E5672B60B3FB4243B4A55C75E6B170C9417CB2AD_w1920_h1080.jpg.webp","title":"今日油条店员回应被起诉侵权：不理解，是哪个字不能用？","source":"风视频","subscribe":{"cateid":543545,"catename":"风视频","type":"vampire","description":"为你带来最及时、最好看的全球资讯","forbidFollow":"0","forbidJump":"0","originalName":"","cateSource":"大风号","showDescription":"1"},"updateTime":"2020/10/15 15:52:46","documentId":"51876986-3283-444f-b2ab-e4b4c6dc3db4","staticId":"video_51876986-3283-444f-b2ab-e4b4c6dc3db4","style":{"view":"bigimg","backreason":["0_来源:风视频","c_社会","sc_人物事件","0_对内容不感兴趣"],"defaultreason":"0_不感兴趣"},"commentsUrl":"51876986-3283-444f-b2ab-e4b4c6dc3db4","comments":"9","commentsall":"21","link":{"type":"videoimmersion","url":"51876986-3283-444f-b2ab-e4b4c6dc3db4","weburl":"https://ishare.ifeng.com/c/s/v004T-_NMV3R2NqtrNayXDcZjjAd4jDtXE3f9wg19BAY1l7xu940whkHri81KixU8vUMVE--8YwYZsZP0UNqBi5m4MuQ____?spss=np","openType":"2","vid":"51876986-3283-444f-b2ab-e4b4c6dc3db4","mp4":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37537311-102-009-155125/index.m3u8?ifsign=1","previewurl":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37510863-102-009-160925.mp4","staticId":"video_51876986-3283-444f-b2ab-e4b4c6dc3db4"},"reftype":"ai||||insertRecom%23CommonPanCrowdDocInsert|6689122576788099128%7C%21%7CRecPath.short_intention%7C%21%7Cmain%7C%21%7C0.0%7C%21%7C0.0%7C%21%7C0.0%7C%21%7Cold%7C%21%7Cfalse%7C%21%7Cfalse%7C%21%7Cartificial%7C%21%7CcommonPanGroup|%E7%A4%BE%E4%BC%9A-%E4%BA%BA%E7%89%A9%E4%BA%8B%E4%BB%B6|","intro":"","simId":"usim_80airy01u1g","recomToken":"c8f80e219e4b42dd-f56993062e56481394148a2ad4909c93","payload":"eyJkb2NpZCI6IjgwYWlka05kVE0wIn0=","summary":{"tag":"导语","tagStyle":16,"desp":"近日，河南一家名为\u201c今日油条\u201d的店铺引起网友的注意，由于该店铺装修、logo、菜单与今日头条页面高度相似；今日头条将该店铺背后公司告上法庭，案由为商标权权属、侵权纠纷；风视频联系到今日油条店员：他表示仍正常营业，但对起诉表示不理解，具体是哪个字不能用？","link":{"type":"videoimmersion","url":"51876986-3283-444f-b2ab-e4b4c6dc3db4","weburl":"https://ishare.ifeng.com/c/s/v004T-_NMV3R2NqtrNayXDcZjjAd4jDtXE3f9wg19BAY1l7xu940whkHri81KixU8vUMVE--8YwYZsZP0UNqBi5m4MuQ____?spss=np","openType":"2","vid":"51876986-3283-444f-b2ab-e4b4c6dc3db4","mp4":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37537311-102-009-155125/index.m3u8?ifsign=1","previewurl":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37510863-102-009-160925.mp4","staticId":"video_51876986-3283-444f-b2ab-e4b4c6dc3db4"},"staticId":"video_51876986-3283-444f-b2ab-e4b4c6dc3db4"},"statisticTag":"","phvideo":{"channelName":"风视频","columnid":"543545","path":"27-95084-95093-","filesize":"2926","length":47,"previewlength":20,"preview":0,"currentPlay":0,"completePlay":"0","videoPlayUrl":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37537311-102-009-155125/index.m3u8?ifsign=1"}},{"type":"doc","id":"ucms_7rDNp9lSq9S","thumbnail":"https://d.ifengimg.com/w224_h150_q100_webp/x0.ifengimg.com/ucms/2020_42/C547173C0EE74CE88992F31B64BAE927870999D9_w696_h390.jpg.webp","title":"体内有癌，大便先知！大便若出现三个特征，请及时排查一下肠癌","source":"家庭医生在线","subscribe":{"cateid":1569310,"catename":"家庭医生在线","type":"vampire","description":"家庭医生在线官方账号 悟空问答战略合作伙伴","forbidFollow":"0","forbidJump":"0","originalName":"","cateSource":"","showDescription":"1"},"updateTime":"2019/10/31 10:08:06","documentId":"ucms_7rDNp9lSq9S","staticId":"ucms_7rDNp9lSq9S","style":{"view":"titleimg","backreason":["0_来源:家庭医生在线","c_健康","sc_疾病检查与预防","0_对内容不感兴趣"],"defaultreason":"0_不感兴趣"},"commentsUrl":"ucms_7rDNp9lSq9S","comments":"13","commentsall":"43","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_7rDNp9lSq9S&channelId=SYLB10NEW&category=%E5%81%A5%E5%BA%B7&imId=7rDNp9lSq9S&channelKey=&groupid=6689122576788099422","weburl":"https://ishare.ifeng.com/c/s/v004fL7wJvp3LyBXfcDGuFgUqu0zJNCfN--HTSE7MvKbJFAcCg9AyZxJXqknBVB--XXYRv?spss=np","openType":"1","staticId":"ucms_7rDNp9lSq9S"},"reftype":"ai||||insertRecom%23CommonPanCrowdDocInsert|6689122576788099422%7C%21%7CRecPath.short_intention%7C%21%7Cmain%7C%21%7C0.0%7C%21%7C0.0%7C%21%7C0.0%7C%21%7Cold%7C%21%7Cfalse%7C%21%7Cfalse%7C%21%7Cartificial%7C%21%7CcommonPanGroup|%E5%81%A5%E5%BA%B7-%E7%96%BE%E7%97%85%E6%A3%80%E6%9F%A5%E4%B8%8E%E9%A2%84%E9%98%B2%2C%E5%81%A5%E5%BA%B7-%E5%B8%B8%E8%A7%81%E8%82%BF%E7%98%A4%2C%E5%81%A5%E5%BA%B7-%E7%94%9F%E6%B4%BB%E5%B8%B8%E8%A7%81%E7%97%87%E7%8A%B6|","intro":"","simId":"clusterId_119787398","recomToken":"c8f80e219e4b42dd-566d0d49bb654d209e4d439908d71ddf","payload":"eyJkb2NpZCI6IjdyRE5wOWxTcTlTIn0=","statisticTag":""},{"type":"phvideo","id":"da06280c-b3e3-49d0-9e90-1f1332df5d16","thumbnail":"https://d.ifengimg.com/w560_h281_blur_q100_webp/x0.ifengimg.com/ucms/2020_42/A1ADEB4C7C908F523B8CAD7F080017747768A66E_w500_h281.jpg.webp","title":"解放军第九兵团战力有多强？除了入朝作战，它还有这些耀眼战绩","source":"凤凰大视野","subscribe":{"cateid":1551434,"catename":"凤凰大视野","type":"vampire","description":"凤凰卫视《凤凰大视野》栏目官方账号","forbidFollow":"0","forbidJump":"0","originalName":"","cateSource":"","showDescription":"1"},"updateTime":"2020/10/13 10:57:42","documentId":"da06280c-b3e3-49d0-9e90-1f1332df5d16","staticId":"video_da06280c-b3e3-49d0-9e90-1f1332df5d16","style":{"view":"bigimg","backreason":["0_来源:凤凰大视野","c_纪录片","sc_历史","0_对内容不感兴趣"],"defaultreason":"0_不感兴趣"},"commentsUrl":"da06280c-b3e3-49d0-9e90-1f1332df5d16","comments":"1","commentsall":"4","link":{"type":"videoimmersion","url":"da06280c-b3e3-49d0-9e90-1f1332df5d16","weburl":"https://ishare.ifeng.com/c/s/v004cR2chWRwK6X4YGD20LSk9DztY--G-_V35FiQUBUy76rZGdozkvXU00bToOdSdi--GbyyRBd01--Jmjl9Wwxwb7XIDA____?spss=np","openType":"2","vid":"da06280c-b3e3-49d0-9e90-1f1332df5d16","mp4":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/13/p37504514-102-009-133825/index.m3u8?ifsign=1","previewurl":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/13/p37504515-102-009-133825.mp4","staticId":"video_da06280c-b3e3-49d0-9e90-1f1332df5d16"},"reftype":"ai||||insertRecom%23CommonPanCrowdDocInsert|6689122576788099122%7C%21%7CRecPath.short_intention%7C%21%7Cmain%7C%21%7C0.0%7C%21%7C0.0%7C%21%7C0.0%7C%21%7Cold%7C%21%7Cfalse%7C%21%7Cfalse%7C%21%7Cartificial%7C%21%7CcommonPanGroup|%E7%BA%AA%E5%BD%95%E7%89%87-%E5%8E%86%E5%8F%B2|","intro":"","simId":"usim_80X3rAaqznE","recomToken":"c8f80e219e4b42dd-2355eb69574449d9fd5e0d67be375fb","payload":"eyJkb2NpZCI6IjgwWDNlRWZDWkllIn0=","statisticTag":"","phvideo":{"channelName":"凤凰大视野","columnid":"1551434","path":"27-95119-95121-","filesize":"12331","length":148,"previewlength":39,"preview":0,"currentPlay":0,"completePlay":"0","videoPlayUrl":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/13/p37504514-102-009-133825/index.m3u8?ifsign=1"}},{"type":"doc","id":"ucms_80Viq52LjIO","thumbnail":"https://d.ifengimg.com/w224_h150_q100_webp/x0.ifengimg.com/ucms/2020_42/5B61C58447BA96A91C5F27E0A8573C6E019B98F1_w698_h392.jpg.webp","title":"150亿没白花！中兴\u201c王者归来\u201d：芯片、操作系统实现重大突破","source":"安卓小王子","subscribe":{"cateid":1544227,"catename":"安卓小王子","type":"vampire","description":"深度刷机迷，你知道每个Android版本的彩蛋吗？","forbidFollow":"0","forbidJump":"0","originalName":"","cateSource":"","showDescription":"1"},"updateTime":"2020/10/12 15:31:34","documentId":"ucms_80Viq52LjIO","staticId":"ucms_80Viq52LjIO","style":{"view":"titleimg","backreason":["0_来源:安卓小王子","c_科技","et_王者归来","sc_科技公司动态","0_对内容不感兴趣"],"defaultreason":"0_不感兴趣"},"commentsUrl":"ucms_80Viq52LjIO","comments":"45","commentsall":"140","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80Viq52LjIO&channelId=SYLB10NEW&category=%E7%A7%91%E6%8A%80&imId=80Viq52LjIO&channelKey=&groupid=6689122576788099113","weburl":"https://ishare.ifeng.com/c/s/v0046Z8d7nMACjXVjHAXCqqIRdIrDjtQnj--tYEk9DkLo9XhD2CcDNi8cFJU2EEO6RMdO?spss=np","openType":"1","staticId":"ucms_80Viq52LjIO"},"reftype":"ai||||insertRecom%23CommonPanCrowdDocInsert|6689122576788099113%7C%21%7CRecPath.short_intention%7C%21%7Cmain%7C%21%7C0.0%7C%21%7C0.0%7C%21%7C0.0%7C%21%7Cold%7C%21%7Cfalse%7C%21%7Cfalse%7C%21%7Cartificial%7C%21%7CcommonPanGroup|%E7%A7%91%E6%8A%80-%E7%A7%91%E6%8A%80%E5%85%AC%E5%8F%B8%E5%8A%A8%E6%80%81|","intro":"","simId":"usim_80Viq5IFGa0","recomToken":"c8f80e219e4b42dd-39b37f2417944afbab809ac06fddae81","payload":"eyJkb2NpZCI6IjgwVmlxNTJMaklPIn0=","statisticTag":""},{"thumbnail":"http://imggen.alicdn.com/8d6deec67c12855e0e38b8f0555347a7.jpg?aid=tanx&tid=tailor&m=%7B%22img_url%22%3A%22http%3A%2F%2Fgma.alicdn.com%2Fbao%2Fuploaded%2FO1CN01KuJrLb1lRJbyfxVFp_%21%210-saturn_solar.jpg_230x230.jpg%22%2C%22title%22%3A%22%22%2C%22promot_name%22%3A%22%22%2C%22itemid%22%3A%22591003904006%22%7D&e=c4bebe9137bc21ab977127837ea240f28bda657a7265447432883fc5a07ea6c4&size=220x146","title":"witess 篮球 促销特惠","appSource":"","intro":"","adId":"iis_91_13928_0_1602752312882_yxocn6","adPositionId":"10000254","pid":"10000254","type":"advert","style":{"attribute":"广告·淘宝","backreason":["不感兴趣","虚假广告","看过了","档次太低"],"defaultreason":"0_不感兴趣","images":["http://imggen.alicdn.com/8d6deec67c12855e0e38b8f0555347a7.jpg?aid=tanx&tid=tailor&m=%7B%22img_url%22%3A%22http%3A%2F%2Fgma.alicdn.com%2Fbao%2Fuploaded%2FO1CN01KuJrLb1lRJbyfxVFp_%21%210-saturn_solar.jpg_230x230.jpg%22%2C%22title%22%3A%22%22%2C%22promot_name%22%3A%22%22%2C%22itemid%22%3A%22591003904006%22%7D&e=c4bebe9137bc21ab977127837ea240f28bda657a7265447432883fc5a07ea6c4&size=220x146","http://imggen.alicdn.com/0d3150f2e5c3d19fcfd720a287c9f034.jpg?aid=tanx&tid=tailor&m=%7B%22img_url%22%3A%22http%3A%2F%2Fgma.alicdn.com%2Fbao%2Fuploaded%2Fi4%2F2912764766%2FO1CN01GL1xgn1l4sCbZyRRo_%21%212912764766.jpg_230x230.jpg%22%2C%22title%22%3A%22%22%2C%22promot_name%22%3A%22%22%2C%22itemid%22%3A%22591003904006%22%7D&e=682da748d2744dcc9009a22796410833b338adbe0eb2c96eef9fdfd7cf02c14c&size=220x146","http://imggen.alicdn.com/b08c6675b8eef461612848940e5beb64.jpg?aid=tanx&tid=tailor&m=%7B%22img_url%22%3A%22http%3A%2F%2Fgma.alicdn.com%2Fbao%2Fuploaded%2Fi3%2F2912764766%2FO1CN01EYhNNF1l4sEguka7W_%21%212912764766.jpg_230x230.jpg%22%2C%22title%22%3A%22%22%2C%22promot_name%22%3A%22%22%2C%22itemid%22%3A%22591003904006%22%7D&e=ad37984766a12ed4a0e7bbfe769feb2aa52314ae3f651f2c04ae166c3ae57d38&size=220x146"],"view":"slideimg"},"icon":{"showIcon":1,"text":"广告·淘宝"},"source":"","link":{"type":"web","weburl":"https://ax.ifengo.com/jump?url=gkUyIEZPRm_iHYS1WLlwts5aH_YCFg-_Z5F1p17Z-WtA1BXVOXa40Q0JoUwh9j7V0WyCubncWm73MyAFNCKfvGCQtklIbZsIoC_bgUK9W1fmVHX1up7SQ1HP_XLS0NmPhGdBCr74d8vk_vaaMKapcryE3XovVJ559FgLyiOZGjmmvxa4aQ1R7WXNwZWvvDVICNB0DBm7EICK86SxhymMghLN9doRPPR2dZqPAlppuD8paiiaUWukh_TOAZaV4WPi-a8p0cqHexe4RQHK-UFljzSaYZpifYCIWbbMrH_0_o-r7aEKEPeztuyNH3t-L7ahecaJsGoXN_BGYFiQE4uoQ6maI5HShXb-L2yeZYNlVlxkdQMBcI61YdlEo1nMR_q5TV9xPZPSvc18edxDQ4XOlXHzmJpNcZTPP1MWlt0GL3GOfK0LbNA0REyCdJjoqPmEWUW9ghZQ92HBHnKbQTFyvQ20y-O-tAgtELIn1bJLIFP9KsGfg3Q9d1CNFGg73j_hbdaMoOMD2SLiy4s00TeSV9tVCAfUf7ec3C_asZsnSFQDIRahnNeOlVtfFezvvJqUdn0HnqEN4HTanttv_Fbt7aYYy7QuRqRkcuw2JCe2P7hFAAF6YFcGdUvoWWUJCSUT5Np5HM_EbFXBGMmOTw0XE5QyynAj802FWRt9FoV7gazNL5EYUbbN8S-UUUf0-5BkLe1C99MtTvP_xM3w1OiYQswOUVvL0IDw2r4T16Ihz5Q1mIS2X_B_6GhwXuthnYYKDnBZbwIt4hsOklmLG_AcBgBX-AIjJws3TP85GBqvjwsldOJux9xzcdgUlIxVpfnHw_DWzSAtDbofGIYGBHCcbKUmaohc0IQXnWBFgK5EB26XOgHUBvaqYugI7A8pCRnpWXfw6vBvuCNKOhRMJrICQtIwkp39-wjaMhtuKI6ALQ-NMqkhbHOmJxzUZfKSEVAWUPaG2hjScHqGT-06rEvQM7I-rBuiO6Iqs2bxsvIZ3tBCllFsUzsc9A8sSJj7KmHFZCDKpPriz-WZRsqmltD1NCsj5ev0mlHcUxAGckxUAkB-b8PQgLT1efSrbzuEE2x1KeBfJycmzYrqnnPbk702TMokv94baUxReMEjIhb_JWvCV5A2j0uo6gEKU1rJJB_1NWTwVknRCAic9VkRF5L2_OS00LuMkwyUSo2n3XnQ-ufv0oQQTld5ftqn5bQZhcjoDkWzpw-NGEymAXPsL_gry5gCsIOAs7qF157mScTcDFUsUJoittyBPhFLI1stWcLuJokT0vpDRD_M-gPfWfB95uUXoYP9zdhgzea57LHdZmLjdHk0TOehJxwb5IGTyDZf_WhtWGPGhyRb_xtEIJoXhCKINQwrSU5zwJ8whuYJZpU8J-u5lAbX_0MaVfRDKfijt5Y_nl8f0jDqC70kDzzlRkDuIRq8bqDxYFAFuIEPOw-XZzoQQJhkzAoE2XqryHh9O5-d4saN0p0VnhWB0ZmFi3NUkiZsj57X_L8NsQVKkzFayYu7Gn-sAFdt3-pz--BaTP5Rpn2keAvQzw7L-KzD7yn1N3ZRhkev2v52rdaEc1l5tsi8nKVtsCXB4NeH0MjWU54FE9hAAtuvz5HtaPN25umJ9ks8T8MJ0CPScfwzX-epjgDZRxz_DuS-aYV9sU5_46o3nz4-XI4_12OWtw2R1RpIofXhqAmtJt3zpxwFJisgQxV4AJDsCCCU9IOdZM8EIX5p8gBL0SfxE04omyLaMHtX8kU3TeNZ2BzkL_3aXZjdEFgUI4pVQpPd8TozMXW2K5dj0LdFJnPhmxi1-jMEM3nrtgIuDdoJDSEmx7J1eocE072RDZdVzIG2HR9Ma46LChBKw6n0BX-1sCT5BEUmGwYaCpbHjR4jJAIt7SRnjyD5kWOLAtHc9Ncsw_J29Jdv&bid=91&requestid=c731c85e8004dd8f3e15f4e0bc305857","url":"https://ax.ifengo.com/jump?url=gkUyIEZPRm_iHYS1WLlwts5aH_YCFg-_Z5F1p17Z-WtA1BXVOXa40Q0JoUwh9j7V0WyCubncWm73MyAFNCKfvGCQtklIbZsIoC_bgUK9W1fmVHX1up7SQ1HP_XLS0NmPhGdBCr74d8vk_vaaMKapcryE3XovVJ559FgLyiOZGjmmvxa4aQ1R7WXNwZWvvDVICNB0DBm7EICK86SxhymMghLN9doRPPR2dZqPAlppuD8paiiaUWukh_TOAZaV4WPi-a8p0cqHexe4RQHK-UFljzSaYZpifYCIWbbMrH_0_o-r7aEKEPeztuyNH3t-L7ahecaJsGoXN_BGYFiQE4uoQ6maI5HShXb-L2yeZYNlVlxkdQMBcI61YdlEo1nMR_q5TV9xPZPSvc18edxDQ4XOlXHzmJpNcZTPP1MWlt0GL3GOfK0LbNA0REyCdJjoqPmEWUW9ghZQ92HBHnKbQTFyvQ20y-O-tAgtELIn1bJLIFP9KsGfg3Q9d1CNFGg73j_hbdaMoOMD2SLiy4s00TeSV9tVCAfUf7ec3C_asZsnSFQDIRahnNeOlVtfFezvvJqUdn0HnqEN4HTanttv_Fbt7aYYy7QuRqRkcuw2JCe2P7hFAAF6YFcGdUvoWWUJCSUT5Np5HM_EbFXBGMmOTw0XE5QyynAj802FWRt9FoV7gazNL5EYUbbN8S-UUUf0-5BkLe1C99MtTvP_xM3w1OiYQswOUVvL0IDw2r4T16Ihz5Q1mIS2X_B_6GhwXuthnYYKDnBZbwIt4hsOklmLG_AcBgBX-AIjJws3TP85GBqvjwsldOJux9xzcdgUlIxVpfnHw_DWzSAtDbofGIYGBHCcbKUmaohc0IQXnWBFgK5EB26XOgHUBvaqYugI7A8pCRnpWXfw6vBvuCNKOhRMJrICQtIwkp39-wjaMhtuKI6ALQ-NMqkhbHOmJxzUZfKSEVAWUPaG2hjScHqGT-06rEvQM7I-rBuiO6Iqs2bxsvIZ3tBCllFsUzsc9A8sSJj7KmHFZCDKpPriz-WZRsqmltD1NCsj5ev0mlHcUxAGckxUAkB-b8PQgLT1efSrbzuEE2x1KeBfJycmzYrqnnPbk702TMokv94baUxReMEjIhb_JWvCV5A2j0uo6gEKU1rJJB_1NWTwVknRCAic9VkRF5L2_OS00LuMkwyUSo2n3XnQ-ufv0oQQTld5ftqn5bQZhcjoDkWzpw-NGEymAXPsL_gry5gCsIOAs7qF157mScTcDFUsUJoittyBPhFLI1stWcLuJokT0vpDRD_M-gPfWfB95uUXoYP9zdhgzea57LHdZmLjdHk0TOehJxwb5IGTyDZf_WhtWGPGhyRb_xtEIJoXhCKINQwrSU5zwJ8whuYJZpU8J-u5lAbX_0MaVfRDKfijt5Y_nl8f0jDqC70kDzzlRkDuIRq8bqDxYFAFuIEPOw-XZzoQQJhkzAoE2XqryHh9O5-d4saN0p0VnhWB0ZmFi3NUkiZsj57X_L8NsQVKkzFayYu7Gn-sAFdt3-pz--BaTP5Rpn2keAvQzw7L-KzD7yn1N3ZRhkev2v52rdaEc1l5tsi8nKVtsCXB4NeH0MjWU54FE9hAAtuvz5HtaPN25umJ9ks8T8MJ0CPScfwzX-epjgDZRxz_DuS-aYV9sU5_46o3nz4-XI4_12OWtw2R1RpIofXhqAmtJt3zpxwFJisgQxV4AJDsCCCU9IOdZM8EIX5p8gBL0SfxE04omyLaMHtX8kU3TeNZ2BzkL_3aXZjdEFgUI4pVQpPd8TozMXW2K5dj0LdFJnPhmxi1-jMEM3nrtgIuDdoJDSEmx7J1eocE072RDZdVzIG2HR9Ma46LChBKw6n0BX-1sCT5BEUmGwYaCpbHjR4jJAIt7SRnjyD5kWOLAtHc9Ncsw_J29Jdv&bid=91&requestid=c731c85e8004dd8f3e15f4e0bc305857","pvurl":["http://df.tanx.com/spf3?e=K4ZywnfhENYUB_Z1bLG4GmV-DPnKD9qr67HJneSElmdML-rNBuV2UDAi1R_ToPTJ0N30MTqBTzCBm5CPkxnf51CIdSwfwEuhEwYnVlwM0CylaEuQTURsAjh6Uq6b7T8wP25uxzZsGrVXXrqEOSZWEx5DDqINfxqgwCjdlRTcZasXcfaRXayXvYkMjHAzNt5cTaRyOcFopFIW-ApmGTlkGlgWAps9LxnS&k=225&i=mm_12229823_1573806_67420193","http://dsp.simba.taobao.com/feedback?bid=0bb8928500000a4e5f880f38000083a0&v=1&e=6&p=AQu4koUAAApOX4gPOAAAg6CsjaR2bKjPjQ%3d%3d&s=80220627941105250&pid=mm_12229823_1573806_67420193&nk=ARad5f5waCK9G3bc4bUwr96i8dL5fmVUwelCFw%3D%3D&aid=80220627941105250&dd=AQ8XdHZlD48zriM00snwKdqMona0&bi=2020&ci=%%CREATIVE_ID%%&atsp=1602752312765566%01113.65.209.51%01Mozilla%2F5.0+%28Linux%3B+Android+9%3B+V1932A+Build%2FPKQ1.181030.001%3B+wv%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Version%2F4.0+Chrome%2F68.0.3440.91+Mobile+Safari%2F537.36%01%019%01%01%01%01%01AQ8XdHZlD48zriM00snwKdqMona0%01%01%01%01%01%011080x2310%01%01%E5%87%A4%E5%87%B0%E6%96%B0%E9%97%BB%E5%AE%A2%E6%88%B7%E7%AB%AF%01%011%01%01%01%01&crtid=1706258232&pdt=__PRODT__&spdt=__SPRODT__&req_id=__REQID__","https://iis1.deliver.ifeng.com/i?p=Ig1g2GIOddKwJKLKr9ElLUhD_qnABa75YKl9-LV3-Or0GuYk8tcY2QcoiDh4mThZxvX3YxYOEN6vCHL0eygclUbsxAoz-zT8w3FnE8Pt5FNrt652bMb5a7I5MheM5KP85Hu1OwtIgp1kP4OcHN2i1eOB7Z-nWkoUuBSOFaxOlO5Oau_ie9I9qT_xvgTlAgHrkgelWv4dbbjEBOCzhNkLFqJYnt-9bnN2O__LjytY-aHninnsBkvriAYNUj8XOX6sGYw0f_GOoDm1jyqaeVSB9Hv431_r7NnL6eHfUsQV2kY"],"async_click":["https://iis1.deliver.ifeng.com/c?p=eq21txn4qSORQv4fm855oeJojV9p_Oe9B9PpohmD4zIw7c1Pe2as11iMJpGqcnFA8lfHmkO5QLcbVvMQhtf7CSwxaPP430bEmk_QMsNwRov28Dr2TZAOSUHuCapgrTe2d7FHiYDYwHjdGpx8vR_DnYo5Ms7zVmvtJmUFS-Fsr9QxkNXH5O1eRpe_b3EajA-dyjdQShvgFG4atrPS9WTV51Ah4DDSLGRSiOZfDaa7A4li-Zh0VD-tHKmnjZ-fRlDO","http://rdstat.tanx.com/trd?f=http%3A%2F%2Fdetail.tmall.com%2Fitem.htm&k=57441f6aad744d34&p=mm_12229823_1573806_67420193&pvid=0bb8928500000a4e5f880f38000083a0&s=226x156&d=118678427&bkts=0.7357884&clst=na61&t=1602752312"],"pagemonitor_open":"https://ua.deliver.ifeng.com/monitor/cm.gif?adid=13928&type=o&reqid=c731c85e8004dd8f3e15f4e0bc305857","pagemonitor_close":"https://ua.deliver.ifeng.com/monitor/cm.gif?adid=13928&type=c&reqid=c731c85e8004dd8f3e15f4e0bc305857","dpl_url":"tbopen://m.taobao.com/tbopen/index.html?action=ali.open.nav&module=h5&source=alimama&bootImage=0&appkey=24558693&backURL=&packageName=com.ifeng.news2&visa=068d59511f8dfa0c&bc_fl_src=tanx_k2_67420193_0bb8928500000a4e5f880f38000083a0&h5Url=http%3A%2F%2Fsrd.simba.taobao.com%2Ferd%3Fw%3Dmobileitemjump%26f%3DrR8C55x9bsuWfOgx3b07icatRqqBIgHrRkBs4kqVFwKZyNKo1elpk73V39vrLFNAg3zZ%252BXZ%252BRWcSXkE9tdXy0xM7n%252FTGgDIqALHkFlnFcQKubQ6PCjRVKywtCYgXGjjUMMhstKEVKDK2vsN%252BYMV3HTRrx4CLwsUnhdpSvMd4z%252Fn7OyG3Y23hY%252BVoBo%252BmsBlhZXQmYkKXr7WGHv5jfjws%252BT%252BYxoRlnBLfG%252Fl4CILvfSb2bpbItME77csVi63GghAX2WsdIHW0fAxkXQGDuJwWD6WCVrmwuvp081Vo%252F1N%252F%252FKh6IN3LdZCTZaKwLPzw%252FF7QyPKsbcEZWSoaQzuXoq4H2WX%252B91JZrl1y9vP3QmuszRZhG2gA5dNx7H%252BE0AB3PJhyBO05sY74I2lFyaHbQQgwTjb2lFIu4H67IRMZg4F499lGUGTQ9qgsybzPZSpwiqh1%252Ft65bd1JQYt%252BbQfG6tGDed%252FUtfmbfk5VCwmCjzl6MwuDRVcvIGYcgAGqyBB7vozfdbdbL4mwAmSk0SJSXbDag0iioXf%252Bi%252FrzzBzfkaN058IQmqvKikzDJk6iInw6laV5XrN9Oo7p3cdA0sD4FRc0giALdjxZk2wpaJpJYqBrUWhLwR5XZkWBbPoR6Fp7JuZAV5KRJnor%252BUdkJMdUFoIKb6Q5pzzBiM2LKeP3zh0Yp%252Br%252Bg%252B2JoMZQlccwD%252Fv0EuQtJgleSR81v%252BdoW0MV5HWXlvEy2aXdhdACxjDT%252BlOJNcjoAdVSxc%252B84RQEsN5G5CIQNBAV2svZprilADD3mZFl9p7SYj9Jpz8zQ%252FDjBsp81sDN6AnNVpIpGFaF1gOmuvfmpH%252FeNoBwBOYGkhDRfCpR%252FVQfiFREhs8VzMsKKAMmcsQ1VORrUEMDxKkyYBr3Mg253HYM3hi4XuXTXN7BhUdV729DdPHjHkBWm0tiftWWp5tNZnTCQFNfL1HUwzRgkCW25AQh%252FyDP5G6ZfaIV%252B8SMwZOOS0LgqAuWDTUspzbP%252Fkff5kf76Cw%252BmXZJ%252FHwHv69F7356lW3btfe696cPPbgkXvGkJneNZP7zlstOJhr3vhCQri3GUPXuPczPz04DRVBFDO6DFZwY1I5xfpKgGrW3kw%253D%253D%26k%3D29c8da81eb74c040%26pvid%3D0bb8928500000a4e5f880f38000083a0%26p%3Dtt_12229823_1573806_67420193%26es%3D704114169%26l%3D1112%26a%3Dtoken%253D1.1_G2NmVfr0o_p3C7CxJ1IX0mXgYAJ8fBbF08DTPofEmXI%253D%2526tesla_id%253D7438362"}},{"type":"slide","id":"ucms_80YebNfowe8","thumbnail":"https://d.ifengimg.com/w224_h150_q100_webp/x0.ifengimg.com/ucms/2020_42/D082B8274D58AE12FC31284FB6AA089095433A0A_w690_h1035.jpg.webp","title":"阚清子黑色深V长裙美出新高度","source":"凤凰网时尚","subscribe":{"cateid":"凤凰网时尚","type":"source","catename":"凤凰网时尚","description":"","forbidFollow":"1","forbidJump":"1","originalName":"","cateSource":"","showDescription":"0"},"updateTime":"2020/10/14 10:02:55","documentId":"ucms_80YebNfowe8","staticId":"ucms_80YebNfowe8","style":{"view":"titleimg","backreason":["0_来源:凤凰网时尚","c_时尚","0_对内容不感兴趣"],"defaultreason":"0_不感兴趣","slideCount":5},"commentsUrl":"ucms_80YebNfowe8","comments":"216","commentsall":"351","link":{"type":"slide","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80YebNfowe8&category=%E6%97%B6%E5%B0%9A&imId=80YebNfowe8","weburl":"https://ishare.ifeng.com/c/s/v004ScUt7XaDcqubj--QQu90p8chqLQepBH2ibeL1---_4t9kzR4qx-_p4KpywJz8VZexS1d?spss=np","staticId":"ucms_80YebNfowe8"},"reftype":"ai||||jpPool%23basicEs%23+%230.57%23+%23perfectOld||%E6%97%B6%E5%B0%9A-%E6%98%8E%E6%98%9F%E4%BA%BA%E7%89%A9|","intro":"","hasSlide":true,"simId":"usim_80Yel90GfoW","recomToken":"c8f80e219e4b42dd-3329543db9a44641b6be433e692f6b73","payload":"eyJkb2NpZCI6IjgwWWViTmZvd2U4In0=","statisticTag":""},{"type":"doc","id":"ucms_80aLMzXkubg","thumbnail":"https://d.ifengimg.com/w224_h150_q100_webp/x0.ifengimg.com/ucms/2020_42/7984D3F8CBE4AC3D9233606120CA8B4597A5E9C4_w698_h392.jpg.webp","title":"\u201c勿谓言之不预\u201d，中国什么时候才说这句话？","source":"东风观察","subscribe":{"cateid":1544215,"catename":"东风观察","type":"vampire","description":"使命必达，指哪打哪！","forbidFollow":"0","forbidJump":"0","originalName":"","cateSource":"","showDescription":"1"},"updateTime":"2020/10/15 10:21:10","documentId":"ucms_80aLMzXkubg","staticId":"ucms_80aLMzXkubg","style":{"view":"titleimg","backreason":["0_来源:东风观察","c_历史","et_勿谓言之不预","sc_中共民国事件","0_对内容不感兴趣"],"defaultreason":"0_不感兴趣"},"commentsUrl":"ucms_80aLMzXkubg","comments":"12","commentsall":"48","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80aLMzXkubg&channelId=SYLB10NEW&category=%E5%8E%86%E5%8F%B2&imId=80aLMzXkubg&channelKey=&groupid=6689122576788099114","weburl":"https://ishare.ifeng.com/c/s/v004u07dmfMvktGO6LfFSUujX9W60gxczlwn9u9cWbYxRYy5wb9P4IMpec0P4UfGtJ7u?spss=np","openType":"1","staticId":"ucms_80aLMzXkubg"},"reftype":"ai||||insertRecom%23CommonPanCrowdDocInsert|6689122576788099114%7C%21%7CRecPath.short_intention%7C%21%7Cmain%7C%21%7C0.0%7C%21%7C0.0%7C%21%7C0.0%7C%21%7Cold%7C%21%7Cfalse%7C%21%7Cfalse%7C%21%7Cartificial%7C%21%7CcommonPanGroup|%E5%8E%86%E5%8F%B2-%E4%B8%AD%E5%85%B1%E6%B0%91%E5%9B%BD%E4%BA%8B%E4%BB%B6|","intro":"","simId":"usim_80aLMzlNdmi","recomToken":"c8f80e219e4b42dd-feb7562ad569469c8c5df11755335e1f","payload":"eyJkb2NpZCI6IjgwYUxNelhrdWJnIn0=","statisticTag":""},{"type":"doc","id":"ucms_7ykIln1z4HA","thumbnail":"https://d.ifengimg.com/w224_h150_q100_webp/x0.ifengimg.com/ucms/2020_32/17F8DB8D3994A1924EA7A2043E2179E0FA74C2EE_w640_h359.jpg.webp","title":"地铁上最有气质的老奶奶！全白头发、粉色包包，优雅到极致","source":"时尚焦点社","subscribe":{"cateid":1544267,"catename":"时尚焦点社","type":"vampire","description":"T台？大秀？品牌典礼？社长带你加入时尚最前沿。","forbidFollow":"0","forbidJump":"0","originalName":"","cateSource":"","showDescription":"1"},"updateTime":"2020/08/07 17:17:44","documentId":"ucms_7ykIln1z4HA","staticId":"ucms_7ykIln1z4HA","style":{"view":"titleimg","backreason":["0_来源:时尚焦点社","c_社会","sc_社会万象","0_对内容不感兴趣"],"defaultreason":"0_不感兴趣"},"commentsUrl":"ucms_7ykIln1z4HA","comments":"236","commentsall":"1046","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_7ykIln1z4HA&channelId=SYLB10NEW&category=%E7%A4%BE%E4%BC%9A&imId=7ykIln1z4HA&channelKey=&groupid=6689122576788099158","weburl":"https://ishare.ifeng.com/c/s/v004VBJAQ8UCa0osIKgkfGUnVuPM4MqJEIo5r--FjtbHEwfmwgzWTDz0LJsnvPXztyPsa?spss=np","openType":"1","staticId":"ucms_7ykIln1z4HA"},"reftype":"ai||||insertRecom%23CommonPanCrowdDocInsert|6689122576788099158%7C%21%7CRecPath.short_intention%7C%21%7Cmain%7C%21%7C0.0%7C%21%7C0.0%7C%21%7C0.0%7C%21%7Cold%7C%21%7Cfalse%7C%21%7Cfalse%7C%21%7Cartificial%7C%21%7CcommonPanGroup|%E7%A4%BE%E4%BC%9A-%E7%A4%BE%E4%BC%9A%E4%B8%87%E8%B1%A1|","intro":"","simId":"usim_7ykIlmGrcYK","recomToken":"c8f80e219e4b42dd-7fa5fd47ed1843f89f46aed2af8c2dd4","payload":"eyJkb2NpZCI6Ijd5a0lsbjF6NEhBIn0=","statisticTag":""},{"type":"doc","id":"ucms_80A2jcOR0SG","thumbnail":"https://d.ifengimg.com/w224_h150_q100_webp/x0.ifengimg.com/ucms/2020_40/343B3031131862C91CDCD41CFA0646B7ED9DE3EB_w580_h325.jpg.webp","title":"在美国泛滥成灾的蛇头鱼，已悄然进入我国，这回它的命运将如何？","source":"垂钓达人","subscribe":{"cateid":1586246,"catename":"垂钓达人","type":"vampire","description":"渔具、鱼饵、钓法、垂钓水域、对象鱼等百科内容，以及垂钓视频","forbidFollow":"0","forbidJump":"0","originalName":"","cateSource":"","showDescription":"1"},"updateTime":"2020/09/29 14:02:39","documentId":"ucms_80A2jcOR0SG","staticId":"ucms_80A2jcOR0SG","style":{"view":"slideimg","backreason":["0_来源:垂钓达人","c_科学探索","sc_动物植物","0_对内容不感兴趣"],"defaultreason":"0_不感兴趣","images":["https://d.ifengimg.com/w224_h150_q100_webp/x0.ifengimg.com/ucms/2020_40/343B3031131862C91CDCD41CFA0646B7ED9DE3EB_w580_h325.jpg.webp","https://d.ifengimg.com/w224_h150_q100_webp/x0.ifengimg.com/ucms/2020_40/966B39CDB5E0CCE25F355D924C8E0FA3C8B4E6E5_w580_h325.jpg.webp","https://d.ifengimg.com/w224_h150_q100_webp/x0.ifengimg.com/ucms/2020_40/3649FDBD7CB13F131A3926C38117E13347FE2F32_w619_h348.jpg.webp"],"type":"slides"},"commentsUrl":"ucms_80A2jcOR0SG","comments":"305","commentsall":"794","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80A2jcOR0SG&channelId=SYLB10NEW&category=%E7%A7%91%E5%AD%A6%E6%8E%A2%E7%B4%A2&imId=80A2jcOR0SG&channelKey=&groupid=6689122576788099291","weburl":"https://ishare.ifeng.com/c/s/v004dFJk9NorVJAgeaeefmess-_xc9rlKYj04F33McA2N8WnU--1OxOYcEoTVSJfPiqW4X?spss=np","openType":"1","staticId":"ucms_80A2jcOR0SG"},"reftype":"ai||||insertRecom%23CommonPanCrowdDocInsert|6689122576788099291%7C%21%7CRecPath.short_intention%7C%21%7Cmain%7C%21%7C0.0%7C%21%7C0.0%7C%21%7C0.0%7C%21%7Cold%7C%21%7Cfalse%7C%21%7Cfalse%7C%21%7Cartificial%7C%21%7CcommonPanGroup|%E7%A7%91%E5%AD%A6%E6%8E%A2%E7%B4%A2-%E5%8A%A8%E7%89%A9%E6%A4%8D%E7%89%A9|","intro":"","simId":"usim_80A2jcdlMXo","recomToken":"c8f80e219e4b42dd-ef91644d708944498c9856383556257f","payload":"eyJkb2NpZCI6IjgwQTJqY09SMFNHIn0=","statisticTag":""},{"type":"doc","id":"ucms_80YQcCozvCP","thumbnail":"https://d.ifengimg.com/w224_h150_q100_webp/x0.ifengimg.com/ucms/2020_42/3FECEB4CCEE239C6E0C709E4AF74033C04A4887A_w230_h152.jpg.webp","title":"这条路向东延伸至广州南站，力争今年年底通车","source":"广州日报","subscribe":{"cateid":"广州日报","type":"source","catename":"广州日报","description":"","forbidFollow":"1","forbidJump":"1","originalName":"","cateSource":"","showDescription":"0"},"updateTime":"2020/10/14 07:53:52","documentId":"ucms_80YQcCozvCP","staticId":"ucms_80YQcCozvCP","style":{"view":"titleimg","recomTag":{"fontColor":"#FF3091F5","fontNightColor":"#FF2A7FD3","icon":"https://x0.ifengimg.com/ucms/2020_16/C8D0D24D378F1D02230A6A303DC557D3D469B8CD_w42_h42.png","iconNight":"https://x0.ifengimg.com/ucms/2020_16/EF8989DAD364AA67F03A330FD0AC32C64F11A05E_w42_h42.png","text":"广州"},"backreason":["0_来源:广州日报","c_房产","sc_房地产城建","0_对内容不感兴趣"],"defaultreason":"0_不感兴趣"},"commentsUrl":"ucms_80YQcCozvCP","comments":"1","commentsall":"1","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80YQcCozvCP&channelId=SYLB10NEW&category=%E6%88%BF%E4%BA%A7&imId=80YQcCozvCP&channelKey=","weburl":"https://ishare.ifeng.com/c/s/v004j1DTMHE8FAyxorWlifO9jRkf23tB4w8c1YwwYfdfTXMZlSB1qNyu3AQYGl-_VxK--l?spss=np","openType":"1","staticId":"ucms_80YQcCozvCP"},"reftype":"ai||||insertRecom%23CommonLocalContent|%E5%B9%BF%E5%B7%9E%E5%B8%82|%E6%88%BF%E4%BA%A7-%E6%88%BF%E5%9C%B0%E4%BA%A7%E5%9F%8E%E5%BB%BA|","intro":"","simId":"usim_80YVwtSPVpI","recomToken":"c8f80e219e4b42dd-b712b8daf1d04ca5babc96f15afdf067","payload":"eyJkb2NpZCI6IjgwWVFjQ296dkNQIn0=","statisticTag":""}]
+     * downHideFocusNav : 1
+     * downHideNews : 1
+     * downAdData : {"type":"advert","pid":"10000210","adError":1,"errorText":"no  addata"}
+     * iconDownParticle : {"type":"advert","pid":"10028883","adError":1,"errorText":"no  addata"}
      */
 
-    private String status;
-    private int code;
-    private int disable_op;
-    private int fresh_count;
-    private int offset;
-    private String refresh_status;
-    private String search_hint;
-    private String bookcount;
-    private String channel_id;
-    private String fromId;
-    private String channel_name;
-    private String channel_type;
-    private String channel_summary;
-    private String channel_image;
-    private boolean channel_unshared;
-    private List<ResultBean> result;
-    private List<TraceInfoBean> trace_info;
+    private String listId;
+    private String type;
+    private int expiredTime;
+    private String ch;
+    private int syRetainOldNew;
+    private String downHideFocusNav;
+    private String downHideNews;
+    private DownAdDataBean downAdData;
+    private IconDownParticleBean iconDownParticle;
+    private List<ItemBean> item;
 
-    public String getStatus() {
-        return status;
+    public String getListId() {
+        return listId;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setListId(String listId) {
+        this.listId = listId;
     }
 
-    public int getCode() {
-        return code;
+    public String getType() {
+        return type;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public int getDisable_op() {
-        return disable_op;
+    public int getExpiredTime() {
+        return expiredTime;
     }
 
-    public void setDisable_op(int disable_op) {
-        this.disable_op = disable_op;
+    public void setExpiredTime(int expiredTime) {
+        this.expiredTime = expiredTime;
     }
 
-    public int getFresh_count() {
-        return fresh_count;
+    public String getCh() {
+        return ch;
     }
 
-    public void setFresh_count(int fresh_count) {
-        this.fresh_count = fresh_count;
+    public void setCh(String ch) {
+        this.ch = ch;
     }
 
-    public int getOffset() {
-        return offset;
+    public int getSyRetainOldNew() {
+        return syRetainOldNew;
     }
 
-    public void setOffset(int offset) {
-        this.offset = offset;
+    public void setSyRetainOldNew(int syRetainOldNew) {
+        this.syRetainOldNew = syRetainOldNew;
     }
 
-    public String getRefresh_status() {
-        return refresh_status;
+    public String getDownHideFocusNav() {
+        return downHideFocusNav;
     }
 
-    public void setRefresh_status(String refresh_status) {
-        this.refresh_status = refresh_status;
+    public void setDownHideFocusNav(String downHideFocusNav) {
+        this.downHideFocusNav = downHideFocusNav;
     }
 
-    public String getSearch_hint() {
-        return search_hint;
+    public String getDownHideNews() {
+        return downHideNews;
     }
 
-    public void setSearch_hint(String search_hint) {
-        this.search_hint = search_hint;
+    public void setDownHideNews(String downHideNews) {
+        this.downHideNews = downHideNews;
     }
 
-    public String getBookcount() {
-        return bookcount;
+    public DownAdDataBean getDownAdData() {
+        return downAdData;
     }
 
-    public void setBookcount(String bookcount) {
-        this.bookcount = bookcount;
+    public void setDownAdData(DownAdDataBean downAdData) {
+        this.downAdData = downAdData;
     }
 
-    public String getChannel_id() {
-        return channel_id;
+    public IconDownParticleBean getIconDownParticle() {
+        return iconDownParticle;
     }
 
-    public void setChannel_id(String channel_id) {
-        this.channel_id = channel_id;
+    public void setIconDownParticle(IconDownParticleBean iconDownParticle) {
+        this.iconDownParticle = iconDownParticle;
     }
 
-    public String getFromId() {
-        return fromId;
+    public List<ItemBean> getItem() {
+        return item;
     }
 
-    public void setFromId(String fromId) {
-        this.fromId = fromId;
+    public void setItem(List<ItemBean> item) {
+        this.item = item;
     }
 
-    public String getChannel_name() {
-        return channel_name;
-    }
-
-    public void setChannel_name(String channel_name) {
-        this.channel_name = channel_name;
-    }
-
-    public String getChannel_type() {
-        return channel_type;
-    }
-
-    public void setChannel_type(String channel_type) {
-        this.channel_type = channel_type;
-    }
-
-    public String getChannel_summary() {
-        return channel_summary;
-    }
-
-    public void setChannel_summary(String channel_summary) {
-        this.channel_summary = channel_summary;
-    }
-
-    public String getChannel_image() {
-        return channel_image;
-    }
-
-    public void setChannel_image(String channel_image) {
-        this.channel_image = channel_image;
-    }
-
-    public boolean isChannel_unshared() {
-        return channel_unshared;
-    }
-
-    public void setChannel_unshared(boolean channel_unshared) {
-        this.channel_unshared = channel_unshared;
-    }
-
-    public List<ResultBean> getResult() {
-        return result;
-    }
-
-    public void setResult(List<ResultBean> result) {
-        this.result = result;
-    }
-
-    public List<TraceInfoBean> getTrace_info() {
-        return trace_info;
-    }
-
-    public void setTrace_info(List<TraceInfoBean> trace_info) {
-        this.trace_info = trace_info;
-    }
-
-    public static class ResultBean {
+    public static class DownAdDataBean {
         /**
-         * extra : []
-         * title : 社交网络“去中心化”消亡史
-         * meta : 183725222_1602560340059_236
-         * docid : 0RK1Flww
-         * ctype : news
-         * dtype : 1
-         * impid : 183725222_1602560340059_236
-         * pageid : CF_c4
-         * itemid : 0RK1Flww
-         * display_flag : 0
-         * feedback_forbidden : false
-         * wemedia_id : 110526
-         * tags : []
-         * category : 科技
-         * security : 2
-         * detail : {"fid":"c4","federation_mash_type":"relevant","dedup_type":"channel","document_item_mash_type":"relevant","dedupValid":"true","batch":"0","mashtype":"ch-rel","trans_info":{"fid":"c4","mashtype":"ch-rel","point":"c4","dedupValid":"true","federation_mash_type":"relevant","document_item_mash_type":"relevant","dedup_level":"2","dedup_type":"channel","batch":"0"},"point":"c4","dedup_level":"2"}
-         * is_local_doc : false
-         * ddate : 2020-10-13 11:33:32
-         * dislike_reasons : ["IT","社交网络","Twitter","品读科技"]
-         * dislike_fromids : ["sc18","sc46","t1676","t24635"]
-         * date : 2020-10-13 11:33:32
-         * dsource : 钛媒体
-         * summary : 在美国大选前夕，各家社交网络都针对在平台上出现的仇恨言论、假新闻等问题进行了相关整治。当然，整治的方法不只是删帖封号这么“简单粗暴”，其中推特（Twitter）所做的“绣花功夫”尤为值得一提。
-         * image_attribut_update : true
-         * image_urls : ["0RK1Fl6tsF"]
-         * source : 钛媒体
-         * author_dtype : yidianhao
-         * url : http://www.tmtpost.com/4790500.html
-         * i_alliance_scope : 5512202
-         * image : 0RK1Fl6tsF
-         * upload_images_v : []
-         * comment_count : 5
-         * auth : true
-         * is_gov : false
-         * content_type : news
-         * b_political : false
-         * enable_top : true
-         * is_like : false
-         * is_up : false
-         * is_down : false
-         * is_top : false
-         * wemedia_info : {"image":"http://si1.go2yd.com/get-image/0IUGMBY3wg4","name":"钛媒体","channel_id":"m110526","summary":"中国最大也最具影响力的财经科技信息服务提供商，集\u201c媒体、数据和生活方式\u201d三大板块于一身，旨在引领未来商业与生活新知。","media_domain":"科技","source_type":2,"plus_v":2,"postcount":0,"authentication":"钛媒体官方一点号 品创计划作者","sunnyplan_mark":0,"sunnyplan_snnum":"","copy_right_mark":0,"sunnyplan_certlevel":"","is_changfeng":0,"account_click":0,"is_puppet":0,"userid":211887075,"rank":6,"fromId":"m110526","type":"media"}
-         * mtype : 0
-         * upload_images : ["0RKG5wZsua"]
-         * scope : 16777216
-         * removed : false
-         * adsfrom : lingxi
-         * videoUrl :
-         * video_type : -1
-         * eid : 2008951947
-         * tid :
-         * actionUrl :
-         * actionIcon : list_download_small.png
-         * actionName : 立即下载
-         * actionDesc :
-         * pn :
-         * template : 3
-         * ex : t4rxBArA85Ogx9RWs2mIKyRgq6axaycHkFlhLmtvsxQaoH6SAi6gAolxd5MR290c5KVWEW0USEQcV3cJn4L_RCoCX8IPGCBaCM-jObgYDccYHJTrd5sPp1tY5FU8gWe6as66U-PN7WKzkwBT-_GgXrTKyU33GzyWDvTRpDwFFk71VguyHnedt9d91aQGc4f0N_TR-U-KHwMftbOJ6XBpHvqeKwHzRnak8mXdSzvs1eatdlZwhIbc7NGaQdSH2yR-fwJ1_aXEtwbXeZhRYAiqil5vhsRK9S-kd_QYbZwESjp4lhhs_ysSkhmIDAVD0DE1zSlZ1ZPj1VvZpiMczMUKlpRrtO9FFgtpr7sHJB3C_4iWppvl7d4uxXj5UUZkkoivgxlp9HwTIb2BYwCvoKxfUf-XQr4wk6br97xJSfNZitL1VguyHnedt_7NBluRr1zdpbBxwO1kQh6L1m10VWiqE8XBHHmU-OSWnpVcYtm3SyaeUG3b2FWFpy9dELQ-dLkmGByU63ebD6ehol6AdpHCVi0_xjK_8OSMxR8Uu0GsuT7yOuX0dy2tu3C7fgIC6nK4L5W_ET1PiQiCWW8c7CO-SC8U34bkc8AjHxCu25Z9t6OSJLx4SNKVQO7cb3P3KcKgTX50y_mStIbZU_gPT-0M2_48j9NdTEICENgAvjBaC4F8LpPIvC502bQYtoukCLEz4073W-Em8Mn3QX9Kbo3r3g_dB8L3WzbUX2qc87is7MeQxoAgZd-ua78WEpxbYeUbOs3BRC1wE9lKryHqS78NbE2umTs50Hd58eBtQrNDAq389_cy8My_jnuDT7JykHft4Md7p3pUATux02pXK88pwc-EvE36ckcsbHHsZ-urgrxY2vUYBUakwd_6FjbmBj6YJjXEM9LJQ00xwLzauJDnXcGk8h2sKPhCF57uQB88AoFuMqP0JCqwU_z-wGb9nii-TXR46wHKVjrNOudMqv5WPkd5fIkoJRCAxkjeBthSpG7pfRXHvNCOHdtqI1ddEy-b04FjRsDGlRQ-OSdEY4vBBWzJ35kPgi1EWZau1ALUzkfcvbD-BQt0ipVThBRRBNL6pY_pN-1tv6ljp67ZH9ws5x8Mpiyx8TEMx_yAg1qCB3qOBJxmCHx68l5vhsRK9S-kd_QYbZwESjoPR0gwGsXUxULR_RqNVn9FKrUm6ZG_PDO9XZS5lEgckkZRG_kPpRziKj_40KH4OR7fXbvjvtTQo8_3gCdJywhua3l61zURytgFT42ne8D-bkU56WD2jRUKbxrvFzt__OZDHfOJ7o2BYpSYJOBUVnomgZdYivgu4lgLwGIcNc5pmxQf_d3jyZMKI99C79BY6mjJKxm_1bboAK-B13xd02_IeY8dLxfXDVBVS2V8CtZDLzs59rzn8bcqXfFfwvh0zbfwg19QHQos1awy7A0_pyRL7FpA42P6koX0eUoaQMYiYb8rxNxEOaT1yV39Ujqm6GtYlqL_r1xFElvxXGIYToH1y7iNJlbeqWGpdIAJaOkPMXjchdsytVEOMBhQaqNp7_d9HhW4JEFAfdezkvewmpDSvOjuxaUc278JvkBtVJy3Ebt85dc78mJAAdXLFTgeerf7n2p9RBuvf1sBkVupzQtJzqQHHyK2FxSqjvxKafrAfdFI9EElo4Lu2hqvspx2ZFiJOgwAsLOywEe06P0XQL3hs9umbk2KcSz2gvfB1bB3Nhe3DaiS59zAAWiD69WBVRJFOelg9o0VCqBPVDEAOq9N5E-nYYyScqGD8uhm9xkrM0N5oqTsq-Nz_HnIVNGx8-5BC2ipkyQByhDd5AevAGLSlBmaJY8qQKROxI2HiWSjPYxO4NNkmuWSzc9CV4wpsr8jXjtkgUN-z66WLzdGVR5ZSc-BFs83JWB44NbRM5IzmRxGeN2oGogyqQZhInb_7XgXIlJNRS7199FjgBOyErcu-qfouBympJs8n8u5kbCWoDSzq2ydZiTAoAsQ-SZbD1PG2GaVvK1CLioCX8IPGCBanPjly_NUywKCNWqLak2FdrnWyJGzUA6njxoSVe185dd8gD48LXpz1qufAkDqW2_56Lm1ohfzkqxChjo3xxVZcmdiqZz5eLq17m8K9zishFEP9i-J76waEzyAVEeNYeeUhEYkczVWQAwMpi4dPzwMeOCjVvoHirlYh0cNpnGMhyNI70bUx47HHqjragv50JVK0Ny_Xcy0IfpC1oUezmIX9VEWN8LO_RlGq6MFBuelUdUKdLZLpRj7-ZzUinhbY_AZLjpqva-Y3Zmmz0e815xgWueZKajRg3sPSK2TdMNDLyL0fiVK2-y33HCATHwEs0HBP1_PN42gSMMFJ6Md1MX9Ib9ntisyLRhe52PIvgtCUA61Zi7e1y8-diyJ0k7_YuLKR4NyfmofznSTv3XypPIkVjqEJDq5gVGuUbkCtO3An1lLnoFo_zoCGOuUsRtaKjj8Quszg7mNardh5SjWEP655X2DB8YI1AVaBgcK1E8kyp_30fQVSPzivk9EzpUEX9Py_mYp7xQVJ7v1jTpvGVr3n8zbrZLM4b0laZYhuWo-jrnGuN2xLXZ1S4mz6p32cek6ihaoc-P2bpQyCc0ubaRtXp8LjGu-Lhlzi8J_BZH5NRKMB1P4_g46BfNQqqWylSmkAFlA7jYMVU4AoiWmFJuQVFI-LksZtF1YB4BaSRnaHNhUeATQroZYIIVMUQ7QGtAIRs9j1Mxl8bShGb3Y-T2V5E0_vCaMDukhm7Fq-OmtnNZCpcmuGQbFCgQ5D24AKe6733xdSJbyZtuWLLUlte-YPHff2kJGIpiFqvX9nPh3hxNfzJ7r6yBV7qjD9oh_1Nwtb4DmgihwjwTHd5nzwGuH8rSUrPTu0jjhULKqD9pw05CrkzVrI64FjHHlSEgYY7zm_pzcpu1ev-M_XRV4LiW2KYm1rxF5r_PVJfozNMEoysZWfBncwO8-DbtyET1vAMBgXRElu0_ydqN7b5nHwfyanGcnzSnGUq3ti7pqcbVjhnxKzO38Ow9emb0JwwRiaNoIINx9lPUTz6pBp2KhV40DHrnmchyAfqNoBjkm8nNXSErVJfcGC8FdmFDoSbFrUuMf0rkK2VIrGWRxYx5M8hH6B1xpkQbI6yKUxj62jTMACxkUdm7IqPYbrIiJOaz7Q13RVpCe6HAnZhI5TPbByaKeFXxsqltvisbC8Ni_c08hz6_gMIPbp_PHOzLe3wM1kXlbTWdXZ4eUV1zoMYh6ceaxTfhLw4qvqFWpKinjvOjP7PwRJc6434Gk55V_97sGL2UIUoq2zVlDzhVhL0PYWWGvffePKL_-m1bFmdN8FlrgEJ58lI4mXnoLBlZO2WejzuacKRbdPJglnhGoO-8h99eFO4XHpv_Rlr6IvCM8erZpA9YInj7MtsYAr4gNMsB_uVOuXs380a1E0LE_KNCdwnJokwssZWOBD7Xqn0kj5yRn7yHS8kw9l8phonfN9XorDFeSX0CXyYDLP8kpLSf2PcMZPEmMvj_V4Mbwifjf0Au1SRxxhn2ga09DSBlkvcvnGI8Q_vxS81_vwTeiXmdFsaEC8Oqu6oIq9oIsxl_hgqJyNepGbgZo6LUna4O75bSl1JUhxIOiuyATDf_ZkYtvnCOM1dCOy_az4SmhKCefE0damALk9XDfAvPXqA
-         * startAppStore : 0
-         * expireTime : 2082729600000
-         * viewMonitorUrls : []
-         * clickMonitorUrls : []
-         * playMonitorUrls : []
-         * finishMonitorUrls : []
-         * position : 9
-         * dspname :
-         * tag : 推广
-         * dislikeReasons : []
-         * UI_type :
-         * show_share : 1
-         * multi_titles : []
-         * multi_headlines : []
-         * multi_subtitles : []
-         * subtitle_urls : []
-         * multi_urls : []
-         * firstMonitorUrls : []
-         * midMonitorUrls : []
-         * thirdMonitorUrls : []
-         * stdMonitorUrls : []
-         * fidMonitorUrls : []
-         * stiMonitorUrls : []
-         * fiiMonitorUrls : []
-         * btm_image_urls : []
-         * extraField : {"specialFreqCtrl":"false","remainingViewNum":"2147483647","autoVideo":"1"}
-         * click_type : 0
-         * ads_channel_id :
-         * ads_channel_name :
-         * ads_channel_type :
-         * ads_channel_image :
-         * ads_docid :
-         * play_sound : 1
-         * buttonName :
-         * formUrl :
-         * iconUrl :
-         * ads_flag :
-         * deepLinkUrl :
-         * categoryName :
-         * appName :
-         * buttonDesc :
-         * flag_color :
-         * gif_url :
-         * phonenumber :
-         * appChannel :
-         * appRef :
-         * appClientId :
-         * appSignature :
-         * nonce :
-         * conversion_link :
-         * business_center :
-         * longitude : -1
-         * latitude : -1
-         * distance : -1
-         * click_url_bottom :
-         * MultiClickType : []
-         * download_url :
-         * s5MonitorUrls : []
-         * s15MonitorUrls : []
-         * s30MonitorUrls : []
-         * sNMonitorUrls : []
-         * mini_program_id :
-         * mini_program_path :
-         * sdktype : 0
-         * locationInformation :
-         * aid : 600377156
+         * type : advert
+         * pid : 10000210
+         * adError : 1
+         * errorText : no  addata
          */
 
+        private String type;
+        private String pid;
+        private int adError;
+        private String errorText;
+
+        public String getType() {
+            return type;
+        }
+
+        public void setType(String type) {
+            this.type = type;
+        }
+
+        public String getPid() {
+            return pid;
+        }
+
+        public void setPid(String pid) {
+            this.pid = pid;
+        }
+
+        public int getAdError() {
+            return adError;
+        }
+
+        public void setAdError(int adError) {
+            this.adError = adError;
+        }
+
+        public String getErrorText() {
+            return errorText;
+        }
+
+        public void setErrorText(String errorText) {
+            this.errorText = errorText;
+        }
+    }
+
+    public static class IconDownParticleBean {
+        /**
+         * type : advert
+         * pid : 10028883
+         * adError : 1
+         * errorText : no  addata
+         */
+
+        private String type;
+        private String pid;
+        private int adError;
+        private String errorText;
+
+        public String getType() {
+            return type;
+        }
+
+        public void setType(String type) {
+            this.type = type;
+        }
+
+        public String getPid() {
+            return pid;
+        }
+
+        public void setPid(String pid) {
+            this.pid = pid;
+        }
+
+        public int getAdError() {
+            return adError;
+        }
+
+        public void setAdError(int adError) {
+            this.adError = adError;
+        }
+
+        public String getErrorText() {
+            return errorText;
+        }
+
+        public void setErrorText(String errorText) {
+            this.errorText = errorText;
+        }
+    }
+
+    public static class ItemBean {
+        /**
+         * type : doc
+         * id : ucms_80amI77Rd8y
+         * thumbnail : https://d.ifengimg.com/w224_h150_q100_webp/x0.ifengimg.com/ucms/2020_42/9EA591FD3F8B42E8CE1B155EF05C53AD145CC6AC_w500_h280.jpg.webp
+         * title : 光刻机龙头阿斯麦：从荷兰向中国出口DUV光刻机无需许可证
+         * source : 第一财经
+         * subscribe : {"cateid":312705,"catename":"第一财经","type":"vampire","description":"第一财经官方账号","forbidFollow":"0","forbidJump":"0","originalName":"","cateSource":"","showDescription":"1"}
+         * updateTime : 2020/10/15 16:39:47
+         * documentId : ucms_80amI77Rd8y
+         * staticId : ucms_80amI77Rd8y
+         * style : {"view":"titleimg","recomTag":{"bg":"1","bgColor":"#26F54343","bgNightColor":"#26D33939","fontColor":"#FFF54343","fontNightColor":"#FFD33939","text":"热点","pos":"1"},"backreason":["0_来源:第一财经","c_财经","sc_企业动态","0_对内容不感兴趣"],"defaultreason":"0_不感兴趣"}
+         * commentsUrl : ucms_80amI77Rd8y
+         * comments : 1
+         * commentsall : 3
+         * link : {"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80amI77Rd8y&channelId=SYLB10NEW&category=%E8%B4%A2%E7%BB%8F&imId=80amI77Rd8y&channelKey=&isHotSpot=1","weburl":"https://ishare.ifeng.com/c/s/v004UGhxGPNp9Fjcd--tf2tUNp9y6MsPGa0pwog0KQvlT3zdhFkMIn4BPqEre5SEJOKuK?spss=np","openType":"1","staticId":"ucms_80amI77Rd8y"}
+         * reftype : ai||||insertRecom%23OutHotTagInsert%23+%230.0%23+%23perfectOld||%E7%A7%91%E6%8A%80-%E7%A7%91%E6%8A%80%E5%85%AC%E5%8F%B8%E5%8A%A8%E6%80%81|
+         * intro :
+         * simId : usim_80amOu1RwOG
+         * recomToken : c8f80e219e4b42dd-c420ca0528524bbdb9bc397ceb573c96
+         * payload : eyJkb2NpZCI6IjgwYW1JNzdSZDh5In0=
+         * statisticTag :
+         * relation : [{"type":"doc","title":"为什么中国人的头发最值钱？","thumbnail":"https://d.ifengimg.com/w600_h338_q100_webp/x0.ifengimg.com/res/2020/071AB32207DA56862CB19C4105EE3C9A798A4CC3_size92_w1080_h720.jpeg.webp","documentId":"ucms_80aY6IzxAJn","staticId":"ucms_80aY6IzxAJn","reftype":"ai||||qualityReading%23Marquee||%E7%A4%BE%E4%BC%9A-%E7%A4%BE%E4%BC%9A%E4%B8%87%E8%B1%A1|","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80aY6IzxAJn&channelId=SYLB10NEW&category=&imId=80aY6IzxAJn&channelKey=&startfrom=qualityreading","weburl":"https://ishare.ifeng.com/c/s/v004yX24f1GcKFsQvGfB2-_JBoleEiqhC5i01hC4tgynEcT3Q0w1C2DjAbAM9Ydbl6--Bj?spss=np","openType":"1","staticId":"ucms_80aY6IzxAJn"}},{"type":"doc","title":"一个管不住丈夫，一个管不住儿子？文在寅被女亲信接连\u201c插刀\u201d","thumbnail":"https://d.ifengimg.com/w600_h338_q100_webp/x0.ifengimg.com/ucms/2020_42/9064494241FE0BE55CAB4DEA29FEDF6AE40258DC_w650_h366.jpg.webp","documentId":"ucms_80aTsYm0ZbM","staticId":"ucms_80aTsYm0ZbM","reftype":"ai||||qualityReading%23Marquee||%E6%97%B6%E6%94%BF-%E4%B8%9C%E4%BA%9A%E5%92%8C%E7%8E%AF%E5%A4%AA%E5%B9%B3%E6%B4%8B%E6%97%B6%E6%94%BF|","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80aTsYm0ZbM&channelId=SYLB10NEW&category=%E6%97%B6%E6%94%BF&imId=80aTsYm0ZbM&channelKey=&startfrom=qualityreading","weburl":"https://ishare.ifeng.com/c/s/v004N9mf2srEXqarVViQq3JJYxRFXaFVt4LT6euIEgZ1MNr9wRwyfg14-_i7v5QC--BJZp?spss=np","openType":"1","staticId":"ucms_80aTsYm0ZbM"}},{"type":"doc","title":"香港，正告别\u201c世界间谍中心\u201d","thumbnail":"https://d.ifengimg.com/w600_h338_q100_webp/x0.ifengimg.com/ucms/2020_42/54A11CF5E696BF721B575AB5EF7522A3179F143C_w650_h366.png.webp","documentId":"ucms_80aQIEkXszG","staticId":"ucms_80aQIEkXszG","reftype":"ai||||qualityReading%23Marquee||%E6%97%B6%E6%94%BF-%E6%B8%AF%E6%BE%B3%E5%8F%B0%E7%9A%84%E5%90%84%E9%A1%B9%E5%B7%A5%E4%BD%9C|","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80aQIEkXszG&channelId=SYLB10NEW&category=%E6%97%B6%E6%94%BF&imId=80aQIEkXszG&channelKey=&startfrom=qualityreading","weburl":"https://ishare.ifeng.com/c/s/v004fr2M32PL-_vzZ7F1YsFIZnIiobvkHOZe9Hmag-_US1SnOFf7eIcuw-_scQuK32hIMqu?spss=np","openType":"1","staticId":"ucms_80aQIEkXszG"}},{"type":"doc","title":"胡毅峰：我是城管，我怕大家问我什么时候去收复钓鱼岛","thumbnail":"https://d.ifengimg.com/w600_h338_q100_webp/x0.ifengimg.com/ucms/2020_42/B340F3369AE4EAF953C52839E5C1E7F33BEFB01C_w1200_h600.jpg.webp","documentId":"ucms_80aOX8RB5lP","staticId":"ucms_80aOX8RB5lP","reftype":"ai||||qualityReading%23Marquee||%E7%A4%BE%E4%BC%9A-%E5%9F%8E%E7%AE%A1%E7%89%A9%E4%B8%9A%E5%9C%A8%E8%A1%8C%E5%8A%A8|","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80aOX8RB5lP&channelId=SYLB10NEW&category=%E7%A4%BE%E4%BC%9A&imId=80aOX8RB5lP&channelKey=&startfrom=qualityreading","weburl":"https://ishare.ifeng.com/c/s/v004DhXQmHdELRybPi1x7rC5EY8J--3PnJ6PPSLGa48Re7xHfqf9FskfHeK--UBjnTsvm7?spss=np","openType":"1","staticId":"ucms_80aOX8RB5lP"}},{"type":"doc","title":"我是爱自由的美国人，被新冠困在美国失去了自由","thumbnail":"https://d.ifengimg.com/w600_h338_q100_webp/x0.ifengimg.com/ucms/2020_42/4C636D087D26CD4231E199876EB9DAEE7316479B_w650_h366.jpg.webp","documentId":"ucms_80aQTBp0YvG","staticId":"ucms_80aQTBp0YvG","reftype":"ai||||qualityReading%23Marquee||%E7%A4%BE%E4%BC%9A-%E7%A4%BE%E4%BC%9A%E4%B8%87%E8%B1%A1%2C%E5%A2%83%E5%A4%96%E7%96%AB%E6%83%85-%E7%BE%8E%E5%9B%BD%E7%96%AB%E6%83%85|","link":{"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80aQTBp0YvG&channelId=SYLB10NEW&category=&imId=80aQTBp0YvG&channelKey=&startfrom=qualityreading","weburl":"https://ishare.ifeng.com/c/s/v004v8M7bnvEEXoff4--ceRQDSDMJazeY--SBBSNHbzqyVaBQSTyHLeibV1k7DFfZiO--Aw?spss=np","openType":"1","staticId":"ucms_80aQTBp0YvG"}}]
+         * appSource :
+         * adId : iis_91_13654_1_1602752312883_rvrkfi
+         * adPositionId : 10000252
+         * pid : 10000252
+         * icon : {"showIcon":1,"text":"广告·淘宝"}
+         * like : 1000
+         * shareCount : 39
+         * commentLink : {"type":"short","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_7y8GvOrbmSG&channelId=SYLB10NEW&category=%E7%BE%8E%E5%A5%B3&imId=7y8GvOrbmSG&channelKey=&groupid=6689122576788099123","weburl":"https://ishare.ifeng.com/c/s/v004kI2uT82zNlre441jw0-_v--Z5mT8dXxIqXlHZLzULQ6e898Z8pz-_yHB2rQUMpsKpuW?spss=np","openType":"1","staticId":"ucms_7y8GvOrbmSG"}
+         * summary : {"tag":"导语","tagStyle":16,"desp":"近日，河南一家名为\u201c今日油条\u201d的店铺引起网友的注意，由于该店铺装修、logo、菜单与今日头条页面高度相似；今日头条将该店铺背后公司告上法庭，案由为商标权权属、侵权纠纷；风视频联系到今日油条店员：他表示仍正常营业，但对起诉表示不理解，具体是哪个字不能用？","link":{"type":"videoimmersion","url":"51876986-3283-444f-b2ab-e4b4c6dc3db4","weburl":"https://ishare.ifeng.com/c/s/v004T-_NMV3R2NqtrNayXDcZjjAd4jDtXE3f9wg19BAY1l7xu940whkHri81KixU8vUMVE--8YwYZsZP0UNqBi5m4MuQ____?spss=np","openType":"2","vid":"51876986-3283-444f-b2ab-e4b4c6dc3db4","mp4":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37537311-102-009-155125/index.m3u8?ifsign=1","previewurl":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37510863-102-009-160925.mp4","staticId":"video_51876986-3283-444f-b2ab-e4b4c6dc3db4"},"staticId":"video_51876986-3283-444f-b2ab-e4b4c6dc3db4"}
+         * phvideo : {"channelName":"风视频","columnid":"543545","path":"27-95084-95093-","filesize":"2926","length":47,"previewlength":20,"preview":0,"currentPlay":0,"completePlay":"0","videoPlayUrl":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37537311-102-009-155125/index.m3u8?ifsign=1"}
+         * hasSlide : true
+         */
+
+        private String type;
+        private String id;
+        private String thumbnail;
         private String title;
-        private String meta;
-        private String docid;
-        private String ctype;
-        private int dtype;
-        private String impid;
-        private String pageid;
-        private String itemid;
-        private int display_flag;
-        private boolean feedback_forbidden;
-        private int wemedia_id;
-        private String category;
-        private int security;
-        private DetailBean detail;
-        private boolean is_local_doc;
-        private String ddate;
-        private String date;
-        private String dsource;
-        private String summary;
-        private boolean image_attribut_update;
         private String source;
-        private String author_dtype;
-        private String url;
-        private int i_alliance_scope;
-        private String image;
-        private int comment_count;
-        private boolean auth;
-        private boolean is_gov;
-        private String content_type;
-        private boolean b_political;
-        private boolean enable_top;
-        private boolean is_like;
-        private boolean is_up;
-        private boolean is_down;
-        private boolean is_top;
-        private WemediaInfoBean wemedia_info;
-        private int mtype;
-        private int scope;
-        private boolean removed;
-        private String adsfrom;
-        private String videoUrl;
-        private int video_type;
-        private String eid;
-        private String tid;
-        private String actionUrl;
-        private String actionIcon;
-        private String actionName;
-        private String actionDesc;
-        private String pn;
-        private String template;
-        private String ex;
-        private int startAppStore;
-        private long expireTime;
-        private int position;
-        private String dspname;
-        private String tag;
-        private String UI_type;
-        private int show_share;
-        private ExtraFieldBean extraField;
-        private int click_type;
-        private String ads_channel_id;
-        private String ads_channel_name;
-        private String ads_channel_type;
-        private String ads_channel_image;
-        private String ads_docid;
-        private int play_sound;
-        private String buttonName;
-        private String formUrl;
-        private String iconUrl;
-        private String ads_flag;
-        private String deepLinkUrl;
-        private String categoryName;
-        private String appName;
-        private String buttonDesc;
-        private String flag_color;
-        private String gif_url;
-        private String phonenumber;
-        private String appChannel;
-        private String appRef;
-        private String appClientId;
-        private String appSignature;
-        private String nonce;
-        private String conversion_link;
-        private String business_center;
-        private int longitude;
-        private int latitude;
-        private int distance;
-        private String click_url_bottom;
-        private String download_url;
-        private String mini_program_id;
-        private String mini_program_path;
-        private int sdktype;
-        private String locationInformation;
-        private int aid;
-        private List<?> extra;
-        private List<?> tags;
-        private List<String> dislike_reasons;
-        private List<String> dislike_fromids;
-        private List<String> image_urls;
-        private List<?> upload_images_v;
-        private List<String> upload_images;
-        private List<?> viewMonitorUrls;
-        private List<?> clickMonitorUrls;
-        private List<?> playMonitorUrls;
-        private List<?> finishMonitorUrls;
-        private List<?> dislikeReasons;
-        private List<?> multi_titles;
-        private List<?> multi_headlines;
-        private List<?> multi_subtitles;
-        private List<?> subtitle_urls;
-        private List<?> multi_urls;
-        private List<?> firstMonitorUrls;
-        private List<?> midMonitorUrls;
-        private List<?> thirdMonitorUrls;
-        private List<?> stdMonitorUrls;
-        private List<?> fidMonitorUrls;
-        private List<?> stiMonitorUrls;
-        private List<?> fiiMonitorUrls;
-        private List<?> btm_image_urls;
-        private List<?> MultiClickType;
-        private List<?> s5MonitorUrls;
-        private List<?> s15MonitorUrls;
-        private List<?> s30MonitorUrls;
-        private List<?> sNMonitorUrls;
+        private SubscribeBean subscribe;
+        private String updateTime;
+        private String documentId;
+        private String staticId;
+        private StyleBean style;
+        private String commentsUrl;
+        private String comments;
+        private String commentsall;
+        private LinkBean link;
+        private String reftype;
+        private String intro;
+        private String simId;
+        private String recomToken;
+        private String payload;
+        private String statisticTag;
+        private String appSource;
+        private String adId;
+        private String adPositionId;
+        private String pid;
+        private IconBean icon;
+        private String like;
+        private String shareCount;
+        private CommentLinkBean commentLink;
+        private SummaryBean summary;
+        private PhvideoBean phvideo;
+        private boolean hasSlide;
+        private List<RelationBean> relation;
+
+        public String getType() {
+            return type;
+        }
+
+        public void setType(String type) {
+            this.type = type;
+        }
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+        public String getThumbnail() {
+            return thumbnail;
+        }
+
+        public void setThumbnail(String thumbnail) {
+            this.thumbnail = thumbnail;
+        }
 
         public String getTitle() {
             return title;
@@ -444,158 +299,6 @@ public class Tsest {
 
         public void setTitle(String title) {
             this.title = title;
-        }
-
-        public String getMeta() {
-            return meta;
-        }
-
-        public void setMeta(String meta) {
-            this.meta = meta;
-        }
-
-        public String getDocid() {
-            return docid;
-        }
-
-        public void setDocid(String docid) {
-            this.docid = docid;
-        }
-
-        public String getCtype() {
-            return ctype;
-        }
-
-        public void setCtype(String ctype) {
-            this.ctype = ctype;
-        }
-
-        public int getDtype() {
-            return dtype;
-        }
-
-        public void setDtype(int dtype) {
-            this.dtype = dtype;
-        }
-
-        public String getImpid() {
-            return impid;
-        }
-
-        public void setImpid(String impid) {
-            this.impid = impid;
-        }
-
-        public String getPageid() {
-            return pageid;
-        }
-
-        public void setPageid(String pageid) {
-            this.pageid = pageid;
-        }
-
-        public String getItemid() {
-            return itemid;
-        }
-
-        public void setItemid(String itemid) {
-            this.itemid = itemid;
-        }
-
-        public int getDisplay_flag() {
-            return display_flag;
-        }
-
-        public void setDisplay_flag(int display_flag) {
-            this.display_flag = display_flag;
-        }
-
-        public boolean isFeedback_forbidden() {
-            return feedback_forbidden;
-        }
-
-        public void setFeedback_forbidden(boolean feedback_forbidden) {
-            this.feedback_forbidden = feedback_forbidden;
-        }
-
-        public int getWemedia_id() {
-            return wemedia_id;
-        }
-
-        public void setWemedia_id(int wemedia_id) {
-            this.wemedia_id = wemedia_id;
-        }
-
-        public String getCategory() {
-            return category;
-        }
-
-        public void setCategory(String category) {
-            this.category = category;
-        }
-
-        public int getSecurity() {
-            return security;
-        }
-
-        public void setSecurity(int security) {
-            this.security = security;
-        }
-
-        public DetailBean getDetail() {
-            return detail;
-        }
-
-        public void setDetail(DetailBean detail) {
-            this.detail = detail;
-        }
-
-        public boolean isIs_local_doc() {
-            return is_local_doc;
-        }
-
-        public void setIs_local_doc(boolean is_local_doc) {
-            this.is_local_doc = is_local_doc;
-        }
-
-        public String getDdate() {
-            return ddate;
-        }
-
-        public void setDdate(String ddate) {
-            this.ddate = ddate;
-        }
-
-        public String getDate() {
-            return date;
-        }
-
-        public void setDate(String date) {
-            this.date = date;
-        }
-
-        public String getDsource() {
-            return dsource;
-        }
-
-        public void setDsource(String dsource) {
-            this.dsource = dsource;
-        }
-
-        public String getSummary() {
-            return summary;
-        }
-
-        public void setSummary(String summary) {
-            this.summary = summary;
-        }
-
-        public boolean isImage_attribut_update() {
-            return image_attribut_update;
-        }
-
-        public void setImage_attribut_update(boolean image_attribut_update) {
-            this.image_attribut_update = image_attribut_update;
         }
 
         public String getSource() {
@@ -606,1227 +309,259 @@ public class Tsest {
             this.source = source;
         }
 
-        public String getAuthor_dtype() {
-            return author_dtype;
+        public SubscribeBean getSubscribe() {
+            return subscribe;
         }
 
-        public void setAuthor_dtype(String author_dtype) {
-            this.author_dtype = author_dtype;
+        public void setSubscribe(SubscribeBean subscribe) {
+            this.subscribe = subscribe;
         }
 
-        public String getUrl() {
-            return url;
+        public String getUpdateTime() {
+            return updateTime;
         }
 
-        public void setUrl(String url) {
-            this.url = url;
+        public void setUpdateTime(String updateTime) {
+            this.updateTime = updateTime;
         }
 
-        public int getI_alliance_scope() {
-            return i_alliance_scope;
+        public String getDocumentId() {
+            return documentId;
         }
 
-        public void setI_alliance_scope(int i_alliance_scope) {
-            this.i_alliance_scope = i_alliance_scope;
+        public void setDocumentId(String documentId) {
+            this.documentId = documentId;
         }
 
-        public String getImage() {
-            return image;
+        public String getStaticId() {
+            return staticId;
         }
 
-        public void setImage(String image) {
-            this.image = image;
+        public void setStaticId(String staticId) {
+            this.staticId = staticId;
         }
 
-        public int getComment_count() {
-            return comment_count;
+        public StyleBean getStyle() {
+            return style;
         }
 
-        public void setComment_count(int comment_count) {
-            this.comment_count = comment_count;
+        public void setStyle(StyleBean style) {
+            this.style = style;
         }
 
-        public boolean isAuth() {
-            return auth;
+        public String getCommentsUrl() {
+            return commentsUrl;
         }
 
-        public void setAuth(boolean auth) {
-            this.auth = auth;
+        public void setCommentsUrl(String commentsUrl) {
+            this.commentsUrl = commentsUrl;
         }
 
-        public boolean isIs_gov() {
-            return is_gov;
+        public String getComments() {
+            return comments;
         }
 
-        public void setIs_gov(boolean is_gov) {
-            this.is_gov = is_gov;
+        public void setComments(String comments) {
+            this.comments = comments;
         }
 
-        public String getContent_type() {
-            return content_type;
+        public String getCommentsall() {
+            return commentsall;
         }
 
-        public void setContent_type(String content_type) {
-            this.content_type = content_type;
+        public void setCommentsall(String commentsall) {
+            this.commentsall = commentsall;
         }
 
-        public boolean isB_political() {
-            return b_political;
+        public LinkBean getLink() {
+            return link;
         }
 
-        public void setB_political(boolean b_political) {
-            this.b_political = b_political;
+        public void setLink(LinkBean link) {
+            this.link = link;
         }
 
-        public boolean isEnable_top() {
-            return enable_top;
+        public String getReftype() {
+            return reftype;
         }
 
-        public void setEnable_top(boolean enable_top) {
-            this.enable_top = enable_top;
+        public void setReftype(String reftype) {
+            this.reftype = reftype;
         }
 
-        public boolean isIs_like() {
-            return is_like;
+        public String getIntro() {
+            return intro;
         }
 
-        public void setIs_like(boolean is_like) {
-            this.is_like = is_like;
+        public void setIntro(String intro) {
+            this.intro = intro;
         }
 
-        public boolean isIs_up() {
-            return is_up;
+        public String getSimId() {
+            return simId;
         }
 
-        public void setIs_up(boolean is_up) {
-            this.is_up = is_up;
+        public void setSimId(String simId) {
+            this.simId = simId;
         }
 
-        public boolean isIs_down() {
-            return is_down;
+        public String getRecomToken() {
+            return recomToken;
         }
 
-        public void setIs_down(boolean is_down) {
-            this.is_down = is_down;
+        public void setRecomToken(String recomToken) {
+            this.recomToken = recomToken;
         }
 
-        public boolean isIs_top() {
-            return is_top;
+        public String getPayload() {
+            return payload;
         }
 
-        public void setIs_top(boolean is_top) {
-            this.is_top = is_top;
+        public void setPayload(String payload) {
+            this.payload = payload;
         }
 
-        public WemediaInfoBean getWemedia_info() {
-            return wemedia_info;
+        public String getStatisticTag() {
+            return statisticTag;
         }
 
-        public void setWemedia_info(WemediaInfoBean wemedia_info) {
-            this.wemedia_info = wemedia_info;
+        public void setStatisticTag(String statisticTag) {
+            this.statisticTag = statisticTag;
         }
 
-        public int getMtype() {
-            return mtype;
+        public String getAppSource() {
+            return appSource;
         }
 
-        public void setMtype(int mtype) {
-            this.mtype = mtype;
+        public void setAppSource(String appSource) {
+            this.appSource = appSource;
         }
 
-        public int getScope() {
-            return scope;
+        public String getAdId() {
+            return adId;
         }
 
-        public void setScope(int scope) {
-            this.scope = scope;
+        public void setAdId(String adId) {
+            this.adId = adId;
         }
 
-        public boolean isRemoved() {
-            return removed;
+        public String getAdPositionId() {
+            return adPositionId;
         }
 
-        public void setRemoved(boolean removed) {
-            this.removed = removed;
+        public void setAdPositionId(String adPositionId) {
+            this.adPositionId = adPositionId;
         }
 
-        public String getAdsfrom() {
-            return adsfrom;
+        public String getPid() {
+            return pid;
         }
 
-        public void setAdsfrom(String adsfrom) {
-            this.adsfrom = adsfrom;
+        public void setPid(String pid) {
+            this.pid = pid;
         }
 
-        public String getVideoUrl() {
-            return videoUrl;
+        public IconBean getIcon() {
+            return icon;
         }
 
-        public void setVideoUrl(String videoUrl) {
-            this.videoUrl = videoUrl;
+        public void setIcon(IconBean icon) {
+            this.icon = icon;
         }
 
-        public int getVideo_type() {
-            return video_type;
+        public String getLike() {
+            return like;
         }
 
-        public void setVideo_type(int video_type) {
-            this.video_type = video_type;
+        public void setLike(String like) {
+            this.like = like;
         }
 
-        public String getEid() {
-            return eid;
+        public String getShareCount() {
+            return shareCount;
         }
 
-        public void setEid(String eid) {
-            this.eid = eid;
+        public void setShareCount(String shareCount) {
+            this.shareCount = shareCount;
         }
 
-        public String getTid() {
-            return tid;
+        public CommentLinkBean getCommentLink() {
+            return commentLink;
         }
 
-        public void setTid(String tid) {
-            this.tid = tid;
+        public void setCommentLink(CommentLinkBean commentLink) {
+            this.commentLink = commentLink;
         }
 
-        public String getActionUrl() {
-            return actionUrl;
+        public SummaryBean getSummary() {
+            return summary;
         }
 
-        public void setActionUrl(String actionUrl) {
-            this.actionUrl = actionUrl;
+        public void setSummary(SummaryBean summary) {
+            this.summary = summary;
         }
 
-        public String getActionIcon() {
-            return actionIcon;
+        public PhvideoBean getPhvideo() {
+            return phvideo;
         }
 
-        public void setActionIcon(String actionIcon) {
-            this.actionIcon = actionIcon;
+        public void setPhvideo(PhvideoBean phvideo) {
+            this.phvideo = phvideo;
         }
 
-        public String getActionName() {
-            return actionName;
+        public boolean isHasSlide() {
+            return hasSlide;
         }
 
-        public void setActionName(String actionName) {
-            this.actionName = actionName;
+        public void setHasSlide(boolean hasSlide) {
+            this.hasSlide = hasSlide;
         }
 
-        public String getActionDesc() {
-            return actionDesc;
+        public List<RelationBean> getRelation() {
+            return relation;
         }
 
-        public void setActionDesc(String actionDesc) {
-            this.actionDesc = actionDesc;
+        public void setRelation(List<RelationBean> relation) {
+            this.relation = relation;
         }
 
-        public String getPn() {
-            return pn;
-        }
-
-        public void setPn(String pn) {
-            this.pn = pn;
-        }
-
-        public String getTemplate() {
-            return template;
-        }
-
-        public void setTemplate(String template) {
-            this.template = template;
-        }
-
-        public String getEx() {
-            return ex;
-        }
-
-        public void setEx(String ex) {
-            this.ex = ex;
-        }
-
-        public int getStartAppStore() {
-            return startAppStore;
-        }
-
-        public void setStartAppStore(int startAppStore) {
-            this.startAppStore = startAppStore;
-        }
-
-        public long getExpireTime() {
-            return expireTime;
-        }
-
-        public void setExpireTime(long expireTime) {
-            this.expireTime = expireTime;
-        }
-
-        public int getPosition() {
-            return position;
-        }
-
-        public void setPosition(int position) {
-            this.position = position;
-        }
-
-        public String getDspname() {
-            return dspname;
-        }
-
-        public void setDspname(String dspname) {
-            this.dspname = dspname;
-        }
-
-        public String getTag() {
-            return tag;
-        }
-
-        public void setTag(String tag) {
-            this.tag = tag;
-        }
-
-        public String getUI_type() {
-            return UI_type;
-        }
-
-        public void setUI_type(String UI_type) {
-            this.UI_type = UI_type;
-        }
-
-        public int getShow_share() {
-            return show_share;
-        }
-
-        public void setShow_share(int show_share) {
-            this.show_share = show_share;
-        }
-
-        public ExtraFieldBean getExtraField() {
-            return extraField;
-        }
-
-        public void setExtraField(ExtraFieldBean extraField) {
-            this.extraField = extraField;
-        }
-
-        public int getClick_type() {
-            return click_type;
-        }
-
-        public void setClick_type(int click_type) {
-            this.click_type = click_type;
-        }
-
-        public String getAds_channel_id() {
-            return ads_channel_id;
-        }
-
-        public void setAds_channel_id(String ads_channel_id) {
-            this.ads_channel_id = ads_channel_id;
-        }
-
-        public String getAds_channel_name() {
-            return ads_channel_name;
-        }
-
-        public void setAds_channel_name(String ads_channel_name) {
-            this.ads_channel_name = ads_channel_name;
-        }
-
-        public String getAds_channel_type() {
-            return ads_channel_type;
-        }
-
-        public void setAds_channel_type(String ads_channel_type) {
-            this.ads_channel_type = ads_channel_type;
-        }
-
-        public String getAds_channel_image() {
-            return ads_channel_image;
-        }
-
-        public void setAds_channel_image(String ads_channel_image) {
-            this.ads_channel_image = ads_channel_image;
-        }
-
-        public String getAds_docid() {
-            return ads_docid;
-        }
-
-        public void setAds_docid(String ads_docid) {
-            this.ads_docid = ads_docid;
-        }
-
-        public int getPlay_sound() {
-            return play_sound;
-        }
-
-        public void setPlay_sound(int play_sound) {
-            this.play_sound = play_sound;
-        }
-
-        public String getButtonName() {
-            return buttonName;
-        }
-
-        public void setButtonName(String buttonName) {
-            this.buttonName = buttonName;
-        }
-
-        public String getFormUrl() {
-            return formUrl;
-        }
-
-        public void setFormUrl(String formUrl) {
-            this.formUrl = formUrl;
-        }
-
-        public String getIconUrl() {
-            return iconUrl;
-        }
-
-        public void setIconUrl(String iconUrl) {
-            this.iconUrl = iconUrl;
-        }
-
-        public String getAds_flag() {
-            return ads_flag;
-        }
-
-        public void setAds_flag(String ads_flag) {
-            this.ads_flag = ads_flag;
-        }
-
-        public String getDeepLinkUrl() {
-            return deepLinkUrl;
-        }
-
-        public void setDeepLinkUrl(String deepLinkUrl) {
-            this.deepLinkUrl = deepLinkUrl;
-        }
-
-        public String getCategoryName() {
-            return categoryName;
-        }
-
-        public void setCategoryName(String categoryName) {
-            this.categoryName = categoryName;
-        }
-
-        public String getAppName() {
-            return appName;
-        }
-
-        public void setAppName(String appName) {
-            this.appName = appName;
-        }
-
-        public String getButtonDesc() {
-            return buttonDesc;
-        }
-
-        public void setButtonDesc(String buttonDesc) {
-            this.buttonDesc = buttonDesc;
-        }
-
-        public String getFlag_color() {
-            return flag_color;
-        }
-
-        public void setFlag_color(String flag_color) {
-            this.flag_color = flag_color;
-        }
-
-        public String getGif_url() {
-            return gif_url;
-        }
-
-        public void setGif_url(String gif_url) {
-            this.gif_url = gif_url;
-        }
-
-        public String getPhonenumber() {
-            return phonenumber;
-        }
-
-        public void setPhonenumber(String phonenumber) {
-            this.phonenumber = phonenumber;
-        }
-
-        public String getAppChannel() {
-            return appChannel;
-        }
-
-        public void setAppChannel(String appChannel) {
-            this.appChannel = appChannel;
-        }
-
-        public String getAppRef() {
-            return appRef;
-        }
-
-        public void setAppRef(String appRef) {
-            this.appRef = appRef;
-        }
-
-        public String getAppClientId() {
-            return appClientId;
-        }
-
-        public void setAppClientId(String appClientId) {
-            this.appClientId = appClientId;
-        }
-
-        public String getAppSignature() {
-            return appSignature;
-        }
-
-        public void setAppSignature(String appSignature) {
-            this.appSignature = appSignature;
-        }
-
-        public String getNonce() {
-            return nonce;
-        }
-
-        public void setNonce(String nonce) {
-            this.nonce = nonce;
-        }
-
-        public String getConversion_link() {
-            return conversion_link;
-        }
-
-        public void setConversion_link(String conversion_link) {
-            this.conversion_link = conversion_link;
-        }
-
-        public String getBusiness_center() {
-            return business_center;
-        }
-
-        public void setBusiness_center(String business_center) {
-            this.business_center = business_center;
-        }
-
-        public int getLongitude() {
-            return longitude;
-        }
-
-        public void setLongitude(int longitude) {
-            this.longitude = longitude;
-        }
-
-        public int getLatitude() {
-            return latitude;
-        }
-
-        public void setLatitude(int latitude) {
-            this.latitude = latitude;
-        }
-
-        public int getDistance() {
-            return distance;
-        }
-
-        public void setDistance(int distance) {
-            this.distance = distance;
-        }
-
-        public String getClick_url_bottom() {
-            return click_url_bottom;
-        }
-
-        public void setClick_url_bottom(String click_url_bottom) {
-            this.click_url_bottom = click_url_bottom;
-        }
-
-        public String getDownload_url() {
-            return download_url;
-        }
-
-        public void setDownload_url(String download_url) {
-            this.download_url = download_url;
-        }
-
-        public String getMini_program_id() {
-            return mini_program_id;
-        }
-
-        public void setMini_program_id(String mini_program_id) {
-            this.mini_program_id = mini_program_id;
-        }
-
-        public String getMini_program_path() {
-            return mini_program_path;
-        }
-
-        public void setMini_program_path(String mini_program_path) {
-            this.mini_program_path = mini_program_path;
-        }
-
-        public int getSdktype() {
-            return sdktype;
-        }
-
-        public void setSdktype(int sdktype) {
-            this.sdktype = sdktype;
-        }
-
-        public String getLocationInformation() {
-            return locationInformation;
-        }
-
-        public void setLocationInformation(String locationInformation) {
-            this.locationInformation = locationInformation;
-        }
-
-        public int getAid() {
-            return aid;
-        }
-
-        public void setAid(int aid) {
-            this.aid = aid;
-        }
-
-        public List<?> getExtra() {
-            return extra;
-        }
-
-        public void setExtra(List<?> extra) {
-            this.extra = extra;
-        }
-
-        public List<?> getTags() {
-            return tags;
-        }
-
-        public void setTags(List<?> tags) {
-            this.tags = tags;
-        }
-
-        public List<String> getDislike_reasons() {
-            return dislike_reasons;
-        }
-
-        public void setDislike_reasons(List<String> dislike_reasons) {
-            this.dislike_reasons = dislike_reasons;
-        }
-
-        public List<String> getDislike_fromids() {
-            return dislike_fromids;
-        }
-
-        public void setDislike_fromids(List<String> dislike_fromids) {
-            this.dislike_fromids = dislike_fromids;
-        }
-
-        public List<String> getImage_urls() {
-            return image_urls;
-        }
-
-        public void setImage_urls(List<String> image_urls) {
-            this.image_urls = image_urls;
-        }
-
-        public List<?> getUpload_images_v() {
-            return upload_images_v;
-        }
-
-        public void setUpload_images_v(List<?> upload_images_v) {
-            this.upload_images_v = upload_images_v;
-        }
-
-        public List<String> getUpload_images() {
-            return upload_images;
-        }
-
-        public void setUpload_images(List<String> upload_images) {
-            this.upload_images = upload_images;
-        }
-
-        public List<?> getViewMonitorUrls() {
-            return viewMonitorUrls;
-        }
-
-        public void setViewMonitorUrls(List<?> viewMonitorUrls) {
-            this.viewMonitorUrls = viewMonitorUrls;
-        }
-
-        public List<?> getClickMonitorUrls() {
-            return clickMonitorUrls;
-        }
-
-        public void setClickMonitorUrls(List<?> clickMonitorUrls) {
-            this.clickMonitorUrls = clickMonitorUrls;
-        }
-
-        public List<?> getPlayMonitorUrls() {
-            return playMonitorUrls;
-        }
-
-        public void setPlayMonitorUrls(List<?> playMonitorUrls) {
-            this.playMonitorUrls = playMonitorUrls;
-        }
-
-        public List<?> getFinishMonitorUrls() {
-            return finishMonitorUrls;
-        }
-
-        public void setFinishMonitorUrls(List<?> finishMonitorUrls) {
-            this.finishMonitorUrls = finishMonitorUrls;
-        }
-
-        public List<?> getDislikeReasons() {
-            return dislikeReasons;
-        }
-
-        public void setDislikeReasons(List<?> dislikeReasons) {
-            this.dislikeReasons = dislikeReasons;
-        }
-
-        public List<?> getMulti_titles() {
-            return multi_titles;
-        }
-
-        public void setMulti_titles(List<?> multi_titles) {
-            this.multi_titles = multi_titles;
-        }
-
-        public List<?> getMulti_headlines() {
-            return multi_headlines;
-        }
-
-        public void setMulti_headlines(List<?> multi_headlines) {
-            this.multi_headlines = multi_headlines;
-        }
-
-        public List<?> getMulti_subtitles() {
-            return multi_subtitles;
-        }
-
-        public void setMulti_subtitles(List<?> multi_subtitles) {
-            this.multi_subtitles = multi_subtitles;
-        }
-
-        public List<?> getSubtitle_urls() {
-            return subtitle_urls;
-        }
-
-        public void setSubtitle_urls(List<?> subtitle_urls) {
-            this.subtitle_urls = subtitle_urls;
-        }
-
-        public List<?> getMulti_urls() {
-            return multi_urls;
-        }
-
-        public void setMulti_urls(List<?> multi_urls) {
-            this.multi_urls = multi_urls;
-        }
-
-        public List<?> getFirstMonitorUrls() {
-            return firstMonitorUrls;
-        }
-
-        public void setFirstMonitorUrls(List<?> firstMonitorUrls) {
-            this.firstMonitorUrls = firstMonitorUrls;
-        }
-
-        public List<?> getMidMonitorUrls() {
-            return midMonitorUrls;
-        }
-
-        public void setMidMonitorUrls(List<?> midMonitorUrls) {
-            this.midMonitorUrls = midMonitorUrls;
-        }
-
-        public List<?> getThirdMonitorUrls() {
-            return thirdMonitorUrls;
-        }
-
-        public void setThirdMonitorUrls(List<?> thirdMonitorUrls) {
-            this.thirdMonitorUrls = thirdMonitorUrls;
-        }
-
-        public List<?> getStdMonitorUrls() {
-            return stdMonitorUrls;
-        }
-
-        public void setStdMonitorUrls(List<?> stdMonitorUrls) {
-            this.stdMonitorUrls = stdMonitorUrls;
-        }
-
-        public List<?> getFidMonitorUrls() {
-            return fidMonitorUrls;
-        }
-
-        public void setFidMonitorUrls(List<?> fidMonitorUrls) {
-            this.fidMonitorUrls = fidMonitorUrls;
-        }
-
-        public List<?> getStiMonitorUrls() {
-            return stiMonitorUrls;
-        }
-
-        public void setStiMonitorUrls(List<?> stiMonitorUrls) {
-            this.stiMonitorUrls = stiMonitorUrls;
-        }
-
-        public List<?> getFiiMonitorUrls() {
-            return fiiMonitorUrls;
-        }
-
-        public void setFiiMonitorUrls(List<?> fiiMonitorUrls) {
-            this.fiiMonitorUrls = fiiMonitorUrls;
-        }
-
-        public List<?> getBtm_image_urls() {
-            return btm_image_urls;
-        }
-
-        public void setBtm_image_urls(List<?> btm_image_urls) {
-            this.btm_image_urls = btm_image_urls;
-        }
-
-        public List<?> getMultiClickType() {
-            return MultiClickType;
-        }
-
-        public void setMultiClickType(List<?> MultiClickType) {
-            this.MultiClickType = MultiClickType;
-        }
-
-        public List<?> getS5MonitorUrls() {
-            return s5MonitorUrls;
-        }
-
-        public void setS5MonitorUrls(List<?> s5MonitorUrls) {
-            this.s5MonitorUrls = s5MonitorUrls;
-        }
-
-        public List<?> getS15MonitorUrls() {
-            return s15MonitorUrls;
-        }
-
-        public void setS15MonitorUrls(List<?> s15MonitorUrls) {
-            this.s15MonitorUrls = s15MonitorUrls;
-        }
-
-        public List<?> getS30MonitorUrls() {
-            return s30MonitorUrls;
-        }
-
-        public void setS30MonitorUrls(List<?> s30MonitorUrls) {
-            this.s30MonitorUrls = s30MonitorUrls;
-        }
-
-        public List<?> getSNMonitorUrls() {
-            return sNMonitorUrls;
-        }
-
-        public void setSNMonitorUrls(List<?> sNMonitorUrls) {
-            this.sNMonitorUrls = sNMonitorUrls;
-        }
-
-        public static class DetailBean {
+        public static class SubscribeBean {
             /**
-             * fid : c4
-             * federation_mash_type : relevant
-             * dedup_type : channel
-             * document_item_mash_type : relevant
-             * dedupValid : true
-             * batch : 0
-             * mashtype : ch-rel
-             * trans_info : {"fid":"c4","mashtype":"ch-rel","point":"c4","dedupValid":"true","federation_mash_type":"relevant","document_item_mash_type":"relevant","dedup_level":"2","dedup_type":"channel","batch":"0"}
-             * point : c4
-             * dedup_level : 2
+             * cateid : 312705
+             * catename : 第一财经
+             * type : vampire
+             * description : 第一财经官方账号
+             * forbidFollow : 0
+             * forbidJump : 0
+             * originalName :
+             * cateSource :
+             * showDescription : 1
              */
 
-            private String fid;
-            private String federation_mash_type;
-            private String dedup_type;
-            private String document_item_mash_type;
-            private String dedupValid;
-            private String batch;
-            private String mashtype;
-            private TransInfoBean trans_info;
-            private String point;
-            private String dedup_level;
-
-            public String getFid() {
-                return fid;
-            }
-
-            public void setFid(String fid) {
-                this.fid = fid;
-            }
-
-            public String getFederation_mash_type() {
-                return federation_mash_type;
-            }
-
-            public void setFederation_mash_type(String federation_mash_type) {
-                this.federation_mash_type = federation_mash_type;
-            }
-
-            public String getDedup_type() {
-                return dedup_type;
-            }
-
-            public void setDedup_type(String dedup_type) {
-                this.dedup_type = dedup_type;
-            }
-
-            public String getDocument_item_mash_type() {
-                return document_item_mash_type;
-            }
-
-            public void setDocument_item_mash_type(String document_item_mash_type) {
-                this.document_item_mash_type = document_item_mash_type;
-            }
-
-            public String getDedupValid() {
-                return dedupValid;
-            }
-
-            public void setDedupValid(String dedupValid) {
-                this.dedupValid = dedupValid;
-            }
-
-            public String getBatch() {
-                return batch;
-            }
-
-            public void setBatch(String batch) {
-                this.batch = batch;
-            }
-
-            public String getMashtype() {
-                return mashtype;
-            }
-
-            public void setMashtype(String mashtype) {
-                this.mashtype = mashtype;
-            }
-
-            public TransInfoBean getTrans_info() {
-                return trans_info;
-            }
-
-            public void setTrans_info(TransInfoBean trans_info) {
-                this.trans_info = trans_info;
-            }
-
-            public String getPoint() {
-                return point;
-            }
-
-            public void setPoint(String point) {
-                this.point = point;
-            }
-
-            public String getDedup_level() {
-                return dedup_level;
-            }
-
-            public void setDedup_level(String dedup_level) {
-                this.dedup_level = dedup_level;
-            }
-
-            public static class TransInfoBean {
-                /**
-                 * fid : c4
-                 * mashtype : ch-rel
-                 * point : c4
-                 * dedupValid : true
-                 * federation_mash_type : relevant
-                 * document_item_mash_type : relevant
-                 * dedup_level : 2
-                 * dedup_type : channel
-                 * batch : 0
-                 */
-
-                private String fid;
-                private String mashtype;
-                private String point;
-                private String dedupValid;
-                private String federation_mash_type;
-                private String document_item_mash_type;
-                private String dedup_level;
-                private String dedup_type;
-                private String batch;
-
-                public String getFid() {
-                    return fid;
-                }
-
-                public void setFid(String fid) {
-                    this.fid = fid;
-                }
-
-                public String getMashtype() {
-                    return mashtype;
-                }
-
-                public void setMashtype(String mashtype) {
-                    this.mashtype = mashtype;
-                }
-
-                public String getPoint() {
-                    return point;
-                }
-
-                public void setPoint(String point) {
-                    this.point = point;
-                }
-
-                public String getDedupValid() {
-                    return dedupValid;
-                }
-
-                public void setDedupValid(String dedupValid) {
-                    this.dedupValid = dedupValid;
-                }
-
-                public String getFederation_mash_type() {
-                    return federation_mash_type;
-                }
-
-                public void setFederation_mash_type(String federation_mash_type) {
-                    this.federation_mash_type = federation_mash_type;
-                }
-
-                public String getDocument_item_mash_type() {
-                    return document_item_mash_type;
-                }
-
-                public void setDocument_item_mash_type(String document_item_mash_type) {
-                    this.document_item_mash_type = document_item_mash_type;
-                }
-
-                public String getDedup_level() {
-                    return dedup_level;
-                }
-
-                public void setDedup_level(String dedup_level) {
-                    this.dedup_level = dedup_level;
-                }
-
-                public String getDedup_type() {
-                    return dedup_type;
-                }
-
-                public void setDedup_type(String dedup_type) {
-                    this.dedup_type = dedup_type;
-                }
-
-                public String getBatch() {
-                    return batch;
-                }
-
-                public void setBatch(String batch) {
-                    this.batch = batch;
-                }
-            }
-        }
-
-        public static class WemediaInfoBean {
-            /**
-             * image : http://si1.go2yd.com/get-image/0IUGMBY3wg4
-             * name : 钛媒体
-             * channel_id : m110526
-             * summary : 中国最大也最具影响力的财经科技信息服务提供商，集“媒体、数据和生活方式”三大板块于一身，旨在引领未来商业与生活新知。
-             * media_domain : 科技
-             * source_type : 2
-             * plus_v : 2
-             * postcount : 0
-             * authentication : 钛媒体官方一点号 品创计划作者
-             * sunnyplan_mark : 0
-             * sunnyplan_snnum :
-             * copy_right_mark : 0
-             * sunnyplan_certlevel :
-             * is_changfeng : 0
-             * account_click : 0
-             * is_puppet : 0
-             * userid : 211887075
-             * rank : 6
-             * fromId : m110526
-             * type : media
-             */
-
-            private String image;
-            private String name;
-            private String channel_id;
-            private String summary;
-            private String media_domain;
-            private int source_type;
-            private int plus_v;
-            private int postcount;
-            private String authentication;
-            private int sunnyplan_mark;
-            private String sunnyplan_snnum;
-            private int copy_right_mark;
-            private String sunnyplan_certlevel;
-            private int is_changfeng;
-            private int account_click;
-            private int is_puppet;
-            private int userid;
-            private int rank;
-            private String fromId;
+            private int cateid;
+            private String catename;
             private String type;
+            private String description;
+            private String forbidFollow;
+            private String forbidJump;
+            private String originalName;
+            private String cateSource;
+            private String showDescription;
 
-            public String getImage() {
-                return image;
+            public int getCateid() {
+                return cateid;
             }
 
-            public void setImage(String image) {
-                this.image = image;
+            public void setCateid(int cateid) {
+                this.cateid = cateid;
             }
 
-            public String getName() {
-                return name;
+            public String getCatename() {
+                return catename;
             }
 
-            public void setName(String name) {
-                this.name = name;
-            }
-
-            public String getChannel_id() {
-                return channel_id;
-            }
-
-            public void setChannel_id(String channel_id) {
-                this.channel_id = channel_id;
-            }
-
-            public String getSummary() {
-                return summary;
-            }
-
-            public void setSummary(String summary) {
-                this.summary = summary;
-            }
-
-            public String getMedia_domain() {
-                return media_domain;
-            }
-
-            public void setMedia_domain(String media_domain) {
-                this.media_domain = media_domain;
-            }
-
-            public int getSource_type() {
-                return source_type;
-            }
-
-            public void setSource_type(int source_type) {
-                this.source_type = source_type;
-            }
-
-            public int getPlus_v() {
-                return plus_v;
-            }
-
-            public void setPlus_v(int plus_v) {
-                this.plus_v = plus_v;
-            }
-
-            public int getPostcount() {
-                return postcount;
-            }
-
-            public void setPostcount(int postcount) {
-                this.postcount = postcount;
-            }
-
-            public String getAuthentication() {
-                return authentication;
-            }
-
-            public void setAuthentication(String authentication) {
-                this.authentication = authentication;
-            }
-
-            public int getSunnyplan_mark() {
-                return sunnyplan_mark;
-            }
-
-            public void setSunnyplan_mark(int sunnyplan_mark) {
-                this.sunnyplan_mark = sunnyplan_mark;
-            }
-
-            public String getSunnyplan_snnum() {
-                return sunnyplan_snnum;
-            }
-
-            public void setSunnyplan_snnum(String sunnyplan_snnum) {
-                this.sunnyplan_snnum = sunnyplan_snnum;
-            }
-
-            public int getCopy_right_mark() {
-                return copy_right_mark;
-            }
-
-            public void setCopy_right_mark(int copy_right_mark) {
-                this.copy_right_mark = copy_right_mark;
-            }
-
-            public String getSunnyplan_certlevel() {
-                return sunnyplan_certlevel;
-            }
-
-            public void setSunnyplan_certlevel(String sunnyplan_certlevel) {
-                this.sunnyplan_certlevel = sunnyplan_certlevel;
-            }
-
-            public int getIs_changfeng() {
-                return is_changfeng;
-            }
-
-            public void setIs_changfeng(int is_changfeng) {
-                this.is_changfeng = is_changfeng;
-            }
-
-            public int getAccount_click() {
-                return account_click;
-            }
-
-            public void setAccount_click(int account_click) {
-                this.account_click = account_click;
-            }
-
-            public int getIs_puppet() {
-                return is_puppet;
-            }
-
-            public void setIs_puppet(int is_puppet) {
-                this.is_puppet = is_puppet;
-            }
-
-            public int getUserid() {
-                return userid;
-            }
-
-            public void setUserid(int userid) {
-                this.userid = userid;
-            }
-
-            public int getRank() {
-                return rank;
-            }
-
-            public void setRank(int rank) {
-                this.rank = rank;
-            }
-
-            public String getFromId() {
-                return fromId;
-            }
-
-            public void setFromId(String fromId) {
-                this.fromId = fromId;
+            public void setCatename(String catename) {
+                this.catename = catename;
             }
 
             public String getType() {
@@ -1836,104 +571,694 @@ public class Tsest {
             public void setType(String type) {
                 this.type = type;
             }
+
+            public String getDescription() {
+                return description;
+            }
+
+            public void setDescription(String description) {
+                this.description = description;
+            }
+
+            public String getForbidFollow() {
+                return forbidFollow;
+            }
+
+            public void setForbidFollow(String forbidFollow) {
+                this.forbidFollow = forbidFollow;
+            }
+
+            public String getForbidJump() {
+                return forbidJump;
+            }
+
+            public void setForbidJump(String forbidJump) {
+                this.forbidJump = forbidJump;
+            }
+
+            public String getOriginalName() {
+                return originalName;
+            }
+
+            public void setOriginalName(String originalName) {
+                this.originalName = originalName;
+            }
+
+            public String getCateSource() {
+                return cateSource;
+            }
+
+            public void setCateSource(String cateSource) {
+                this.cateSource = cateSource;
+            }
+
+            public String getShowDescription() {
+                return showDescription;
+            }
+
+            public void setShowDescription(String showDescription) {
+                this.showDescription = showDescription;
+            }
         }
 
-        public static class ExtraFieldBean {
+        public static class StyleBean {
             /**
-             * specialFreqCtrl : false
-             * remainingViewNum : 2147483647
-             * autoVideo : 1
+             * view : titleimg
+             * recomTag : {"bg":"1","bgColor":"#26F54343","bgNightColor":"#26D33939","fontColor":"#FFF54343","fontNightColor":"#FFD33939","text":"热点","pos":"1"}
+             * backreason : ["0_来源:第一财经","c_财经","sc_企业动态","0_对内容不感兴趣"]
+             * defaultreason : 0_不感兴趣
              */
 
-            private String specialFreqCtrl;
-            private String remainingViewNum;
-            private String autoVideo;
+            private String view;
+            private RecomTagBean recomTag;
+            private String defaultreason;
+            private List<String> backreason;
 
-            public String getSpecialFreqCtrl() {
-                return specialFreqCtrl;
+            public String getView() {
+                return view;
             }
 
-            public void setSpecialFreqCtrl(String specialFreqCtrl) {
-                this.specialFreqCtrl = specialFreqCtrl;
+            public void setView(String view) {
+                this.view = view;
             }
 
-            public String getRemainingViewNum() {
-                return remainingViewNum;
+            public RecomTagBean getRecomTag() {
+                return recomTag;
             }
 
-            public void setRemainingViewNum(String remainingViewNum) {
-                this.remainingViewNum = remainingViewNum;
+            public void setRecomTag(RecomTagBean recomTag) {
+                this.recomTag = recomTag;
             }
 
-            public String getAutoVideo() {
-                return autoVideo;
+            public String getDefaultreason() {
+                return defaultreason;
             }
 
-            public void setAutoVideo(String autoVideo) {
-                this.autoVideo = autoVideo;
+            public void setDefaultreason(String defaultreason) {
+                this.defaultreason = defaultreason;
+            }
+
+            public List<String> getBackreason() {
+                return backreason;
+            }
+
+            public void setBackreason(List<String> backreason) {
+                this.backreason = backreason;
+            }
+
+            public static class RecomTagBean {
+                /**
+                 * bg : 1
+                 * bgColor : #26F54343
+                 * bgNightColor : #26D33939
+                 * fontColor : #FFF54343
+                 * fontNightColor : #FFD33939
+                 * text : 热点
+                 * pos : 1
+                 */
+
+                private String bg;
+                private String bgColor;
+                private String bgNightColor;
+                private String fontColor;
+                private String fontNightColor;
+                private String text;
+                private String pos;
+
+                public String getBg() {
+                    return bg;
+                }
+
+                public void setBg(String bg) {
+                    this.bg = bg;
+                }
+
+                public String getBgColor() {
+                    return bgColor;
+                }
+
+                public void setBgColor(String bgColor) {
+                    this.bgColor = bgColor;
+                }
+
+                public String getBgNightColor() {
+                    return bgNightColor;
+                }
+
+                public void setBgNightColor(String bgNightColor) {
+                    this.bgNightColor = bgNightColor;
+                }
+
+                public String getFontColor() {
+                    return fontColor;
+                }
+
+                public void setFontColor(String fontColor) {
+                    this.fontColor = fontColor;
+                }
+
+                public String getFontNightColor() {
+                    return fontNightColor;
+                }
+
+                public void setFontNightColor(String fontNightColor) {
+                    this.fontNightColor = fontNightColor;
+                }
+
+                public String getText() {
+                    return text;
+                }
+
+                public void setText(String text) {
+                    this.text = text;
+                }
+
+                public String getPos() {
+                    return pos;
+                }
+
+                public void setPos(String pos) {
+                    this.pos = pos;
+                }
             }
         }
-    }
 
-    public static class TraceInfoBean {
-        /**
-         * type : ListAdCard
-         * reason : success
-         * code : 1
-         */
+        public static class LinkBean {
+            /**
+             * type : doc
+             * url : https://nine.ifeng.com/getNewsDocs?aid=ucms_80amI77Rd8y&channelId=SYLB10NEW&category=%E8%B4%A2%E7%BB%8F&imId=80amI77Rd8y&channelKey=&isHotSpot=1
+             * weburl : https://ishare.ifeng.com/c/s/v004UGhxGPNp9Fjcd--tf2tUNp9y6MsPGa0pwog0KQvlT3zdhFkMIn4BPqEre5SEJOKuK?spss=np
+             * openType : 1
+             * staticId : ucms_80amI77Rd8y
+             */
 
-        private String type;
-        private String reason;
-        private int code;
+            private String type;
+            private String url;
+            private String weburl;
+            private String openType;
+            private String staticId;
 
-        public String getType() {
-            return type;
+            public String getType() {
+                return type;
+            }
+
+            public void setType(String type) {
+                this.type = type;
+            }
+
+            public String getUrl() {
+                return url;
+            }
+
+            public void setUrl(String url) {
+                this.url = url;
+            }
+
+            public String getWeburl() {
+                return weburl;
+            }
+
+            public void setWeburl(String weburl) {
+                this.weburl = weburl;
+            }
+
+            public String getOpenType() {
+                return openType;
+            }
+
+            public void setOpenType(String openType) {
+                this.openType = openType;
+            }
+
+            public String getStaticId() {
+                return staticId;
+            }
+
+            public void setStaticId(String staticId) {
+                this.staticId = staticId;
+            }
         }
 
-        public void setType(String type) {
-            this.type = type;
+        public static class IconBean {
+            /**
+             * showIcon : 1
+             * text : 广告·淘宝
+             */
+
+            private int showIcon;
+            private String text;
+
+            public int getShowIcon() {
+                return showIcon;
+            }
+
+            public void setShowIcon(int showIcon) {
+                this.showIcon = showIcon;
+            }
+
+            public String getText() {
+                return text;
+            }
+
+            public void setText(String text) {
+                this.text = text;
+            }
         }
 
-        public String getReason() {
-            return reason;
+        public static class CommentLinkBean {
+            /**
+             * type : short
+             * url : https://nine.ifeng.com/getNewsDocs?aid=ucms_7y8GvOrbmSG&channelId=SYLB10NEW&category=%E7%BE%8E%E5%A5%B3&imId=7y8GvOrbmSG&channelKey=&groupid=6689122576788099123
+             * weburl : https://ishare.ifeng.com/c/s/v004kI2uT82zNlre441jw0-_v--Z5mT8dXxIqXlHZLzULQ6e898Z8pz-_yHB2rQUMpsKpuW?spss=np
+             * openType : 1
+             * staticId : ucms_7y8GvOrbmSG
+             */
+
+            private String type;
+            private String url;
+            private String weburl;
+            private String openType;
+            private String staticId;
+
+            public String getType() {
+                return type;
+            }
+
+            public void setType(String type) {
+                this.type = type;
+            }
+
+            public String getUrl() {
+                return url;
+            }
+
+            public void setUrl(String url) {
+                this.url = url;
+            }
+
+            public String getWeburl() {
+                return weburl;
+            }
+
+            public void setWeburl(String weburl) {
+                this.weburl = weburl;
+            }
+
+            public String getOpenType() {
+                return openType;
+            }
+
+            public void setOpenType(String openType) {
+                this.openType = openType;
+            }
+
+            public String getStaticId() {
+                return staticId;
+            }
+
+            public void setStaticId(String staticId) {
+                this.staticId = staticId;
+            }
         }
 
-        public void setReason(String reason) {
-            this.reason = reason;
+        public static class SummaryBean {
+            /**
+             * tag : 导语
+             * tagStyle : 16
+             * desp : 近日，河南一家名为“今日油条”的店铺引起网友的注意，由于该店铺装修、logo、菜单与今日头条页面高度相似；今日头条将该店铺背后公司告上法庭，案由为商标权权属、侵权纠纷；风视频联系到今日油条店员：他表示仍正常营业，但对起诉表示不理解，具体是哪个字不能用？
+             * link : {"type":"videoimmersion","url":"51876986-3283-444f-b2ab-e4b4c6dc3db4","weburl":"https://ishare.ifeng.com/c/s/v004T-_NMV3R2NqtrNayXDcZjjAd4jDtXE3f9wg19BAY1l7xu940whkHri81KixU8vUMVE--8YwYZsZP0UNqBi5m4MuQ____?spss=np","openType":"2","vid":"51876986-3283-444f-b2ab-e4b4c6dc3db4","mp4":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37537311-102-009-155125/index.m3u8?ifsign=1","previewurl":"http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37510863-102-009-160925.mp4","staticId":"video_51876986-3283-444f-b2ab-e4b4c6dc3db4"}
+             * staticId : video_51876986-3283-444f-b2ab-e4b4c6dc3db4
+             */
+
+            private String tag;
+            private int tagStyle;
+            private String desp;
+            private LinkBeanX link;
+            private String staticId;
+
+            public String getTag() {
+                return tag;
+            }
+
+            public void setTag(String tag) {
+                this.tag = tag;
+            }
+
+            public int getTagStyle() {
+                return tagStyle;
+            }
+
+            public void setTagStyle(int tagStyle) {
+                this.tagStyle = tagStyle;
+            }
+
+            public String getDesp() {
+                return desp;
+            }
+
+            public void setDesp(String desp) {
+                this.desp = desp;
+            }
+
+            public LinkBeanX getLink() {
+                return link;
+            }
+
+            public void setLink(LinkBeanX link) {
+                this.link = link;
+            }
+
+            public String getStaticId() {
+                return staticId;
+            }
+
+            public void setStaticId(String staticId) {
+                this.staticId = staticId;
+            }
+
+            public static class LinkBeanX {
+                /**
+                 * type : videoimmersion
+                 * url : 51876986-3283-444f-b2ab-e4b4c6dc3db4
+                 * weburl : https://ishare.ifeng.com/c/s/v004T-_NMV3R2NqtrNayXDcZjjAd4jDtXE3f9wg19BAY1l7xu940whkHri81KixU8vUMVE--8YwYZsZP0UNqBi5m4MuQ____?spss=np
+                 * openType : 2
+                 * vid : 51876986-3283-444f-b2ab-e4b4c6dc3db4
+                 * mp4 : http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37537311-102-009-155125/index.m3u8?ifsign=1
+                 * previewurl : http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37510863-102-009-160925.mp4
+                 * staticId : video_51876986-3283-444f-b2ab-e4b4c6dc3db4
+                 */
+
+                private String type;
+                private String url;
+                private String weburl;
+                private String openType;
+                private String vid;
+                private String mp4;
+                private String previewurl;
+                private String staticId;
+
+                public String getType() {
+                    return type;
+                }
+
+                public void setType(String type) {
+                    this.type = type;
+                }
+
+                public String getUrl() {
+                    return url;
+                }
+
+                public void setUrl(String url) {
+                    this.url = url;
+                }
+
+                public String getWeburl() {
+                    return weburl;
+                }
+
+                public void setWeburl(String weburl) {
+                    this.weburl = weburl;
+                }
+
+                public String getOpenType() {
+                    return openType;
+                }
+
+                public void setOpenType(String openType) {
+                    this.openType = openType;
+                }
+
+                public String getVid() {
+                    return vid;
+                }
+
+                public void setVid(String vid) {
+                    this.vid = vid;
+                }
+
+                public String getMp4() {
+                    return mp4;
+                }
+
+                public void setMp4(String mp4) {
+                    this.mp4 = mp4;
+                }
+
+                public String getPreviewurl() {
+                    return previewurl;
+                }
+
+                public void setPreviewurl(String previewurl) {
+                    this.previewurl = previewurl;
+                }
+
+                public String getStaticId() {
+                    return staticId;
+                }
+
+                public void setStaticId(String staticId) {
+                    this.staticId = staticId;
+                }
+            }
         }
 
-        public int getCode() {
-            return code;
+        public static class PhvideoBean {
+            /**
+             * channelName : 风视频
+             * columnid : 543545
+             * path : 27-95084-95093-
+             * filesize : 2926
+             * length : 47
+             * previewlength : 20
+             * preview : 0
+             * currentPlay : 0
+             * completePlay : 0
+             * videoPlayUrl : http://ips.ifeng.com/video19.ifeng.com/video09/2020/10/15/p37537311-102-009-155125/index.m3u8?ifsign=1
+             */
+
+            private String channelName;
+            private String columnid;
+            private String path;
+            private String filesize;
+            private int length;
+            private int previewlength;
+            private int preview;
+            private int currentPlay;
+            private String completePlay;
+            private String videoPlayUrl;
+
+            public String getChannelName() {
+                return channelName;
+            }
+
+            public void setChannelName(String channelName) {
+                this.channelName = channelName;
+            }
+
+            public String getColumnid() {
+                return columnid;
+            }
+
+            public void setColumnid(String columnid) {
+                this.columnid = columnid;
+            }
+
+            public String getPath() {
+                return path;
+            }
+
+            public void setPath(String path) {
+                this.path = path;
+            }
+
+            public String getFilesize() {
+                return filesize;
+            }
+
+            public void setFilesize(String filesize) {
+                this.filesize = filesize;
+            }
+
+            public int getLength() {
+                return length;
+            }
+
+            public void setLength(int length) {
+                this.length = length;
+            }
+
+            public int getPreviewlength() {
+                return previewlength;
+            }
+
+            public void setPreviewlength(int previewlength) {
+                this.previewlength = previewlength;
+            }
+
+            public int getPreview() {
+                return preview;
+            }
+
+            public void setPreview(int preview) {
+                this.preview = preview;
+            }
+
+            public int getCurrentPlay() {
+                return currentPlay;
+            }
+
+            public void setCurrentPlay(int currentPlay) {
+                this.currentPlay = currentPlay;
+            }
+
+            public String getCompletePlay() {
+                return completePlay;
+            }
+
+            public void setCompletePlay(String completePlay) {
+                this.completePlay = completePlay;
+            }
+
+            public String getVideoPlayUrl() {
+                return videoPlayUrl;
+            }
+
+            public void setVideoPlayUrl(String videoPlayUrl) {
+                this.videoPlayUrl = videoPlayUrl;
+            }
         }
 
-        public void setCode(int code) {
-            this.code = code;
-        }
-    }
+        public static class RelationBean {
+            /**
+             * type : doc
+             * title : 为什么中国人的头发最值钱？
+             * thumbnail : https://d.ifengimg.com/w600_h338_q100_webp/x0.ifengimg.com/res/2020/071AB32207DA56862CB19C4105EE3C9A798A4CC3_size92_w1080_h720.jpeg.webp
+             * documentId : ucms_80aY6IzxAJn
+             * staticId : ucms_80aY6IzxAJn
+             * reftype : ai||||qualityReading%23Marquee||%E7%A4%BE%E4%BC%9A-%E7%A4%BE%E4%BC%9A%E4%B8%87%E8%B1%A1|
+             * link : {"type":"doc","url":"https://nine.ifeng.com/getNewsDocs?aid=ucms_80aY6IzxAJn&channelId=SYLB10NEW&category=&imId=80aY6IzxAJn&channelKey=&startfrom=qualityreading","weburl":"https://ishare.ifeng.com/c/s/v004yX24f1GcKFsQvGfB2-_JBoleEiqhC5i01hC4tgynEcT3Q0w1C2DjAbAM9Ydbl6--Bj?spss=np","openType":"1","staticId":"ucms_80aY6IzxAJn"}
+             */
 
+            private String type;
+            private String title;
+            private String thumbnail;
+            private String documentId;
+            private String staticId;
+            private String reftype;
+            private LinkBeanXX link;
 
-    public PostInfo getdata(String tag){
-        PostInfo postInfo = new PostInfo();
-        if(this.result==null){
-            return null;
+            public String getType() {
+                return type;
+            }
+
+            public void setType(String type) {
+                this.type = type;
+            }
+
+            public String getTitle() {
+                return title;
+            }
+
+            public void setTitle(String title) {
+                this.title = title;
+            }
+
+            public String getThumbnail() {
+                return thumbnail;
+            }
+
+            public void setThumbnail(String thumbnail) {
+                this.thumbnail = thumbnail;
+            }
+
+            public String getDocumentId() {
+                return documentId;
+            }
+
+            public void setDocumentId(String documentId) {
+                this.documentId = documentId;
+            }
+
+            public String getStaticId() {
+                return staticId;
+            }
+
+            public void setStaticId(String staticId) {
+                this.staticId = staticId;
+            }
+
+            public String getReftype() {
+                return reftype;
+            }
+
+            public void setReftype(String reftype) {
+                this.reftype = reftype;
+            }
+
+            public LinkBeanXX getLink() {
+                return link;
+            }
+
+            public void setLink(LinkBeanXX link) {
+                this.link = link;
+            }
+
+            public static class LinkBeanXX {
+                /**
+                 * type : doc
+                 * url : https://nine.ifeng.com/getNewsDocs?aid=ucms_80aY6IzxAJn&channelId=SYLB10NEW&category=&imId=80aY6IzxAJn&channelKey=&startfrom=qualityreading
+                 * weburl : https://ishare.ifeng.com/c/s/v004yX24f1GcKFsQvGfB2-_JBoleEiqhC5i01hC4tgynEcT3Q0w1C2DjAbAM9Ydbl6--Bj?spss=np
+                 * openType : 1
+                 * staticId : ucms_80aY6IzxAJn
+                 */
+
+                private String type;
+                private String url;
+                private String weburl;
+                private String openType;
+                private String staticId;
+
+                public String getType() {
+                    return type;
+                }
+
+                public void setType(String type) {
+                    this.type = type;
+                }
+
+                public String getUrl() {
+                    return url;
+                }
+
+                public void setUrl(String url) {
+                    this.url = url;
+                }
+
+                public String getWeburl() {
+                    return weburl;
+                }
+
+                public void setWeburl(String weburl) {
+                    this.weburl = weburl;
+                }
+
+                public String getOpenType() {
+                    return openType;
+                }
+
+                public void setOpenType(String openType) {
+                    this.openType = openType;
+                }
+
+                public String getStaticId() {
+                    return staticId;
+                }
+
+                public void setStaticId(String staticId) {
+                    this.staticId = staticId;
+                }
+            }
         }
-        postInfo.setCount(this.result.size()+"");
-        ArrayList<PostInfo.InfoBean> postinfobeanlist=new ArrayList<>();
-        for (Tsest.ResultBean b:result
-        ) {
-            PostInfo.InfoBean bean=new PostInfo.InfoBean();
-            bean.setCreateTime(b.getDdate());
-            bean.setItemAuthor(b.getSource());
-            bean.setItemDomain(tag);
-            bean.setItemType("1");
-            bean.setItemTitle(b.getTitle());
-            bean.setItemSource(b.getDsource());
-            bean.setItemUrl("http://www.yidianzixun.com/article/"+b.getDocid());
-            bean.setItemComment(b.getComment_count()+"");
-//            bean.setItemRead((b.getComment_count()*b.getLike())+"");
-            postinfobeanlist.add(bean);
-        }
-        postInfo.setInfo(postinfobeanlist);
-        return postInfo;
     }
 }

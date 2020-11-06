@@ -7,6 +7,8 @@ import android.preference.PreferenceManager;
 import android.support.multidex.MultiDexApplication;
 import android.util.Log;
 
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
 import com.squareup.leakcanary.LeakCanary;
 import com.tencent.bugly.Bugly;
 import net.gotev.uploadservice.UploadService;
@@ -52,6 +54,7 @@ public class SysApplication extends MultiDexApplication {
         initProxy();
         closeAndroid10Dialog();
         startLogcatManager();
+        Logger.addLogAdapter(new AndroidLogAdapter());
         SharedPreferenceUtils.putString(this, "select_ua", "1");
         SysUtils.getInstanse().init(this).plintPkgAndCls();
         // Gradle automatically generates proper variable as below.

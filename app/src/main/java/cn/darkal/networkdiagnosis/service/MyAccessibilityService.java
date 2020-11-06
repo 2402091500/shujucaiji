@@ -11,6 +11,7 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import cn.darkal.networkdiagnosis.Utils.ClassN;
 import cn.darkal.networkdiagnosis.Utils.NodeUtil;
 import cn.darkal.networkdiagnosis.Utils.PlamID;
+import cn.darkal.networkdiagnosis.Utils.SharedPreferenceUtils;
 import cn.darkal.networkdiagnosis.Utils.SysUtils;
 
 
@@ -19,7 +20,6 @@ import cn.darkal.networkdiagnosis.Utils.SysUtils;
  */
 public class MyAccessibilityService extends AccessibilityService {
     public static boolean state = false;
-
 
 
     @Override
@@ -32,36 +32,24 @@ public class MyAccessibilityService extends AccessibilityService {
     @Override
     public void onAccessibilityEvent(AccessibilityEvent event) {
         state = true;
-        AccessibilityNodeInfo scrollview = NodeUtil.findNodeByIdAndClassName(getRootInActiveWindow(), PlamID.scrollviewid, ClassN.HorizontalScrollView);
-        SysUtils.getInstanse().findanclick(scrollview,"娱乐");
-        SysUtils.getInstanse().findanclick(scrollview,"科技");
-        SysUtils.getInstanse().findanclick(scrollview,"新时代");
-        SysUtils.getInstanse().findanclick(scrollview,"汽车");
-        SysUtils.getInstanse().findanclick(scrollview,"动漫");
-        SysUtils.getInstanse().findanclick(scrollview,"生活");
-        SysUtils.getInstanse().findanclick(scrollview,"体育");
-        SysUtils.getInstanse().findanclick(scrollview,"财经");
+        String packagename = SharedPreferenceUtils.getString(this, "pingtai", URL.kuaibao);
+        if (packagename.equals(URL.kuaibao)) {
 
+            SysUtils.getInstanse().runkuaibao(this);
+        }
+        else if (packagename.equals(URL.douyin)) {
 
-        SysUtils.getInstanse().findanclick(scrollview,"军事");
-        SysUtils.getInstanse().findanclick(scrollview,"美女");
-        SysUtils.getInstanse().findanclick(scrollview,"历史");
-        SysUtils.getInstanse().findanclick(scrollview,"NBA");
-        SysUtils.getInstanse().findanclick(scrollview,"国际");
-        SysUtils.getInstanse().findanclick(scrollview,"游戏");
-        SysUtils.getInstanse().findanclick(scrollview,"数码");
-        SysUtils.getInstanse().findanclick(scrollview,"情感");
-        SysUtils.getInstanse().findanclick(scrollview,"宠物");
-        SysUtils.getInstanse().findanclick(scrollview,"星座");
-        SysUtils.getInstanse().findanclick(scrollview,"育儿");
-        SysUtils.getInstanse().findanclick(scrollview,"旅游");
-        SysUtils.getInstanse().findanclick(scrollview,"时尚");
-        SysUtils.getInstanse().findanclick(scrollview,"美食");
-        SysUtils.getInstanse().findanclick(scrollview,"三农");
-        SysUtils.getInstanse().findanclick(scrollview,"健康");
-        SysUtils.getInstanse().findanclick(scrollview,"教育");
+            SysUtils.getInstanse().rundouying(this);
+        }
+        else if (packagename.equals(URL.yidianzhixun)) {
 
-        //SysUtils.getInstanse().topGestureClick(getApplicationContext(),this,true);
+            SysUtils.getInstanse().runYidian(this);
+        }
+        else if (packagename.equals(URL.toutiao)) {
+
+            SysUtils.getInstanse().runYidian(this);
+        }
+
 
     }
 
@@ -69,7 +57,6 @@ public class MyAccessibilityService extends AccessibilityService {
     public void onInterrupt() {
         state = false;
     }
-
 
 
 }

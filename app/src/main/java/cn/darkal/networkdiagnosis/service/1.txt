@@ -31,7 +31,7 @@
 时政     channel_id=60813409126
 美文     channel_id=60813409078
 电商     channel_id=60813409046
-it      channel_id=60813408998
+IT      channel_id=60813408998
 金融     channel_id=60652002582
 健康     channel_id=2712332746
 美食     channel_id=60651998774
@@ -45,7 +45,7 @@ it      channel_id=60813408998
 娱乐    channel_id=2712332710
 动物    channel_id=60652001638
 军事    channel_id=2712332714
-NBa     channel_id=2712332714
+NBA     channel_id=2712332714
 体育    channel_id=2712332718
 财经    channel_id=2712332726
 科技    channel_id=2712332730
@@ -57,8 +57,18 @@ NBa     channel_id=2712332714
 搞笑    channel_id=2712332758
 
 
+1，直播间对接流程，初始化，拉取直播流，加载直播间控件，播放直播流，结束直播流，回收资源
+2，直播聊天室题目同步
 
 
+privateKey
+sign
+timestamps
+appType
+appId
+cusName
+avatar
+from
 
 
 
