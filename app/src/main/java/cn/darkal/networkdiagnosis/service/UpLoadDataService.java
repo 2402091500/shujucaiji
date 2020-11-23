@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
+import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Retrofit;
@@ -46,6 +47,9 @@ public class UpLoadDataService {
 
     public Observable<String> postdata(String data){
         return serviceApi.getPostInfoRx(data);
+    }
+    public Observable<String> postdatatopic(RequestBody data){
+        return serviceApi.getPostTopic(data);
     }
 
 

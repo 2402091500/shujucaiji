@@ -1,11 +1,14 @@
 package cn.darkal.networkdiagnosis.Fragment;
 
+import android.Manifest;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
@@ -13,6 +16,7 @@ import android.provider.Settings;
 import android.security.KeyChain;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -54,8 +58,21 @@ public class WebViewFragment2 extends Fragment implements View.OnClickListener {
     private LinearLayout llpintai;
     private ImageView im_pingtai;
     private TextView tv_pintai;
+    private static final int REQUEST_EXTERNAL_STORAGE = 1;
+    private static String[] PERMISSIONS_STORAGE = {
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE };
 
-
+    public static void verifyStoragePermissions(Activity activity) {
+        // Check if we have write permission
+        int permission = ActivityCompat.checkSelfPermission(activity,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            // We don't have permission so prompt the user
+            ActivityCompat.requestPermissions(activity, PERMISSIONS_STORAGE,
+                    REQUEST_EXTERNAL_STORAGE);
+        }
+    }
     public static WebViewFragment2 getInstance() {
         return webViewFragment;
     }
@@ -70,6 +87,7 @@ public class WebViewFragment2 extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_webview2, container, false);
         ButterKnife.bind(this, view);
+        verifyStoragePermissions(getActivity());
         startBt = (Button) view.findViewById(R.id.send);
         tvser = (TextView) view.findViewById(R.id.tvser);
         tv_pintai = (TextView) view.findViewById(R.id.tv_pintai);
@@ -130,7 +148,7 @@ public class WebViewFragment2 extends Fragment implements View.OnClickListener {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                 builder.setTitle("选择要采集数据的平台：");
                 builder.setCancelable(true);
-                final String[] lesson = new String[]{"抖音", "天天快报", "一点资讯", "今日头条", "趣头条", "惠头条", "百度新闻", "万能钥匙"};
+                final String[] lesson = new String[]{"抖音", "天天快报", "一点资讯", "今日头条", "知乎","趣头条", "惠头条", "百度新闻", "万能钥匙"};
                 builder.setIcon(R.drawable.logo);
                 builder.setIcon(R.drawable.logo)
                         .setItems(lesson, new DialogInterface.OnClickListener() {
@@ -157,6 +175,11 @@ public class WebViewFragment2 extends Fragment implements View.OnClickListener {
                                         im_pingtai.setImageDrawable(getContext().getDrawable(R.drawable.toutiao));
                                         tv_pintai.setText("今日头条");
                                         SharedPreferenceUtils.putString(getContext(), "pingtai", URL.toutiao);
+                                        break;
+                                    case 4:
+                                        im_pingtai.setImageDrawable(getContext().getDrawable(R.drawable.zhihu));
+                                        tv_pintai.setText("知乎");
+                                        SharedPreferenceUtils.putString(getContext(), "pingtai", URL.zhihu);
                                         break;
                                 }
                                 dialog.dismiss();

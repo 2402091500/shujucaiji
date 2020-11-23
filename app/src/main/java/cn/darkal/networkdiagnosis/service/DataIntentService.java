@@ -99,10 +99,10 @@ public class DataIntentService extends IntentService {
                     else if (urld.contains("nine.ifeng.com")) {
                         Log.i("凤凰新闻数据", data + "@@");
                         Log.i("凤凰新闻url", entry.getRequest().getUrl() + "@@@");
-                        SysUtils.getInstanse().WriteStringToFile5(entry.getResponse().getContent().getText() + "@@");
+                        SysUtils.getInstanse().WriteStringToFile6(entry.getResponse().getContent().getText() + "@@");
 //                        GetDataByTag.getDouyin(entry, "未知");
                     }
-                    else if (urld.contains("lf.snssdk.com/api/news/feed")) {
+                    else if (urld.contains("snssdk.com/api/news/feed")) {
                         Log.i("今日头条 数据", data + "@@");
                         Log.i("今日头条 url", entry.getRequest().getUrl() + "@@@");
 
@@ -118,8 +118,15 @@ public class DataIntentService extends IntentService {
                         }
                         TD(entry,urld);
 //                        GetDataByTag.getDouyin(entry, "未知");
+                    }else  if(urld.contains("zhihu.com")){
+                        Log.i("知乎 数据", data + "@@");
+                        Log.i("知乎 url", entry.getRequest().getUrl() + "@@@");
+                        SysUtils.getInstanse().WriteStringToFile6(entry.getResponse().getContent().getText() + "@@");
+                        ZH(entry);
                     }
                 } else {
+
+
                     LogUtil.i("TAG", "printData: ############################################");
                 }
             }
@@ -235,6 +242,9 @@ public class DataIntentService extends IntentService {
 
     private void YD(HarEntry entry) {
         GetDataByTag.getYD(entry);
+    }
+    private void ZH(HarEntry entry) {
+        GetDataByTag.getZH(entry);
     }
     private void TD(HarEntry entry,String urld) {
         if (urld.contains("category=video")) {GetDataByTag.getTD(entry, "视频",urld);}

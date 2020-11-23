@@ -11,6 +11,8 @@ import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 import com.squareup.leakcanary.LeakCanary;
 import com.tencent.bugly.Bugly;
+import com.tencent.bugly.crashreport.CrashReport;
+
 import net.gotev.uploadservice.UploadService;
 import net.lightbody.bmp.BrowserMobProxy;
 import net.lightbody.bmp.BrowserMobProxyServer;
@@ -54,6 +56,7 @@ public class SysApplication extends MultiDexApplication {
         initProxy();
         closeAndroid10Dialog();
         startLogcatManager();
+        CrashReport.initCrashReport(getApplicationContext(), "26051ad9d3", false);
         Logger.addLogAdapter(new AndroidLogAdapter());
         SharedPreferenceUtils.putString(this, "select_ua", "1");
         SysUtils.getInstanse().init(this).plintPkgAndCls();

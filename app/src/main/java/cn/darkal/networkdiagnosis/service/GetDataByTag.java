@@ -15,12 +15,16 @@ import java.util.LinkedHashMap;
 
 import cn.darkal.networkdiagnosis.Utils.SysUtils;
 import cn.darkal.networkdiagnosis.modle.PostInfo;
+import cn.darkal.networkdiagnosis.modle.PostInfoTopic;
 import cn.darkal.networkdiagnosis.modle.douyin.DouYin;
 import cn.darkal.networkdiagnosis.modle.jinri.TouTiao;
 import cn.darkal.networkdiagnosis.modle.jinri.Video;
 import cn.darkal.networkdiagnosis.modle.tiantian.TT_KeJi;
 import cn.darkal.networkdiagnosis.modle.tiantian.TT_Yule;
 import cn.darkal.networkdiagnosis.modle.yidian.KeJi;
+import cn.darkal.networkdiagnosis.modle.zhihu.Zhihu;
+import okhttp3.MediaType;
+import okhttp3.RequestBody;
 import rx.Subscriber;
 
 public class GetDataByTag {
@@ -93,6 +97,42 @@ public class GetDataByTag {
 
     }
 
+    public static void getZH(HarEntry entry) {
+        String data = entry.getResponse().getContent().getText();
+        Log.i("知乎  数据", data + "@@");
+        Log.i("知乎 url", entry.getRequest().getUrl() + "@@@");
+        if (entry.getResponse().getContent().toString().contains("没有新闻返回")) {
+            return;
+        }
+        if (data != null && data.length() > 200&&data.contains("question")) {
+
+            Gson gosn = new Gson();
+            Zhihu yule = gosn.fromJson(data, Zhihu.class);
+            PostInfoTopic postinfo = yule.getdata();
+            Log.i("json",gosn.toJson(postinfo));
+            String json = gosn.toJson(postinfo);
+            RequestBody body = RequestBody.create(MediaType.parse("application/json; charset=utf-8"),json);
+            UpLoadDataService.getInstance().postdatatopic(body)
+                    .subscribe(new Subscriber<String>() {
+                        @Override
+                        public void onCompleted() {
+
+                        }
+
+                        @Override
+                        public void onError(Throwable e) {
+                            Log.e("接口数据错误", e.getMessage().toString() + "QQQ");
+                        }
+
+                        @Override
+                        public void onNext(String s) {
+                            Log.e("接口数据错误", s + "QQQ");
+                        }
+                    });
+        }
+
+    }
+
     public static void getDouyin(HarEntry entry, final String tag) {
         String data = entry.getResponse().getContent().getText();
 
@@ -141,7 +181,7 @@ public class GetDataByTag {
             data =data.replace("href=\"","");
             data =data.replace("\"u003e#","");
         Log.i("@@@@@@@",data);
-            SysUtils.getInstanse().WriteStringToFile6(data + "@@");
+//            SysUtils.getInstanse().WriteStringToFile6(data + "@@");
             Gson gosn = new Gson();
             PostInfo postinfo = null;
 //            if(urld.contains("category=video")||urld.contains("category=hotsoon_video")){

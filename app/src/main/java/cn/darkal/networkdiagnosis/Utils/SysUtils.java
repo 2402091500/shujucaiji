@@ -275,37 +275,54 @@ public class SysUtils {
         }
     @SuppressLint("NewApi")
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
+        public void runZhihu(AccessibilityService mservice){
+        GestureDescription.Builder builder = new GestureDescription.Builder();
+        Path path = new Path();
+        path.moveTo(240, 500);
+        path.lineTo(240, 1000);
+        GestureDescription gestureDescription = builder.addStroke(new GestureDescription.StrokeDescription(path, 20, 500)).build();
+    }
+        @SuppressLint("NewApi")
+        @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
         public void runTouTiao(AccessibilityService mservice){
-            AccessibilityNodeInfo scrollview = NodeUtil.findNodeByIdAndClassName(mservice.getRootInActiveWindow(), PlamID.yd_scrollviewid, ClassN.HorizontalScrollView);
-            SysUtils.getInstanse().findanclick(scrollview,"互联网");
-            SysUtils.getInstanse().findanclick(scrollview,"科学");
-            SysUtils.getInstanse().findanclick(scrollview,"时政");
-            SysUtils.getInstanse().findanclick(scrollview,"美文");
-            SysUtils.getInstanse().findanclick(scrollview,"电商");
-            SysUtils.getInstanse().findanclick(scrollview,"IT");
-            SysUtils.getInstanse().findanclick(scrollview,"金融");
-            SysUtils.getInstanse().findanclick(scrollview,"健康");
-            SysUtils.getInstanse().findanclick(scrollview,"美食");
-            SysUtils.getInstanse().findanclick(scrollview,"育儿");
-            SysUtils.getInstanse().findanclick(scrollview,"摄影");
-            SysUtils.getInstanse().findanclick(scrollview,"情感");
-            SysUtils.getInstanse().findanclick(scrollview,"农村");
+            AccessibilityNodeInfo scrollview = NodeUtil.findNodeByIdAndClassName(mservice.getRootInActiveWindow(), PlamID.td_scrollviewid, ClassN.HorizontalScrollView);
+            if(scrollview==null){
+                Log.i("无障碍服务","今日头条 scrollview 为空");
+            }
             SysUtils.getInstanse().findanclick(scrollview,"视频");
-            SysUtils.getInstanse().findanclick(scrollview,"新时代");
-            SysUtils.getInstanse().findanclick(scrollview,"历史");
+            SysUtils.getInstanse().findanclick(scrollview,"热点");
             SysUtils.getInstanse().findanclick(scrollview,"娱乐");
-            SysUtils.getInstanse().findanclick(scrollview,"动物");
-            SysUtils.getInstanse().findanclick(scrollview,"军事");
-            SysUtils.getInstanse().findanclick(scrollview,"NBA");
+            SysUtils.getInstanse().findanclick(scrollview,"图片");
             SysUtils.getInstanse().findanclick(scrollview,"体育");
-            SysUtils.getInstanse().findanclick(scrollview,"财经");
+            SysUtils.getInstanse().findanclick(scrollview,"要闻");
+            SysUtils.getInstanse().findanclick(scrollview,"国际");
+            SysUtils.getInstanse().findanclick(scrollview,"健康");
             SysUtils.getInstanse().findanclick(scrollview,"科技");
-            SysUtils.getInstanse().findanclick(scrollview,"民生");
-            SysUtils.getInstanse().findanclick(scrollview,"段子");
-            SysUtils.getInstanse().findanclick(scrollview,"汽车");
-            SysUtils.getInstanse().findanclick(scrollview,"时尚");
-            SysUtils.getInstanse().findanclick(scrollview,"明星");
+            SysUtils.getInstanse().findanclick(scrollview,"军事");
+            SysUtils.getInstanse().findanclick(scrollview,"历史");
+            SysUtils.getInstanse().findanclick(scrollview,"漫画");
+            SysUtils.getInstanse().findanclick(scrollview,"数码");
+            SysUtils.getInstanse().findanclick(scrollview,"NBA");
+            SysUtils.getInstanse().findanclick(scrollview,"游戏");
+            SysUtils.getInstanse().findanclick(scrollview,"音乐");
+            SysUtils.getInstanse().findanclick(scrollview,"情感");
+            SysUtils.getInstanse().findanclick(scrollview,"小视频");
+            SysUtils.getInstanse().findanclick(scrollview,"育儿");
+            SysUtils.getInstanse().findanclick(scrollview,"美食");
+            SysUtils.getInstanse().findanclick(scrollview,"养生");
+            SysUtils.getInstanse().findanclick(scrollview,"旅游");
+            SysUtils.getInstanse().findanclick(scrollview,"家居");
+            SysUtils.getInstanse().findanclick(scrollview,"教育");
+            SysUtils.getInstanse().findanclick(scrollview,"三农");
+            SysUtils.getInstanse().findanclick(scrollview,"故事");
+            SysUtils.getInstanse().findanclick(scrollview,"影视");
+            SysUtils.getInstanse().findanclick(scrollview,"彩票");
             SysUtils.getInstanse().findanclick(scrollview,"搞笑");
+            SysUtils.getInstanse().findanclick(scrollview,"星座");
+            SysUtils.getInstanse().findanclick(scrollview,"财经");
+            SysUtils.getInstanse().findanclick(scrollview,"手机");
+            SysUtils.getInstanse().findanclick(scrollview,"股票");
+
 
         }
     @SuppressLint("NewApi")

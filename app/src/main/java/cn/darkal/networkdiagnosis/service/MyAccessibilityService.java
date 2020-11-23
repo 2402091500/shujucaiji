@@ -46,8 +46,12 @@ public class MyAccessibilityService extends AccessibilityService {
             SysUtils.getInstanse().runYidian(this);
         }
         else if (packagename.equals(URL.toutiao)) {
-
-            SysUtils.getInstanse().runYidian(this);
+            Log.i("无障碍服务","今日头条");
+            SysUtils.getInstanse().runTouTiao(this);
+        }
+        else if (packagename.equals(URL.zhihu)) {
+            Log.i("无障碍服务","知乎");
+            SysUtils.getInstanse().runZhihu(this);
         }
 
 

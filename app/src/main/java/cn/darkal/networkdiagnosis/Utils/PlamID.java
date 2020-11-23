@@ -9,4 +9,5 @@ public interface PlamID {
 
 
     final String yd_scrollviewid="com.hipu.yidian:id/navi_tabs";
+    final String td_scrollviewid="com.ss.android.article.lite:id/a44";
 }

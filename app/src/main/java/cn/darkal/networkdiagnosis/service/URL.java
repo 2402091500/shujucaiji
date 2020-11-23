@@ -7,4 +7,6 @@ public interface URL {
     final String kuaibao="com.tencent.reading";
     final String yidianzhixun="com.hipu.yidian";
     final String toutiao="com.ss.android.article.lite";
+    //com.zhihu.android/com.zhihu.android.app.ui.activity.MainActivity
+    final String zhihu="com.zhihu.android";
 }

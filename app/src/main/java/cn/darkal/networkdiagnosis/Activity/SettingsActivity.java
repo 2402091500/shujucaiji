@@ -16,7 +16,7 @@ import android.support.v7.app.ActionBar;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.tencent.bugly.beta.Beta;
+
 
 import net.lightbody.bmp.BrowserMobProxy;
 import net.lightbody.bmp.proxy.dns.AdvancedHostResolver;
@@ -91,18 +91,18 @@ public class SettingsActivity extends AppCompatPreferenceActivity implements Pre
 
         findPreference("app_version").setSummary(DeviceUtils.getVersion(this));
 
-        findPreference("app_version").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-            @Override
-            public boolean onPreferenceClick(Preference preference) {
-                try {
-                    Beta.checkUpgrade();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-                return false;
-            }
-
-        });
+//        findPreference("app_version").setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+//            @Override
+//            public boolean onPreferenceClick(Preference preference) {
+//                try {
+//                    Beta.checkUpgrade();
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//                return false;
+//            }
+//
+//        });
 
         hostPreference = findPreference("app_host");
         hostPreference.setSummary(getHost());
