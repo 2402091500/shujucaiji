@@ -100,7 +100,8 @@ public class DataIntentService extends IntentService {
                         Log.i("凤凰新闻数据", data + "@@");
                         Log.i("凤凰新闻url", entry.getRequest().getUrl() + "@@@");
                         SysUtils.getInstanse().WriteStringToFile6(entry.getResponse().getContent().getText() + "@@");
-//                        GetDataByTag.getDouyin(entry, "未知");
+//                        GetDataByTag.getDouyin(entry, "未知");phvideo
+                        FH(entry);
                     }
                     else if (urld.contains("snssdk.com/api/news/feed")) {
                         Log.i("今日头条 数据", data + "@@");
@@ -123,6 +124,10 @@ public class DataIntentService extends IntentService {
                         Log.i("知乎 url", entry.getRequest().getUrl() + "@@@");
                         SysUtils.getInstanse().WriteStringToFile6(entry.getResponse().getContent().getText() + "@@");
                         ZH(entry);
+                    }else {
+                       // Log.i("其他 数据", data + "@@");
+                       // Log.i("其他 url", entry.getRequest().getUrl() + "@@@");
+
                     }
                 } else {
 
@@ -242,6 +247,10 @@ public class DataIntentService extends IntentService {
 
     private void YD(HarEntry entry) {
         GetDataByTag.getYD(entry);
+    }
+    private void FH(HarEntry entry) {
+        GetDataByTag.getFH(entry);
+
     }
     private void ZH(HarEntry entry) {
         GetDataByTag.getZH(entry);

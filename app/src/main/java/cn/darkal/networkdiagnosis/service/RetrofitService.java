@@ -17,4 +17,8 @@ public interface RetrofitService {
     @POST("/admin/addTopicApp")
     Observable<String> getPostTopic(@Body RequestBody body);
 
+    //http://139.159.210.26:8080/admin/addVideoApp
+    @POST("/admin/addVideoApp")
+    Observable<String> getPostVidio(@Body RequestBody body);
+
 }

@@ -278,9 +278,26 @@ public class SysUtils {
         public void runZhihu(AccessibilityService mservice){
         GestureDescription.Builder builder = new GestureDescription.Builder();
         Path path = new Path();
-        path.moveTo(240, 500);
-        path.lineTo(240, 1000);
-        GestureDescription gestureDescription = builder.addStroke(new GestureDescription.StrokeDescription(path, 20, 500)).build();
+        path.moveTo(240, 1000);
+        path.lineTo(240, 2000);
+        GestureDescription gestureDescription = builder.addStroke(new GestureDescription.StrokeDescription(path, 20, 1000)).build();
+        for (;;){
+
+        mservice.dispatchGesture(gestureDescription, new AccessibilityService.GestureResultCallback() {
+            @Override
+            public void onCompleted(GestureDescription gestureDescription) {
+                super.onCompleted(gestureDescription);
+                Log.d("TAG", "----模拟手势成功-----");
+            }
+
+            @Override
+            public void onCancelled(GestureDescription gestureDescription) {
+                super.onCancelled(gestureDescription);
+                Log.d("TAG", "----模拟手势失败-----");
+            }
+        }, null);
+        sleep(3000l);
+        }
     }
         @SuppressLint("NewApi")
         @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)

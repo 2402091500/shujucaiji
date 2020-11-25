@@ -51,6 +51,9 @@ public class UpLoadDataService {
     public Observable<String> postdatatopic(RequestBody data){
         return serviceApi.getPostTopic(data);
     }
+    public Observable<String> postdatavidio(RequestBody data){
+        return serviceApi.getPostVidio(data);
+    }
 
 
 }
