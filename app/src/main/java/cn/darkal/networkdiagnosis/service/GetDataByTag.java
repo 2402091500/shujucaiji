@@ -2,16 +2,10 @@ package cn.darkal.networkdiagnosis.service;
 
 import android.util.Log;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.parser.Feature;
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 
+import com.google.gson.Gson;
 import net.lightbody.bmp.core.har.HarEntry;
 
-import java.util.LinkedHashMap;
 
 import cn.darkal.networkdiagnosis.Utils.SysUtils;
 import cn.darkal.networkdiagnosis.modle.PostInfo;
@@ -23,8 +17,10 @@ import cn.darkal.networkdiagnosis.modle.fenhuan.FenHuanMusic;
 import cn.darkal.networkdiagnosis.modle.fenhuan.FenhuanVidio;
 import cn.darkal.networkdiagnosis.modle.jinri.TouTiao;
 import cn.darkal.networkdiagnosis.modle.jinri.Video;
+import cn.darkal.networkdiagnosis.modle.souhu.SouHu;
 import cn.darkal.networkdiagnosis.modle.tiantian.TT_KeJi;
 import cn.darkal.networkdiagnosis.modle.tiantian.TT_Yule;
+import cn.darkal.networkdiagnosis.modle.wanyi.WanYi;
 import cn.darkal.networkdiagnosis.modle.yidian.KeJi;
 import cn.darkal.networkdiagnosis.modle.zhihu.Zhihu;
 import okhttp3.MediaType;
@@ -260,6 +256,46 @@ public class GetDataByTag {
         }
 
     }
+    public static void getSH(HarEntry entry) {
+        String data = entry.getResponse().getContent().getText();
+
+        if (entry.getResponse().getContent().toString().contains("没有新闻返回")) {
+            return;
+        }
+        if (data != null && data.length() > 200&&data.contains("sourceId")) {
+
+            Gson gosn = new Gson();
+            PostInfo postinfo;
+            try {
+                SouHu yule = gosn.fromJson(data, SouHu.class);
+                postinfo = yule.getdata();
+                postdata(gosn.toJson(postinfo));
+            } catch (Exception e) {
+                return;
+            }
+    }}
+    public static void getWY(HarEntry entry) {
+        String data = entry.getResponse().getContent().getText();
+
+        if (entry.getResponse().getContent().toString().contains("没有新闻返回")) {
+            return;
+        }
+        if (data != null && data.length() > 200&&data.contains("sourceId")) {
+
+            Gson gosn = new Gson();
+           data= data.substring(data.indexOf(":"),data.length());
+           data="{\"jartt\""+data;
+           Log.i("aaaaaaaaaaaaaa----",data);
+            SysUtils.getInstanse().WriteStringToFile6(data);
+            PostInfo postinfo;
+                WanYi yule = gosn.fromJson(data, WanYi.class);
+                postinfo = yule.getdata();
+                postdata(gosn.toJson(postinfo));
+            try {
+            } catch (Exception e) {
+                return;
+            }
+            }}
 
     public static void getTD(HarEntry entry, final String tag, final String urld) {
         String data = entry.getResponse().getContent().getText();

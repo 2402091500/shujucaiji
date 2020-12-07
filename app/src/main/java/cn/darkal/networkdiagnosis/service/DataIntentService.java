@@ -25,6 +25,7 @@ import cn.darkal.networkdiagnosis.SysApplication;
 import cn.darkal.networkdiagnosis.Utils.LogUtil;
 import cn.darkal.networkdiagnosis.Utils.SysUtils;
 import cn.darkal.networkdiagnosis.modle.PostInfo;
+import cn.darkal.networkdiagnosis.modle.souhu.SouHu;
 import cn.darkal.networkdiagnosis.modle.tiantian.TT_Yule;
 import rx.Observable;
 import rx.Subscriber;
@@ -124,13 +125,17 @@ public class DataIntentService extends IntentService {
                         Log.i("知乎 url", entry.getRequest().getUrl() + "@@@");
                         SysUtils.getInstanse().WriteStringToFile6(entry.getResponse().getContent().getText() + "@@");
                         ZH(entry);
-                    }else {
-                       // Log.i("其他 数据", data + "@@");
-                       // Log.i("其他 url", entry.getRequest().getUrl() + "@@@");
-
+                    }else if(urld.contains("sohu.com")){
+                        Log.i("搜狐 数据", data + "@@");
+                        Log.i("搜狐 url", entry.getRequest().getUrl() + "@@@");
+                        SH(entry);
+                    }else if(urld.contains("163.com")){
+                        Log.i("其他 数据", data + "@@");
+                        Log.i("其他 url", entry.getRequest().getUrl() + "@@@");
+                        SysUtils.getInstanse().WriteStringToFile6(entry.getResponse().getContent().getText() + "@@");
+                        WY(entry);
                     }
                 } else {
-
 
                     LogUtil.i("TAG", "printData: ############################################");
                 }
@@ -254,6 +259,12 @@ public class DataIntentService extends IntentService {
     }
     private void ZH(HarEntry entry) {
         GetDataByTag.getZH(entry);
+    }
+    private void SH(HarEntry entry) {
+        GetDataByTag.getSH(entry);
+    }
+    private void WY(HarEntry entry) {
+        GetDataByTag.getWY(entry);
     }
     private void TD(HarEntry entry,String urld) {
         if (urld.contains("category=video")) {GetDataByTag.getTD(entry, "视频",urld);}

@@ -2,7 +2,9 @@ package cn.darkal.networkdiagnosis.modle.jinri;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import cn.darkal.networkdiagnosis.modle.PostInfo;
@@ -10,11 +12,8 @@ import cn.darkal.networkdiagnosis.modle.PostInfo;
 public class Video {
 
 
-
     private List<DataBean> data;
     private PostInfo postInfo;
-
-
 
 
     public List<DataBean> getData() {
@@ -153,7 +152,6 @@ public class Video {
              */
 
 
-
             private String article_url;
 
             private int comment_count;
@@ -211,7 +209,6 @@ public class Video {
             }
 
 
-
             public String getDisplay_url() {
                 return display_url;
             }
@@ -219,6 +216,7 @@ public class Video {
             public void setDisplay_url(String display_url) {
                 this.display_url = display_url;
             }
+
             public boolean isHas_video() {
                 return has_video;
             }
@@ -226,7 +224,6 @@ public class Video {
             public void setHas_video(boolean has_video) {
                 this.has_video = has_video;
             }
-
 
 
             public String getMedia_name() {
@@ -238,7 +235,6 @@ public class Video {
             }
 
 
-
             public int getRead_count() {
                 return read_count;
             }
@@ -246,9 +242,6 @@ public class Video {
             public void setRead_count(int read_count) {
                 this.read_count = read_count;
             }
-
-
-
 
 
             public int getShare_count() {
@@ -268,7 +261,6 @@ public class Video {
             }
 
 
-
             public String getShare_url() {
                 return share_url;
             }
@@ -278,10 +270,6 @@ public class Video {
             }
 
 
-
-
-
-
             public String getSource() {
                 return source;
             }
@@ -289,9 +277,6 @@ public class Video {
             public void setSource(String source) {
                 this.source = source;
             }
-
-
-
 
 
             public String getTitle() {
@@ -323,9 +308,6 @@ public class Video {
                 private String title;
 
 
-
-
-
                 public String getShare_url() {
                     return share_url;
                 }
@@ -346,33 +328,37 @@ public class Video {
 
         }
     }
-    public PostInfo getdata(String tag){
-        postInfo=new PostInfo();
-        if(this.data==null){
+
+    public PostInfo getdata(String tag) {
+        postInfo = new PostInfo();
+        if (this.data == null) {
             return null;
         }
-        postInfo.setCount(this.data.size()+"");
-        ArrayList<PostInfo.InfoBean> postinfobeanlist=new ArrayList<>();
-        for (DataBean b:data
+        postInfo.setCount(this.data.size() + "");
+        ArrayList<PostInfo.InfoBean> postinfobeanlist = new ArrayList<>();
+        for (DataBean b : data
         ) {
-            if(b.getContent()==null){
+            if (b.getContent() == null) {
                 continue;
             }
-            PostInfo.InfoBean bean=new PostInfo.InfoBean();
-            bean.setCreateTime(b.getContent().getPublish_time()+"");
+            PostInfo.InfoBean bean = new PostInfo.InfoBean();
+            Date d = new Date();
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:MM:ss");
+            String sd = sdf.format(new Date(Long.parseLong(b.getContent().getPublish_time() + ""))); // 时间戳转换日期
+            bean.setCreateTime( sd);
             bean.setItemAuthor(b.getContent().getSource());
 
             bean.setItemDomain(tag);
-            if(b.getContent().isHas_video()){
+            if (b.getContent().isHas_video()) {
                 bean.setItemType("2");
-            }else {
+            } else {
                 bean.setItemType("1");
             }
             bean.setItemTitle(b.getContent().getTitle());
             bean.setItemSource("今日头条");
             bean.setItemUrl(b.getContent().getArticle_url());
-            bean.setItemComment(b.getContent().getComment_count()+"");
-            bean.setItemRead(b.getContent().getRead_count()+"");
+            bean.setItemComment(b.getContent().getComment_count() + "");
+            bean.setItemRead(b.getContent().getRead_count() + "");
             postinfobeanlist.add(bean);
         }
         postInfo.setInfo(postinfobeanlist);
